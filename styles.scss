@@ -1,0 +1,142 @@
+@import 'mixins';
+
+$bgimg: url('header.png');
+$bgpos: top center;
+$bgsize: cover;
+$bgrepeat: no-repeat;
+
+@-webkit-keyframes fade-in {
+    0%   {opacity:1;}
+    100% {opacity:1;}
+}
+
+@-moz-keyframes fade-in {
+    0%   {opacity:1;}
+    100% {opacity:1;}
+}
+
+@-o-keyframes fade-in {
+    0%   {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes fade-in {
+    0%   {opacity:1;}
+    100% {opacity:1;}
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+header{
+    position: fixed;
+    width: 33%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 66%;
+    margin: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-image: $bgimg;
+    background-position: $bgpos;
+    background-size: $bgsize;
+    background-repeat: $bgrepeat;
+    z-index: 2;
+    @include transition(all 1s ease-in-out 0);
+
+    h1{
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        margin:15px;
+        font-size: 4.6vw;
+        @include transition(all 1s ease-in-out 0);
+    }
+}
+.shadow{
+    position: fixed;
+    width: 33.7%;
+    top: 10px;
+    bottom: 5px;
+    left: 10px;
+    right: 66.3%;
+    margin: 0;
+    background-image: $bgimg;
+    background-position: $bgpos;
+    background-size: $bgsize;
+    background-repeat: $bgrepeat;
+    @include filter(blur(0.5em));
+    opacity: 1;
+    z-index: 1;
+    @include transition(all 1s ease-in-out 0);
+}
+@media only screen and (max-width: 600px) {
+    header{
+        vertical-align: bottom;
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        top: 0;
+        bottom: 60%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #ffffff;
+        
+        img{
+            display: none;
+            left: 0;
+            width: auto;
+            height: 100%;
+        }
+        h1{
+            text-align: center;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            font-size: 6.5vw;
+            @include transition(all 1s ease-in-out 0);
+        }
+    }
+    
+    .shadow{
+        position: fixed;
+        width: 100%;
+        top: 10px;
+        bottom: 59%;
+        left: 0;
+        right: 0;
+        margin: 0;
+        @include filter(blur(0.5em));
+        opacity: 1;
+    }
+}
+ .fab{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+ .fa-twitter:hover{
+    color:#00aced;
+}
+ .fa-reddit:hover{
+    color: #ff4301;
+    background-color: #ffffff;
+    @include border-radius(50%);
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+}
+ .fa-linkedin:hover{
+    color: #0077b5;
+}
+ .fa-github:hover{
+    color: #211f1f;
+    background-color: #ffffff;
+    @include border-radius(50%);
+    padding-left: 0.5px;
+    padding-right: 0.5px;
+}

@@ -1,0 +1,71 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+         -o-border-radius: $radius;
+            border-radius: $radius;
+}
+
+@mixin transition($transition) {
+    -webkit-transition: $transition;
+       -moz-transition: $transition;
+        -ms-transition: $transition;
+         -o-transition: $transition;
+            transition: $transition;
+}
+
+@mixin animation($animation) {
+    -webkit-animation: $animation;
+       -moz-animation: $animation;
+        -ms-animation: $animation;
+         -o-animation: $animation;
+            animation: $animation;
+}
+
+@mixin filter($filter) {
+    -webkit-filter: $filter;
+       -moz-filter: $filter;
+        -ms-filter: $filter;
+         -o-filter: $filter;
+            filter: $filter;
+}
+
+@mixin transform($transform) {
+    -webkit-transform: $transform;
+       -moz-transform: $transform;
+        -ms-transform: $transform;
+         -o-transform: $transform;
+            transform: $transform;
+}
+
+@mixin box-shadow($box-shadow) {
+    -webkit-box-shadow: $box-shadow;
+       -moz-box-shadow: $box-shadow;
+        -ms-box-shadow: $box-shadow;
+         -o-box-shadow: $box-shadow;
+            box-shadow: $box-shadow;
+}
+
+@mixin text-shadow($text-shadow) {
+    -webkit-text-shadow: $text-shadow;
+       -moz-text-shadow: $text-shadow;
+        -ms-text-shadow: $text-shadow;
+         -o-text-shadow: $text-shadow;
+            text-shadow: $text-shadow;
+}
+
+@mixin gradient($from, $to, $height) {
+    background-color: $to;
+    background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+    background-image: -webkit-linear-gradient($from, $to);
+    background-image:    -moz-linear-gradient($from, $to);
+    background-image:     -ms-linear-gradient($from, $to);
+    background-image:      -o-linear-gradient($from, $to);
+    background-image:         linear-gradient($from, $to);
+    background-repeat: repeat-x;
+    -webkit-background-size: 100% $height;
+       -moz-background-size: 100% $height;
+        -ms-background-size: 100% $height;
+         -o-background-size: 100% $height;
+            background-size: 100% $height;
+}
