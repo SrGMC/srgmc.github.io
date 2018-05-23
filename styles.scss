@@ -228,11 +228,13 @@ header {
         .icon {
             margin: 10px 0 10px 30px;
 
-            .info {
+            img {
                 position: absolute;
+            }
 
+            .info {
                 display: inline-block;
-                margin: 5px 0 0 30px;
+                margin: 5px 0 0 100px;
             }
         }
 
@@ -254,8 +256,8 @@ header {
 
             text-align: center;
 
-            @include border-radius(2px);
             @include box-shadow(0px 0px 10px #aaa);
+            @include border-radius(2px);
 
             span {
                 padding: 3px;

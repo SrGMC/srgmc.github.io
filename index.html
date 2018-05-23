@@ -5,6 +5,7 @@
 		<title>Álvaro Galisteo</title>
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src='https://www.google.com/recaptcha/api.js?render=6Ldl9FoUAAAAAGSnT4J3glB-vHsj4aEp3oV0upKS'></script>
 	</head>
 	<body>
 		<header class="shadow"></header>
@@ -33,7 +34,7 @@
 						<i class="fas fa-circle" data-fa-transform="up-7 right-14"  style="color:white"></i>
 					</span>
 					<div class="info">
-						<a href="https://goo.gl/maps/hG6xHBJkuBv"><b>IES Juan de Padilla</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+						<a href="https://www.iesjuandepadilla.com/"><b>IES Juan de Padilla - Illescas</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
 						</br>Bachillerato en ciencias</br>
 						<i>2015 - 2017</i>
 					</div>
@@ -44,7 +45,7 @@
 						<i class="fas fa-circle" data-fa-transform="up-7 right-14"  style="color:white"></i>
 					</span>
 					<div class="info">
-						<a href="https://goo.gl/maps/GnfE9aSViXz"><b>Universidad Carlos III de Madrid</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></br>
+						<a href="https://uc3m.es/"><b>Universidad Carlos III de Madrid</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></br>
 						Grado en Ingeniería Informática</br>
 						<i>2017 - actualidad</i>
 					</div>
@@ -94,8 +95,22 @@
 			<section>
 				<div class="title"><h1>Contacto</h1></div>
 				<div class="separator">.</div>
+				<script>
+					grecaptcha.ready(function() {
+						grecaptcha.execute('6Ldl9FoUAAAAAGSnT4J3glB-vHsj4aEp3oV0upKS', {action: 'email'})
+						.then(function(token) {
+							showAddress();
+						});
+					});
+				</script>
 			</section>
 		</div>
 	</body>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function getAddress(){var a="mgcsfbrzey.inapo@kwlxqduhtjv".split("");return a[13]+a[19]+a[27]+a[13]+a[6]+a[15]+a[1]+a[13]+a[19]+a[11]+a[3]+a[25]+a[8]+a[15]+a[16]+a[15]+a[23]+a[25]+a[19]+a[15]+a[15]+a[17]+a[10]+a[2]+a[15]+a[0];}
+		function showAddress(){
+			console.log(getAddress());
+		}
+	</script>
 </html>
