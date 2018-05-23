@@ -5,7 +5,7 @@
 		<title>Álvaro Galisteo</title>
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src='https://www.google.com/recaptcha/api.js?render=6Ldl9FoUAAAAAGSnT4J3glB-vHsj4aEp3oV0upKS'></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	</head>
 	<body>
 		<header class="shadow"></header>
@@ -95,14 +95,11 @@
 			<section>
 				<div class="title"><h1>Contacto</h1></div>
 				<div class="separator">.</div>
-				<script>
-					grecaptcha.ready(function() {
-						grecaptcha.execute('6Ldl9FoUAAAAAGSnT4J3glB-vHsj4aEp3oV0upKS', {action: 'email'})
-						.then(function(token) {
-							showAddress();
-						});
-					});
-				</script>
+				    <form action="?" method="POST">
+      					<div class="g-recaptcha" data-sitekey="6Lcw-FoUAAAAADZpWzp5jwKht2QE3rj6lT1J2pP-"></div>
+      					<br/>
+      					<input type="submit" value="Submit">
+    				</form>
 			</section>
 		</div>
 	</body>
