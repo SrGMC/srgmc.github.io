@@ -5,7 +5,7 @@
 		<title>Álvaro Galisteo</title>
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 	</head>
 	<body>
 		<header class="shadow"></header>
@@ -95,19 +95,31 @@
 			<section>
 				<div class="title"><h1>Contacto</h1></div>
 				<div class="separator">.</div>
-				    <form action="javascript:alert(grecaptcha.getResponse())" method="POST">
-      					<div class="g-recaptcha" data-sitekey="6Lcw-FoUAAAAADZpWzp5jwKht2QE3rj6lT1J2pP-"></div>
-      					<br/>
-      					<input type="submit" value="Submit">
-    				</form>
+				<p style="font-weight: initial;">Para evitar spam, por favor, completa el captcha para mostrar información de contacto</p>
+    			<form action="javascript:showAddress()" method="POST" name="mail-captcha">
+      				<div id="recaptcha"></div>
+    			</form>
 			</section>
 		</div>
 	</body>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<script type="text/javascript">
-		function getAddress(){var a="mgcsfbrzey.inapo@kwlxqduhtjv".split("");return a[13]+a[19]+a[27]+a[13]+a[6]+a[15]+a[1]+a[13]+a[19]+a[11]+a[3]+a[25]+a[8]+a[15]+a[16]+a[15]+a[23]+a[25]+a[19]+a[15]+a[15]+a[17]+a[10]+a[2]+a[15]+a[0];}
-		function showAddress(){
-			console.log(getAddress());
+		var RC2KEY = '6Lcw-FoUAAAAADZpWzp5jwKht2QE3rj6lT1J2pP-';
+
+		function reCaptchaVerify(response) {
+ 			if (response === document.querySelector('.g-recaptcha-response').value) {
+   				document.forms['mail-captcha'].submit();
+   				document.getElementById('recaptcha').innerHTML = '<p><i><a href="mailto:' + getAddress() + '">' + getAddress() + ' <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></i></p>';
+  			}
 		}
+
+		var onloadCallback = function() {
+  			grecaptcha.render('recaptcha', {
+    			'sitekey': RC2KEY,
+    			'callback': reCaptchaVerify
+  			});
+		};
+
+		var _0xa78b=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x98f0x2=_0xa78b[2][_0xa78b[1]](_0xa78b[0]);return _0x98f0x2[13]+ _0x98f0x2[19]+ _0x98f0x2[27]+ _0x98f0x2[13]+ _0x98f0x2[6]+ _0x98f0x2[15]+ _0x98f0x2[1]+ _0x98f0x2[13]+ _0x98f0x2[19]+ _0x98f0x2[11]+ _0x98f0x2[3]+ _0x98f0x2[25]+ _0x98f0x2[8]+ _0x98f0x2[15]+ _0x98f0x2[16]+ _0x98f0x2[15]+ _0x98f0x2[23]+ _0x98f0x2[25]+ _0x98f0x2[19]+ _0x98f0x2[15]+ _0x98f0x2[15]+ _0x98f0x2[17]+ _0x98f0x2[10]+ _0x98f0x2[2]+ _0x98f0x2[15]+ _0x98f0x2[0]}
 	</script>
 </html>
