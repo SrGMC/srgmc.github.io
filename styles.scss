@@ -4,42 +4,6 @@ $bgpos: top center;
 $bgsize: cover;
 $bgrepeat: no-repeat;
 
-@-webkit-keyframes fade-in {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fade-in {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fade-in {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 html,
 body {
     height: 100%;
@@ -50,6 +14,11 @@ body {
 
     background-color: #fff;
 }
+
+/*
+    HEADER
+        Side header. Blur is achieved cloning the header and bluring it
+ */
 header {
     position: fixed;
     top: 0;
@@ -83,6 +52,36 @@ header {
     a {
         color: #fff;
     }
+
+    .fab {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .fa-twitter:hover {
+        color: #00aced;
+    }
+    .fa-reddit:hover {
+        padding-right: .5px;
+        padding-left: .5px;
+
+        color: #ff4301;
+        background-color: #fff;
+
+        @include border-radius(50%);
+    }
+    .fa-linkedin:hover {
+        color: #0077b5;
+    }
+    .fa-github:hover {
+        padding-right: .5px;
+        padding-left: .5px;
+
+        color: #211f1f;
+        background-color: #fff;
+
+        @include border-radius(50%);
+    }
 }
 .shadow {
     position: fixed;
@@ -104,40 +103,9 @@ header {
     @include filter(blur(.5em));
 }
 
-.fab {
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-.fa-twitter:hover {
-    color: #00aced;
-}
-.fa-reddit:hover {
-    padding-right: .5px;
-    padding-left: .5px;
-
-    color: #ff4301;
-    background-color: #fff;
-
-    @include border-radius(50%);
-}
-.fa-linkedin:hover {
-    color: #0077b5;
-}
-.fa-github:hover {
-    padding-right: .5px;
-    padding-left: .5px;
-
-    color: #211f1f;
-    background-color: #fff;
-
-    @include border-radius(50%);
-}
-
-.fa-map-marker {
-    color: #f00;
-}
-
+/*
+    MAIN CONTENT
+ */
 .content {
     position: absolute;
     top: 0;
@@ -177,18 +145,24 @@ header {
     }
 
 
-    h1 {
+    h2 {
         font-size: 1.3em;
     }
 
+    /*
+        SECTIONS
+    */
     section {
         margin: 50px 0 20px 0;
+        /* Dirty fix to separate section title and section content */
         .separator {
             margin-top: 10px;
             margin-bottom: 10px;
 
             color: #fff;
         }
+        /* Place a box with 1px height offcentered with margins.
+           Place title with white background relative to the initial box */
         .title {
             height: 1px;
             width: 100%;
@@ -200,7 +174,7 @@ header {
             background-color: #2c3e50;
             h1 {
                 position: relative;
-                top: -13px;
+                top: -13px;                     /* Fix position and center with line */
 
                 display: inline;
                 padding: 0 20px 0 0;
@@ -212,7 +186,10 @@ header {
             }
         }
 
-        .location {
+        /* Place image or icons to the left. Treat text as block.
+           Doesn't overflow if text is bigger than image/icon */
+        .location,
+        .icon {
             margin: 10px 0 10px 30px;
 
             .fa-layers {
@@ -221,17 +198,12 @@ header {
                 margin: 25px 0 0 0;
             }
 
-            .info {
-                display: inline-block;
-                margin: 5px 0 0 100px;
-            }
-        }
-
-        .icon {
-            margin: 10px 0 10px 30px;
-
             img {
                 position: absolute;
+            }
+
+            .fa-map-marker {
+                color: #f00;
             }
 
             .info {
@@ -248,6 +220,7 @@ header {
             text-align: left;
         }
 
+        /* Display skill as a gradient */
         .skill {
             display: inline-block;
             height: 32px;
@@ -258,10 +231,11 @@ header {
 
             text-align: center;
 
-            @include border-radius(2px);
             @include box-shadow(0px 0px 10px #aaa);
+            @include border-radius(2px);
 
             span {
+                /* Skill legend */
                 padding: 3px;
 
                 text-align: center;
@@ -404,6 +378,7 @@ header {
             background:         linear-gradient(to right, #bdbdbd 0%,#424242 100%);
         }
 
+        /* Recaptcha. Try not using <p> elements*/
         #recaptcha {
             display: inline-block;
             margin: 16px 0 30px 20px;
@@ -413,7 +388,11 @@ header {
     }
 }
 
+/*
+    RESPONSIVE
+ */
 @media only screen and (max-width: 600px) {
+    /*Same technique as before. This time only ocupies the top part of the screen*/
     header {
         position: fixed;
         top: 0;
@@ -429,13 +408,6 @@ header {
 
         color: #fff;
 
-        img {
-            left: 0;
-
-            display: none;
-            height: 100%;
-            width: auto;
-        }
         h1 {
             position: absolute;
             right: 0;
@@ -465,6 +437,7 @@ header {
         @include filter(blur(.5em));
     }
 
+    /* Reposition content */
     .content {
         position: absolute;
         top: 42%;

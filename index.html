@@ -19,11 +19,11 @@
 			</h1>
 		</header>
 		<div class="content">
-			<h1>
+			<h2>
 				Estudiante de Ingeniería Informática en la Universidad Carlos III de Madrid.<br/>
 				Amante de la programación, el diseño y la electrónica.<br/>
 				Interés en la ciencia y la tecnología.<br/>
-			</h1>
+			</h2>
 
 			<section>
 				<div class="title"><h1>Estudios</h1></div>
@@ -48,6 +48,7 @@
 						<a href="https://uc3m.es/"><b>Universidad Carlos III de Madrid</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></br>
 						Grado en Ingeniería Informática</br>
 						<i>2017 - actualidad</i>
+
 					</div>
 				</div>
 			</section>
@@ -84,7 +85,7 @@
 				<div class="title"><h1>Proyectos</h1></div>
 				<div class="separator">.</div>
 				<div class="icon">
-					<img src="https://srgmc.github.io/musify/files/512.png" height="70px">
+					<img src="https://srgmc.github.io/musify/files/512.png" alt="Musify logo" height="70px">
 					<div class="info">
 						<a href="http://srgmc.github.io/musify"><b>Musify</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
 						</br>Reproductor de música simple y rápido, construido con tecnologías web como HTML, CSS y JavaScript y Electron. Disponible para macOS.</br>
@@ -112,7 +113,7 @@
 		function reCaptchaVerify(response) {
  			if (response === document.querySelector('.g-recaptcha-response').value) {
    				document.forms['mail-captcha'].submit();
-   				document.getElementById('recaptcha').innerHTML = '<p style="margin-top:0;"><i><a href="mailto:' + getAddress() + '">' + getAddress() + ' <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></i></p>';
+   				document.getElementById('recaptcha').innerHTML = '\<p style="margin-top:0;"><i><a href="mailto:' + getAddress() + '">' + getAddress() + ' <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></i></p>';
   			}
 		}
 
@@ -123,7 +124,7 @@
   			});
 		};
 
-		var _0x11e7=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x3b28x2=_0x11e7[2][_0x11e7[1]](_0x11e7[0]);return _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[15]+ _0x3b28x2[1]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[11]+ _0x3b28x2[3]+ _0x3b28x2[25]+ _0x3b28x2[8]+ _0x3b28x2[15]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[8]+ _0x3b28x2[7]+ _0x3b28x2[16]+ _0x3b28x2[15]+ _0x3b28x2[23]+ _0x3b28x2[25]+ _0x3b28x2[19]+ _0x3b28x2[15]+ _0x3b28x2[15]+ _0x3b28x2[17]+ _0x3b28x2[10]+ _0x3b28x2[2]+ _0x3b28x2[15]+ _0x3b28x2[0]}
+		var _0x11e7=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x3b28x2=_0x11e7[2][_0x11e7[1]](_0x11e7[0]);return _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[15]+ _0x3b28x2[1]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[11]+ _0x3b28x2[3]+ _0x3b28x2[25]+ _0x3b28x2[8]+ _0x3b28x2[15]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[8]+ _0x3b28x2[7]+ _0x3b28x2[16]+ _0x3b28x2[15]+ _0x3b28x2[23]+ _0x3b28x2[25]+ _0x3b28x2[19]+ _0x3b28x2[15]+ _0x3b28x2[15]+ _0x3b28x2[17]+ _0x3b28x2[10]+ _0x3b28x2[2]+ _0x3b28x2[15]+ _0x3b28x2[0]};
 
 		function onClick(){
 			window.location = "mailto:" + getAddress();
