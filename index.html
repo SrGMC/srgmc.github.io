@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 	<head>
 		<meta charset="UTF-8">
 		<title>Álvaro Galisteo</title>
@@ -160,29 +160,30 @@
     			<br>
 			</section>
 		</div>
+
+		<script>
+			var RC2KEY = '6Lcw-FoUAAAAADZpWzp5jwKht2QE3rj6lT1J2pP-';
+
+			function reCaptchaVerify(response) {
+	 			if (response === document.querySelector('.g-recaptcha-response').value) {
+	   				document.forms['mail-captcha'].submit();
+	   				document.getElementById('recaptcha').innerHTML = '\<p style="margin-top:0;"><i><a href="mailto:' + getAddress() + '">' + getAddress() + ' <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></i></p>';
+	  			}
+			}
+
+			var onloadCallback = function() {
+	  			grecaptcha.render('recaptcha', {
+	    			'sitekey': RC2KEY,
+	    			'callback': reCaptchaVerify
+	  			});
+			};
+
+			var _0x11e7=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x3b28x2=_0x11e7[2][_0x11e7[1]](_0x11e7[0]);return _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[15]+ _0x3b28x2[1]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[11]+ _0x3b28x2[3]+ _0x3b28x2[25]+ _0x3b28x2[8]+ _0x3b28x2[15]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[8]+ _0x3b28x2[7]+ _0x3b28x2[16]+ _0x3b28x2[15]+ _0x3b28x2[23]+ _0x3b28x2[25]+ _0x3b28x2[19]+ _0x3b28x2[15]+ _0x3b28x2[15]+ _0x3b28x2[17]+ _0x3b28x2[10]+ _0x3b28x2[2]+ _0x3b28x2[15]+ _0x3b28x2[0]};
+
+			function onClick(){
+				window.course = "mailto:" + getAddress();
+			}
+
+		</script>
 	</body>
-	<script type="text/javascript">
-		var RC2KEY = '6Lcw-FoUAAAAADZpWzp5jwKht2QE3rj6lT1J2pP-';
-
-		function reCaptchaVerify(response) {
- 			if (response === document.querySelector('.g-recaptcha-response').value) {
-   				document.forms['mail-captcha'].submit();
-   				document.getElementById('recaptcha').innerHTML = '\<p style="margin-top:0;"><i><a href="mailto:' + getAddress() + '">' + getAddress() + ' <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></i></p>';
-  			}
-		}
-
-		var onloadCallback = function() {
-  			grecaptcha.render('recaptcha', {
-    			'sitekey': RC2KEY,
-    			'callback': reCaptchaVerify
-  			});
-		};
-
-		var _0x11e7=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x3b28x2=_0x11e7[2][_0x11e7[1]](_0x11e7[0]);return _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[15]+ _0x3b28x2[1]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[11]+ _0x3b28x2[3]+ _0x3b28x2[25]+ _0x3b28x2[8]+ _0x3b28x2[15]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[8]+ _0x3b28x2[7]+ _0x3b28x2[16]+ _0x3b28x2[15]+ _0x3b28x2[23]+ _0x3b28x2[25]+ _0x3b28x2[19]+ _0x3b28x2[15]+ _0x3b28x2[15]+ _0x3b28x2[17]+ _0x3b28x2[10]+ _0x3b28x2[2]+ _0x3b28x2[15]+ _0x3b28x2[0]};
-
-		function onClick(){
-			window.course = "mailto:" + getAddress();
-		}
-
-	</script>
 </html>
