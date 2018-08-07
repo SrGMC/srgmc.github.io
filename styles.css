@@ -135,13 +135,14 @@ header {
       margin-right: 30px;
       text-align: left;
       background-color: #2c3e50; }
-      .content section .title h1 {
+      .content section .title h2 {
         position: relative;
         top: -13px;
         /* Fix position and center with line */
         display: inline;
         padding: 0 20px 0 0;
         font-size: 1.2em;
+        font-weight: bold;
         color: #2c3e50;
         background-color: #fff; }
     .content section .course,
@@ -171,15 +172,10 @@ header {
       .content section .language .info {
         display: inline-block;
         margin: 0 0 0 100px; }
-    .content section .course i {
-      display: inline-block; }
-    .content section .course .info {
-      margin-top: -100px; }
     .content section .language .info {
       margin-top: 13px; }
     .content section p {
       margin: 16px 0 0 20px;
-      font-weight: 700;
       text-align: left; }
     .content section .skillbar {
       display: inline-block; }
@@ -190,16 +186,16 @@ header {
         margin: 10px;
         line-height: 33px;
         text-align: center;
-        -webkit-box-shadow: 0px 0px 10px #aaa;
-        -moz-box-shadow: 0px 0px 10px #aaa;
-        -ms-box-shadow: 0px 0px 10px #aaa;
-        -o-box-shadow: 0px 0px 10px #aaa;
-        box-shadow: 0px 0px 10px #aaa;
         -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
         -ms-border-radius: 2px;
         -o-border-radius: 2px;
-        border-radius: 2px; }
+        border-radius: 2px;
+        -webkit-box-shadow: 0px 0px 10px #aaa;
+        -moz-box-shadow: 0px 0px 10px #aaa;
+        -ms-box-shadow: 0px 0px 10px #aaa;
+        -o-box-shadow: 0px 0px 10px #aaa;
+        box-shadow: 0px 0px 10px #aaa; }
         .content section .skillbar .skill img {
           margin-top: 3px; }
     .content section .skill.red-low {
