@@ -1,5 +1,5 @@
 @import "mixins";
-$bgimg: url("header.png");
+$bgimg: url("images/header.png");
 $bgpos: top center;
 $bgsize: cover;
 $bgrepeat: no-repeat;
@@ -122,7 +122,7 @@ header {
 
         text-decoration: none;
 
-        color: #1976d2;
+        color: #1976d2 !important;
     }
     a::after {
         position: absolute;
@@ -188,8 +188,10 @@ header {
 
         /* Place image or icons to the left. Treat text as block.
            Doesn't overflow if text is bigger than image/icon */
-        .location,
-        .icon {
+        .course,
+        .work,
+        .project,
+        .language {
             margin: 10px 0 10px 30px;
 
             .fa-layers {
@@ -202,13 +204,19 @@ header {
                 position: absolute;
             }
 
-            .fa-map-marker {
+            .fas.red {
                 color: #f00;
             }
 
             .info {
                 display: inline-block;
-                margin: 5px 0 0 100px;
+                margin: 0 0 0 100px;
+            }
+        }
+
+        .language {
+            .info {
+                margin-top: 13px;
             }
         }
 
@@ -221,28 +229,25 @@ header {
         }
 
         /* Display skill as a gradient */
-        .skill {
+        .skillbar {
             display: inline-block;
-            height: 32px;
-            width: 256px;
-            margin: 10px;
 
-            line-height: 33px;
+            .skill {
+                display: inline-block;
+                height: 32px;
+                width: 256px;
+                margin: 10px;
 
-            text-align: center;
-
-            @include box-shadow(0px 0px 10px #aaa);
-            @include border-radius(2px);
-
-            span {
-                /* Skill legend */
-                padding: 3px;
+                line-height: 33px;
 
                 text-align: center;
 
-                background-color: rgba(255,255,255,.5);
-
                 @include border-radius(2px);
+                @include box-shadow(0px 0px 10px #aaa);
+
+                img {
+                    margin-top: 3px;
+                }
             }
         }
         .skill.red-low {
@@ -394,7 +399,7 @@ header {
 @media only screen and (max-width: 600px) {
     /*Same technique as before. This time only ocupies the top part of the screen*/
     header {
-        position: fixed;
+        position: absolute;
         top: 0;
         right: 0;
         bottom: 60%;
@@ -423,7 +428,7 @@ header {
     }
 
     .shadow {
-        position: fixed;
+        position: absolute;
         top: 10px;
         right: 0;
         bottom: 59%;

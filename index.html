@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	</head>
 	<body>
 		<header class="shadow"></header>
@@ -28,23 +29,17 @@
 			<section>
 				<div class="title"><h1>Estudios</h1></div>
 				<div class="separator">.</div>
-				<div class="location">
-					<span class="fa-layers fa-fw">
-						<i class="fas fa-map-marker fa-4x"></i>
-						<i class="fas fa-circle" data-fa-transform="up-7 right-14"  style="color:white"></i>
-					</span>
-					<div class="info">
+				<div class="course">
+					<i class="fas fa-school fa-3x red"></i>
+					<div class="info" style="margin-left: 35px;">
 						<a href="https://www.iesjuandepadilla.com/"><b>IES Juan de Padilla - Illescas</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
 						</br>Bachillerato en ciencias</br>
 						<i>2015 - 2017</i>
 					</div>
 				</div></br>
-				<div class="location">
-					<span class="fa-layers fa-fw">
-						<i class="fas fa-map-marker fa-4x"></i>
-						<i class="fas fa-circle" data-fa-transform="up-7 right-14"  style="color:white"></i>
-					</span>
-					<div class="info">
+				<div class="course">
+					<i class="fas fa-university fa-4x red"></i>
+					<div class="info" style="margin-left: 33px;">
 						<a href="https://uc3m.es/"><b>Universidad Carlos III de Madrid</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a></br>
 						Grado en Ingeniería Informática</br>
 						<i>2017 - actualidad</i>
@@ -57,38 +52,86 @@
 				<div class="title"><h1>Habilidades</h1></div>
 				<div class="separator">.</div>
 				<p>Herramientas de oficina:</p>
-				<div class="skill blue-medium"><span>Microsoft Word</span></div>
-				<div class="skill green-medium"><span>Microsoft Excel</span></div>
-				<div class="skill red-medium"><span>Microsoft PowerPoint</span></div>
+				<div class="skillbar">
+					<div class="skill blue-medium"><img src="images/icons/word.png" alt="" style="height: 25px;"></div><br><span>Microsoft Word</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill green-medium"><img src="images/icons/excel.png" alt="" style="height: 25px;"></div><br><span>Microsoft Excel</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill red-medium"><img src="images/icons/powerpoint.png" alt="" style="height: 25px;"></div><br><span>Microsoft PowerPoint</span>
+				</div>
 				<p>Programación:</p>
-				<div class="skill orange-high"><span>HTML</span></div>
-				<div class="skill pink-medium"><span>CSS/Sass</span></div>
-				<div class="skill yellow-low"><span>JavaScript</span></div>
-				<div class="skill orange-medium"><span>Java</span></div>
+				<div class="skillbar">
+					<div class="skill orange-high"><img src="images/icons/html.png" alt="" style="height: 25px;"></div><br><span>HTML</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill pink-medium"><img src="images/icons/css.png" alt="" style="height: 25px;"></div><br><span>CSS/Sass</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill yellow-low"><img src="images/icons/js.png" alt="" style="height: 25px;"></div><br><span>JavaScript</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill orange-medium"><img src="images/icons/java.png" alt="" style="height: 25px;"></div><br><span>Java</span>
+				</div>
 				<p>Sistemas:</p>
-				<div class="skill black-low"><span>Git</span></div>
-				<div class="skill green-low"><span>GNU/Linux</span></div>
+				<div class="skillbar">
+					<div class="skill black-low"><img src="images/icons/github.png" alt="" style="height: 25px;"></div><br><span>GitHub</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill green-low"><img src="images/icons/linux.png" alt="" style="height: 25px;"></div><br><span>GNU/Linux</span>
+				</div>
 				<p>Diseño:</p>
-				<div class="skill red-low"><span>GIMP</span></div>
-				<div class="skill black-low"><span>Final Cut Pro</span></div>
-				<div class="skill yellow-low"><span>Audacity</span></div>
+				<div class="skillbar">
+					<div class="skill red-low"><img src="images/icons/gimp.png" alt="" style="height: 25px;"></div><br><span>GIMP</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill black-low"></div><br><span>Final Cut Pro</span>
+				</div>
+				<div class="skillbar">
+					<div class="skill yellow-low"><img src="images/icons/audacity.png" alt="" style="height: 25px;"></div><br><span>Audacity</span>
+				</div>
 			</section>
 
-			<section style="text-align: center;">
+			<section>
 				<div class="title"><h1>Idiomas</h1></div>
 				<div class="separator">.</div>
-				<div class="skill yellow-high"><span>Español (Nativo)</span></div>
-				<div class="skill red-medium"><span>Inglés (B2)</span></div>
+				<div class="language">
+					<img src="images/spain.png" alt="Musify logo" style="height:70px;">
+					<div class="info">
+						<b>Español</b><br>Nativo
+					</div>
+				</div><br>
+				<div class="language">
+					<img src="images/uk.png" alt="Musify logo" style="height:70px;">
+					<div class="info">
+						<b>Inglés</b><br>Cambridge First Certificate. Nivel B2.
+					</div>
+				</div>
 			</section>
 
 			<section>
 				<div class="title"><h1>Proyectos</h1></div>
 				<div class="separator">.</div>
-				<div class="icon">
-					<img src="https://srgmc.github.io/musify/files/512.png" alt="Musify logo" height="70px">
+				<div class="project">
+					<img src="images/musify.png" alt="Musify logo" style="height:70px;">
 					<div class="info">
 						<a href="http://srgmc.github.io/musify"><b>Musify</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
 						</br>Reproductor de música simple y rápido, construido con tecnologías web como HTML, CSS y JavaScript y Electron. Disponible para macOS.</br>
+					</div>
+				</div><br>
+				<div class="project">
+					<img src="images/twister.png" alt="Twister logo" style="height:70px;">
+					<div class="info">
+						<a href="http://srgmc.github.io/twister"><b>Twister</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+						</br>Una ruleta para Twister más inteligente. Disponible en español, inglés y francés.</br>
+					</div>
+				</div><br>
+				<div class="project">
+					<img src="images/mazelight.png" alt="Mazelight logo" style="height:70px;">
+					<div class="info">
+						<a href="https://github.com/SrGMC/mazelight"><b>Mazelight</b> <sup><i class="fas fa-external-link-alt fa-xs"></i></sup></a>
+						</br>WIP. Herramienta CLI de código abierto basada en Java diseñada para resolver laberintos</br>
 					</div>
 				</div>
 			</section>
@@ -106,7 +149,6 @@
 			</section>
 		</div>
 	</body>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		var RC2KEY = '6Lcw-FoUAAAAADZpWzp5jwKht2QE3rj6lT1J2pP-';
 
@@ -127,7 +169,7 @@
 		var _0x11e7=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x3b28x2=_0x11e7[2][_0x11e7[1]](_0x11e7[0]);return _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[15]+ _0x3b28x2[1]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[11]+ _0x3b28x2[3]+ _0x3b28x2[25]+ _0x3b28x2[8]+ _0x3b28x2[15]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[8]+ _0x3b28x2[7]+ _0x3b28x2[16]+ _0x3b28x2[15]+ _0x3b28x2[23]+ _0x3b28x2[25]+ _0x3b28x2[19]+ _0x3b28x2[15]+ _0x3b28x2[15]+ _0x3b28x2[17]+ _0x3b28x2[10]+ _0x3b28x2[2]+ _0x3b28x2[15]+ _0x3b28x2[0]};
 
 		function onClick(){
-			window.location = "mailto:" + getAddress();
+			window.course = "mailto:" + getAddress();
 		}
 
 	</script>
