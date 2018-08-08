@@ -1,0 +1,462 @@
+@import "mixins";
+$bgimg: url("../images/header.png");
+$bgpos: top center;
+$bgsize: cover;
+$bgrepeat: no-repeat;
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    transition: all .5s ease-in-out;
+
+    color: #fff;
+    background-color: #2c3e50;
+}
+
+/*
+    HEADER
+        Side header. Blur is achieved cloning the header and bluring it
+ */
+header {
+    position: fixed;
+    top: 0;
+    right: 66%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+
+    width: 33%;
+    margin: 15px;
+
+    text-align: center;
+
+    color: #fff;
+    background-image: $bgimg;
+    background-repeat: $bgrepeat;
+    background-position: $bgpos;
+    background-size: $bgsize;
+
+    h1 {
+        position: absolute;
+        bottom: 0;
+
+        margin: 15px;
+
+        font-size: 4.6vw;
+
+        text-align: center;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    .fab,
+    .fas {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .fa-twitter:hover {
+        color: #00aced;
+    }
+    .fa-reddit-alien:hover {
+        color: #ff4301;
+    }
+    .fa-linkedin:hover {
+        color: #0077b5;
+    }
+    .fa-github-alt:hover {
+        color: #777;
+    }
+    .fa-envelope:hover {
+        color: #1976d2;
+    }
+}
+.shadow {
+    position: fixed;
+    top: 10px;
+    right: 66.3%;
+    bottom: 5px;
+    left: 10px;
+    z-index: 1;
+
+    width: 33.7%;
+    margin: 0;
+
+    opacity: 1;
+    background-image: $bgimg;
+    background-repeat: $bgrepeat;
+    background-position: $bgpos;
+    background-size: $bgsize;
+
+    @include filter(blur(.5em));
+}
+
+/*
+    MAIN CONTENT
+ */
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 36%;
+
+    margin: 10px;
+
+    a {
+        position: relative;
+
+        display: inline-block;
+
+        transition: all .5s ease-in-out;
+        text-decoration: none;
+
+        color: #43b4ff !important;
+    }
+    a::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        height: 2px;
+        width: 100%;
+
+        content: "";
+        transition: transform .25s ease-out;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+
+        background-color: #0087ca;
+    }
+    a:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    a.active {
+        font-weight: bold;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    .settings a {
+        margin-right: 5px;
+    }
+
+    /*
+        SECTIONS
+    */
+    section {
+        margin: 50px 0 20px 0;
+        /* Dirty fix to separate section title and section content */
+        .separator {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            transition: all .5s ease-in-out;
+
+            color: #2c3e50;
+        }
+        /* Place a box with 1px height offcentered with margins.
+           Place title with white background relative to the initial box */
+        .title {
+            height: 1px;
+            width: auto;
+            margin-top: 24px;
+            margin-right: 30px;
+            margin-left: 200px;
+
+            transition: all .5s ease-in-out;
+            text-align: left;
+
+            background-color: #ecf0f1;
+            h2 {
+                position: relative;
+                top: -13px;                     /* Fix position and center with line */
+
+                display: inline;
+                padding: 0 20px 0 0;
+                margin-left: -200px;
+
+                font-size: 1.2em;
+                font-weight: bold;
+
+                transition: all .5s ease-in-out;
+
+                color: #ecf0f1;
+                background-color: transparent;
+            }
+        }
+
+        /* Place image or icons to the left. Treat text as block.
+           Doesn't overflow if text is bigger than image/icon */
+        .course,
+        .work,
+        .project,
+        .language, {
+            margin: 10px 0 10px 30px;
+
+            img {
+                position: absolute;
+            }
+
+            .info {
+                display: inline-block;
+                margin: 0 30px 0 100px;
+            }
+        }
+
+        .language {
+            .info {
+                margin-top: 13px;
+            }
+        }
+
+        .course img,
+        .work img {
+            transition: all .5s ease-in-out;
+
+            filter: invert(100%);
+        }
+
+        p {
+            margin: 16px 0 0 20px;
+
+            text-align: left;
+        }
+
+        /* Display skill as a gradient */
+        .skillbar {
+            display: inline-block;
+
+            .skill {
+                display: inline-block;
+                height: 32px;
+                width: 256px;
+                margin: 10px;
+
+                line-height: 33px;
+
+                transition: all .5s ease-in-out;
+                text-align: center;
+
+                @include box-shadow(0px 0px 10px #222);
+                @include border-radius(2px);
+
+                img {
+                    margin-top: 3px;
+                }
+            }
+        }
+        .skill.red-low {
+            background: #e53935;
+            background:    -moz-linear-gradient(left, #e53935 0%, #d32f2f 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #e53935 0%,#d32f2f 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #e53935 0%,#d32f2f 33%,#fff 33%,#fff 100%);
+        }
+        .skill.red-medium {
+            background: #e53935;
+            background:    -moz-linear-gradient(left, #e53935 0%, #c62828 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #e53935 0%,#c62828 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #e53935 0%,#c62828 66%,#fff 66%,#fff 100%);
+        }
+        .skill.red-high {
+            background: #e53935;
+            background:    -moz-linear-gradient(left, #e53935 0%, #b71c1c 100%);
+            background: -webkit-linear-gradient(left, #e53935 0%,#b71c1c 100%);
+            background:         linear-gradient(to right, #e53935 0%,#b71c1c 100%);
+        }
+
+        .skill.green-low {
+            background: #43a047;
+            background:    -moz-linear-gradient(left, #43a047 0%, #388e3c 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #43a047 0%,#388e3c 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #43a047 0%,#388e3c 33%,#fff 33%,#fff 100%);
+        }
+        .skill.green-medium {
+            background: #43a047;
+            background:    -moz-linear-gradient(left, #43a047 0%, #2e7d32 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #43a047 0%,#2e7d32 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #43a047 0%,#2e7d32 66%,#fff 66%,#fff 100%);
+        }
+        .skill.green-high {
+            background: #43a047;
+            background:    -moz-linear-gradient(left, #43a047 0%, #1b5e20 100%);
+            background: -webkit-linear-gradient(left, #43a047 0%,#1b5e20 100%);
+            background:         linear-gradient(to right, #43a047 0%,#1b5e20 100%);
+        }
+
+        .skill.orange-low {
+            background: #fb8c00;
+            background:    -moz-linear-gradient(left, #fb8c00 0%, #f57c00 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #fb8c00 0%,#f57c00 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #fb8c00 0%,#f57c00 33%,#fff 33%,#fff 100%);
+        }
+        .skill.orange-medium {
+            background: #fb8c00;
+            background:    -moz-linear-gradient(left, #fb8c00 0%, #ef6c00 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #fb8c00 0%,#ef6c00 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #fb8c00 0%,#ef6c00 66%,#fff 66%,#fff 100%);
+        }
+        .skill.orange-high {
+            background: #fb8c00;
+            background:    -moz-linear-gradient(left, #fb8c00 0%, #e65100 100%);
+            background: -webkit-linear-gradient(left, #fb8c00 0%,#e65100 100%);
+            background:         linear-gradient(to right, #fb8c00 0%,#e65100 100%);
+        }
+
+        .skill.blue-low {
+            background: #1e88e5;
+            background:    -moz-linear-gradient(left, #1e88e5 0%, #1976d2 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #1e88e5 0%,#1976d2 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #1e88e5 0%,#1976d2 33%,#fff 33%,#fff 100%);
+        }
+        .skill.blue-medium {
+            background: #1e88e5;
+            background:    -moz-linear-gradient(left, #1e88e5 0%, #1565c0 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #1e88e5 0%,#1565c0 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #1e88e5 0%,#1565c0 66%,#fff 66%,#fff 100%);
+        }
+        .skill.blue-high {
+            background: #1e88e5;
+            background:    -moz-linear-gradient(left, #1e88e5 0%, #0d47a1 100%);
+            background: -webkit-linear-gradient(left, #1e88e5 0%,#0d47a1 100%);
+            background:         linear-gradient(to right, #1e88e5 0%,#0d47a1 100%);
+        }
+
+        .skill.pink-low {
+            background: #ec407a;
+            background:    -moz-linear-gradient(left, #ec407a 0%, #e91e63 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #ec407a 0%,#e91e63 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #ec407a 0%,#e91e63 33%,#fff 33%,#fff 100%);
+        }
+        .skill.pink-medium {
+            background: #ec407a;
+            background:    -moz-linear-gradient(left, #ec407a 0%, #d81b60 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #ec407a 0%,#d81b60 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #ec407a 0%,#d81b60 66%,#fff 66%,#fff 100%);
+        }
+        .skill.pink-high {
+            background: #ec407a#ec407a;
+            background:    -moz-linear-gradient(left, #ec407a 0%, #c2185b 100%);
+            background: -webkit-linear-gradient(left, #ec407a 0%,#c2185b 100%);
+            background:         linear-gradient(to right, #ec407a 0%,#c2185b 100%);
+        }
+
+        .skill.yellow-low {
+            background: #ffee58;
+            background:    -moz-linear-gradient(left, #ffee58 0%, #ffeb3b 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #ffee58 0%,#ffeb3b 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #ffee58 0%,#ffeb3b 33%,#fff 33%,#fff 100%);
+        }
+        .skill.yellow-medium {
+            background: #ffee58;
+            background:    -moz-linear-gradient(left, #ffee58 0%, #ff0 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #ffee58 0%,#ff0 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #ffee58 0%,#ff0 66%,#fff 66%,#fff 100%);
+        }
+        .skill.yellow-high {
+            background: #ffee58;
+            background:    -moz-linear-gradient(left, #ffee58 0%, #ffea00 100%);
+            background: -webkit-linear-gradient(left, #ffee58 0%,#ffea00 100%);
+            background:         linear-gradient(to right, #ffee58 0%,#ffea00 100%);
+        }
+
+        .skill.black-low {
+            background: #bdbdbd;
+            background:    -moz-linear-gradient(left, #bdbdbd 0%, #9e9e9e 33%, #fff 33%, #fff 100%);
+            background: -webkit-linear-gradient(left, #bdbdbd 0%,#9e9e9e 33%,#fff 33%,#fff 100%);
+            background:         linear-gradient(to right, #bdbdbd 0%,#9e9e9e 33%,#fff 33%,#fff 100%);
+        }
+        .skill.black-medium {
+            background: #bdbdbd;
+            background:    -moz-linear-gradient(left, #bdbdbd 0%, #757575 66%, #fff 66%, #fff 100%);
+            background: -webkit-linear-gradient(left, #bdbdbd 0%,#757575 66%,#fff 66%,#fff 100%);
+            background:         linear-gradient(to right, #bdbdbd 0%,#757575 66%,#fff 66%,#fff 100%);
+        }
+        .skill.black-high {
+            background: #bdbdbd;
+            background:    -moz-linear-gradient(left, #bdbdbd 0%, #424242 100%);
+            background: -webkit-linear-gradient(left, #bdbdbd 0%,#424242 100%);
+            background:         linear-gradient(to right, #bdbdbd 0%,#424242 100%);
+        }
+
+        /* Recaptcha. Try not using <p> elements*/
+        #recaptcha {
+            display: inline-block;
+            margin: 16px 0 30px 20px;
+
+            text-align: center;
+        }
+    }
+}
+
+/*
+    RESPONSIVE
+ */
+@media only screen and (max-width: 600px) {
+    /*Same technique as before. This time only ocupies the top part of the screen*/
+    header {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 60%;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+
+        text-align: center;
+        vertical-align: bottom;
+
+        color: #fff;
+
+        h1 {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+
+            font-size: 6.5vw;
+
+            text-align: center;
+
+            @include transition(all 1s ease-in-out 0);
+        }
+    }
+
+    .shadow {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        bottom: 59%;
+        left: 0;
+
+        width: 100%;
+        margin: 0;
+
+        opacity: 1;
+
+        @include filter(blur(.5em));
+    }
+
+    /* Reposition content */
+    .content {
+        position: absolute;
+        top: 42%;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        margin: 10px;
+    }
+}

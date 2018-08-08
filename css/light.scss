@@ -1,5 +1,5 @@
 @import "mixins";
-$bgimg: url("images/header.png");
+$bgimg: url("../images/header.png");
 $bgpos: top center;
 $bgsize: cover;
 $bgrepeat: no-repeat;
@@ -11,6 +11,8 @@ body {
     margin: 0;
 
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+    transition: all .5s ease-in-out;
 
     background-color: #fff;
 }
@@ -53,7 +55,8 @@ header {
         color: #fff;
     }
 
-    .fab {
+    .fab,
+    .fas {
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -61,26 +64,17 @@ header {
     .fa-twitter:hover {
         color: #00aced;
     }
-    .fa-reddit:hover {
-        padding-right: .5px;
-        padding-left: .5px;
-
+    .fa-reddit-alien:hover {
         color: #ff4301;
-        background-color: #fff;
-
-        @include border-radius(50%);
     }
     .fa-linkedin:hover {
         color: #0077b5;
     }
-    .fa-github:hover {
-        padding-right: .5px;
-        padding-left: .5px;
-
-        color: #211f1f;
-        background-color: #fff;
-
-        @include border-radius(50%);
+    .fa-github-alt:hover {
+        color: #777;
+    }
+    .fa-envelope:hover {
+        color: #1976d2;
     }
 }
 .shadow {
@@ -120,6 +114,7 @@ header {
 
         display: inline-block;
 
+        transition: all .5s ease-in-out;
         text-decoration: none;
 
         color: #1976d2 !important;
@@ -144,10 +139,18 @@ header {
         transform-origin: bottom left;
     }
 
+    a.active {
+        font-weight: bold;
+    }
 
     h2 {
         font-size: 1.3em;
     }
+
+    .settings a {
+        margin-right: 5px;
+    }
+
 
     /*
         SECTIONS
@@ -159,16 +162,20 @@ header {
             margin-top: 10px;
             margin-bottom: 10px;
 
+            transition: all .5s ease-in-out;
+
             color: #fff;
         }
         /* Place a box with 1px height offcentered with margins.
            Place title with white background relative to the initial box */
         .title {
             height: 1px;
-            width: 100%;
+            width: auto;
             margin-top: 24px;
             margin-right: 30px;
+            margin-left: 200px;
 
+            transition: all .5s ease-in-out;
             text-align: left;
 
             background-color: #2c3e50;
@@ -178,12 +185,15 @@ header {
 
                 display: inline;
                 padding: 0 20px 0 0;
+                margin-left: -200px;
 
                 font-size: 1.2em;
                 font-weight: bold;
 
+                transition: all .5s ease-in-out;
+
                 color: #2c3e50;
-                background-color: #fff;
+                background-color: transparent;
             }
         }
 
@@ -195,23 +205,15 @@ header {
         .language, {
             margin: 10px 0 10px 30px;
 
-            .fa-layers {
-                position: absolute;
-
-                margin: 25px 0 0 0;
-            }
-
             img {
                 position: absolute;
-            }
 
-            .fas.red {
-                color: #f00;
+                transition: all .5s ease-in-out;
             }
 
             .info {
                 display: inline-block;
-                margin: 0 0 0 100px;
+                margin: 0 30px 0 100px;
             }
         }
 
@@ -239,10 +241,11 @@ header {
 
                 line-height: 33px;
 
+                transition: all .5s ease-in-out;
                 text-align: center;
 
-                @include border-radius(2px);
                 @include box-shadow(0px 0px 10px #aaa);
+                @include border-radius(2px);
 
                 img {
                     margin-top: 3px;
