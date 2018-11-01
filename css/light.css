@@ -163,7 +163,7 @@ header {
     header h1 {
       position: absolute;
       right: 0;
-      bottom: 60px;
+      bottom: 55px;
       left: 0;
       font-size: 9vw;
       text-align: center;
@@ -176,7 +176,7 @@ header {
     position: absolute;
     top: 10px;
     right: 0;
-    bottom: 59%;
+    bottom: 54%;
     left: 0;
     width: 100%;
     margin: 0;
@@ -190,7 +190,7 @@ header {
   /* Reposition content */
   .content {
     position: absolute;
-    top: 42%;
+    top: 44%;
     right: 0;
     bottom: 0;
     left: -20px;
