@@ -6,7 +6,13 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   transition: all .5s ease-in-out;
   color: #000;
-  background-color: #fff; }
+  background: #aaaaaa;
+  background: -moz-linear-gradient(left, #aaaaaa 0%, white 70%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #aaaaaa), color-stop(70%, white));
+  background: -webkit-linear-gradient(left, #aaaaaa 0%, white 70%);
+  background: -o-linear-gradient(left, #aaaaaa 0%, white 70%);
+  background: -ms-linear-gradient(left, #aaaaaa 0%, white 70%);
+  background: linear-gradient(to right, #aaaaaa 0%, white 70%); }
 
 /*
     HEADER
@@ -29,26 +35,38 @@ header {
   background-size: cover; }
   header h1 {
     position: absolute;
-    bottom: 0;
+    right: 0;
+    bottom: 60px;
+    left: 0;
     margin: 15px;
     font-size: 4.6vw;
-    text-align: center; }
+    text-align: center;
+    text-shadow: 0 0 15px black; }
+  header .social {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2.8vw;
+    background: rgba(0, 0, 0, 0);
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, black));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%); }
   header a {
     color: #fff; }
   header .fab,
   header .fas {
     margin-right: 10px;
     margin-left: 10px; }
-  header .fa-twitter:hover {
-    color: #00aced; }
-  header .fa-reddit-alien:hover {
-    color: #ff4301; }
-  header .fa-linkedin:hover {
-    color: #0077b5; }
-  header .fa-github-alt:hover {
-    color: #777; }
-  header .fa-envelope:hover {
-    color: #1976d2; }
+  header .fab:hover,
+  header .fas:hover {
+    color: #ccc; }
 
 .shadow {
   position: fixed;
@@ -75,20 +93,18 @@ header {
  */
 .content {
   position: absolute;
-  top: 0;
   right: 0;
-  bottom: 0;
-  left: 36%;
-  margin: 10px;
-  /*
-      SECTIONS
-  */ }
+  left: 35%;
+  display: table;
+  width: 62%;
+  padding: 15px;
+  overflow-x: auto;
+  overflow-y: hidden; }
   .content a {
     position: relative;
     display: inline-block;
-    transition: all .5s ease-in-out;
     text-decoration: none;
-    color: #1976d2 !important; }
+    color: #1563b2 !important; }
   .content a::after {
     position: absolute;
     bottom: 0;
@@ -105,197 +121,28 @@ header {
     transform-origin: bottom left; }
   .content a.active {
     font-weight: bold; }
-  .content h2 {
-    font-size: 1.3em; }
-  .content .settings a {
-    margin-right: 5px; }
-  .content section {
-    margin: 50px 0 20px 0;
-    /* Dirty fix to separate section title and section content */
-    /* Place a box with 1px height offcentered with margins.
-       Place title with white background relative to the initial box */
-    /* Place image or icons to the left. Treat text as block.
-       Doesn't overflow if text is bigger than image/icon */
-    /* Display skill as a gradient */
-    /* Recaptcha. Try not using <p> elements*/ }
-    .content section .separator {
-      margin-top: 10px;
-      margin-bottom: 10px;
-      transition: all .5s ease-in-out;
-      color: #fff; }
-    .content section .title {
-      height: 1px;
-      width: auto;
-      margin-top: 24px;
-      margin-right: 30px;
-      margin-left: 200px;
-      transition: all .5s ease-in-out;
-      text-align: left;
-      background-color: #2c3e50; }
-      .content section .title h2 {
-        position: relative;
-        top: -13px;
-        /* Fix position and center with line */
-        display: inline;
-        padding: 0 20px 0 0;
-        margin-left: -200px;
-        font-size: 1.2em;
-        font-weight: bold;
-        transition: all .5s ease-in-out;
-        color: #2c3e50;
-        background-color: transparent; }
-    .content section .course,
-    .content section .work,
-    .content section .project,
-    .content section .language {
-      margin: 10px 0 10px 30px; }
-      .content section .course img,
-      .content section .work img,
-      .content section .project img,
-      .content section .language img {
-        position: absolute; }
-      .content section .course .info,
-      .content section .work .info,
-      .content section .project .info,
-      .content section .language .info {
-        display: inline-block;
-        margin: 0 30px 0 100px; }
-    .content section .language .info {
-      margin-top: 13px; }
-    .content section p {
-      margin: 16px 0 0 20px;
-      text-align: left; }
-    .content section .skillbar {
-      display: inline-block; }
-      .content section .skillbar .skill {
-        display: inline-block;
-        height: 32px;
-        width: 256px;
-        margin: 10px;
-        line-height: 33px;
-        transition: all .5s ease-in-out;
-        text-align: center;
-        -webkit-border-radius: 2px;
-        -moz-border-radius: 2px;
-        -ms-border-radius: 2px;
-        -o-border-radius: 2px;
-        border-radius: 2px;
-        -webkit-box-shadow: 0px 0px 10px #aaa;
-        -moz-box-shadow: 0px 0px 10px #aaa;
-        -ms-box-shadow: 0px 0px 10px #aaa;
-        -o-box-shadow: 0px 0px 10px #aaa;
-        box-shadow: 0px 0px 10px #aaa; }
-        .content section .skillbar .skill img {
-          margin-top: 3px; }
-    .content section .skill.red-low {
-      background: #e53935;
-      background: -moz-linear-gradient(left, #e53935 0%, #d32f2f 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #e53935 0%, #d32f2f 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #e53935 0%, #d32f2f 33%, #fff 33%, #fff 100%); }
-    .content section .skill.red-medium {
-      background: #e53935;
-      background: -moz-linear-gradient(left, #e53935 0%, #c62828 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #e53935 0%, #c62828 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #e53935 0%, #c62828 66%, #fff 66%, #fff 100%); }
-    .content section .skill.red-high {
-      background: #e53935;
-      background: -moz-linear-gradient(left, #e53935 0%, #b71c1c 100%);
-      background: -webkit-linear-gradient(left, #e53935 0%, #b71c1c 100%);
-      background: linear-gradient(to right, #e53935 0%, #b71c1c 100%); }
-    .content section .skill.green-low {
-      background: #43a047;
-      background: -moz-linear-gradient(left, #43a047 0%, #388e3c 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #43a047 0%, #388e3c 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #43a047 0%, #388e3c 33%, #fff 33%, #fff 100%); }
-    .content section .skill.green-medium {
-      background: #43a047;
-      background: -moz-linear-gradient(left, #43a047 0%, #2e7d32 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #43a047 0%, #2e7d32 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #43a047 0%, #2e7d32 66%, #fff 66%, #fff 100%); }
-    .content section .skill.green-high {
-      background: #43a047;
-      background: -moz-linear-gradient(left, #43a047 0%, #1b5e20 100%);
-      background: -webkit-linear-gradient(left, #43a047 0%, #1b5e20 100%);
-      background: linear-gradient(to right, #43a047 0%, #1b5e20 100%); }
-    .content section .skill.orange-low {
-      background: #fb8c00;
-      background: -moz-linear-gradient(left, #fb8c00 0%, #f57c00 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #fb8c00 0%, #f57c00 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #fb8c00 0%, #f57c00 33%, #fff 33%, #fff 100%); }
-    .content section .skill.orange-medium {
-      background: #fb8c00;
-      background: -moz-linear-gradient(left, #fb8c00 0%, #ef6c00 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #fb8c00 0%, #ef6c00 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #fb8c00 0%, #ef6c00 66%, #fff 66%, #fff 100%); }
-    .content section .skill.orange-high {
-      background: #fb8c00;
-      background: -moz-linear-gradient(left, #fb8c00 0%, #e65100 100%);
-      background: -webkit-linear-gradient(left, #fb8c00 0%, #e65100 100%);
-      background: linear-gradient(to right, #fb8c00 0%, #e65100 100%); }
-    .content section .skill.blue-low {
-      background: #1e88e5;
-      background: -moz-linear-gradient(left, #1e88e5 0%, #1976d2 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #1e88e5 0%, #1976d2 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #1e88e5 0%, #1976d2 33%, #fff 33%, #fff 100%); }
-    .content section .skill.blue-medium {
-      background: #1e88e5;
-      background: -moz-linear-gradient(left, #1e88e5 0%, #1565c0 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #1e88e5 0%, #1565c0 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #1e88e5 0%, #1565c0 66%, #fff 66%, #fff 100%); }
-    .content section .skill.blue-high {
-      background: #1e88e5;
-      background: -moz-linear-gradient(left, #1e88e5 0%, #0d47a1 100%);
-      background: -webkit-linear-gradient(left, #1e88e5 0%, #0d47a1 100%);
-      background: linear-gradient(to right, #1e88e5 0%, #0d47a1 100%); }
-    .content section .skill.pink-low {
-      background: #ec407a;
-      background: -moz-linear-gradient(left, #ec407a 0%, #e91e63 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #ec407a 0%, #e91e63 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #ec407a 0%, #e91e63 33%, #fff 33%, #fff 100%); }
-    .content section .skill.pink-medium {
-      background: #ec407a;
-      background: -moz-linear-gradient(left, #ec407a 0%, #d81b60 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #ec407a 0%, #d81b60 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #ec407a 0%, #d81b60 66%, #fff 66%, #fff 100%); }
-    .content section .skill.pink-high {
-      background: #ec407a #ec407a;
-      background: -moz-linear-gradient(left, #ec407a 0%, #c2185b 100%);
-      background: -webkit-linear-gradient(left, #ec407a 0%, #c2185b 100%);
-      background: linear-gradient(to right, #ec407a 0%, #c2185b 100%); }
-    .content section .skill.yellow-low {
-      background: #ffee58;
-      background: -moz-linear-gradient(left, #ffee58 0%, #ffeb3b 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #ffee58 0%, #ffeb3b 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #ffee58 0%, #ffeb3b 33%, #fff 33%, #fff 100%); }
-    .content section .skill.yellow-medium {
-      background: #ffee58;
-      background: -moz-linear-gradient(left, #ffee58 0%, #ff0 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #ffee58 0%, #ff0 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #ffee58 0%, #ff0 66%, #fff 66%, #fff 100%); }
-    .content section .skill.yellow-high {
-      background: #ffee58;
-      background: -moz-linear-gradient(left, #ffee58 0%, #ffea00 100%);
-      background: -webkit-linear-gradient(left, #ffee58 0%, #ffea00 100%);
-      background: linear-gradient(to right, #ffee58 0%, #ffea00 100%); }
-    .content section .skill.black-low {
-      background: #bdbdbd;
-      background: -moz-linear-gradient(left, #bdbdbd 0%, #9e9e9e 33%, #fff 33%, #fff 100%);
-      background: -webkit-linear-gradient(left, #bdbdbd 0%, #9e9e9e 33%, #fff 33%, #fff 100%);
-      background: linear-gradient(to right, #bdbdbd 0%, #9e9e9e 33%, #fff 33%, #fff 100%); }
-    .content section .skill.black-medium {
-      background: #bdbdbd;
-      background: -moz-linear-gradient(left, #bdbdbd 0%, #757575 66%, #fff 66%, #fff 100%);
-      background: -webkit-linear-gradient(left, #bdbdbd 0%, #757575 66%, #fff 66%, #fff 100%);
-      background: linear-gradient(to right, #bdbdbd 0%, #757575 66%, #fff 66%, #fff 100%); }
-    .content section .skill.black-high {
-      background: #bdbdbd;
-      background: -moz-linear-gradient(left, #bdbdbd 0%, #424242 100%);
-      background: -webkit-linear-gradient(left, #bdbdbd 0%, #424242 100%);
-      background: linear-gradient(to right, #bdbdbd 0%, #424242 100%); }
-    .content section #recaptcha {
+  .content .section {
+    display: table-row; }
+  .content .text {
+    display: table-cell;
+    padding: 12px;
+    font-size: 18px;
+    color: #3b3b3b; }
+    .content .text .block {
       display: inline-block;
-      margin: 16px 0 30px 20px;
-      text-align: center; }
+      margin-right: 20px; }
+    .content .text b {
+      color: #011730; }
+  .content .title {
+    display: table-cell;
+    width: 160px;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: right;
+    color: #c00; }
+    .content .title .emoji {
+      font-size: 36px; }
 
 /*
     RESPONSIVE
@@ -316,12 +163,14 @@ header {
     header h1 {
       position: absolute;
       right: 0;
-      bottom: 0;
+      bottom: 60px;
       left: 0;
-      font-size: 6.5vw;
+      font-size: 9vw;
       text-align: center;
       -webkit-transition: all 1s ease-in-out 0;
       transition: all 1s ease-in-out 0; }
+    header .social {
+      font-size: 9vw; }
 
   .shadow {
     position: absolute;
@@ -344,7 +193,9 @@ header {
     top: 42%;
     right: 0;
     bottom: 0;
-    left: 0;
-    margin: 10px; } }
+    left: -20px;
+    width: 102%;
+    padding: 0;
+    margin: 10px 0; } }
 
 /*# sourceMappingURL=light.css.map */
