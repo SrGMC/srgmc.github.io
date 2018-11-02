@@ -4,7 +4,7 @@ body {
   width: 100%;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  transition: all .5s ease-in-out;
+  transition: all .2s ease-in-out 0s;
   color: #000;
   background: #aaaaaa;
   background: -moz-linear-gradient(left, #aaaaaa 0%, white 70%);
@@ -13,6 +13,41 @@ body {
   background: -o-linear-gradient(left, #aaaaaa 0%, white 70%);
   background: -ms-linear-gradient(left, #aaaaaa 0%, white 70%);
   background: linear-gradient(to right, #aaaaaa 0%, white 70%); }
+
+html.dark,
+body.dark {
+  color: #fff;
+  background: #aaaaaa;
+  background: -moz-linear-gradient(left, #414141 0%, black 50%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, #414141), color-stop(50%, black));
+  background: -webkit-linear-gradient(left, #414141 0%, black 50%);
+  background: -o-linear-gradient(left, #414141 0%, black 50%);
+  background: -ms-linear-gradient(left, #414141 0%, black 50%);
+  background: linear-gradient(to right, #414141 0%, black 50%); }
+  html.dark .content .title,
+  body.dark .content .title {
+    color: #ff851b; }
+  html.dark .content .text,
+  body.dark .content .text {
+    color: #ddd; }
+    html.dark .content .text b,
+    body.dark .content .text b {
+      color: #7fdbff; }
+  html.dark .content a,
+  body.dark .content a {
+    color: #1978d7; }
+  html.dark .content a::after,
+  body.dark .content a::after {
+    background-color: #1978d7; }
+  html.dark .toggle,
+  body.dark .toggle {
+    color: #ddd; }
+    html.dark .toggle #day,
+    body.dark .toggle #day {
+      display: inline; }
+    html.dark .toggle #night,
+    body.dark .toggle #night {
+      display: none; }
 
 /*
     HEADER
@@ -143,6 +178,18 @@ header {
     color: #c00; }
     .content .title .emoji {
       font-size: 36px; }
+
+.toggle {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  font-size: 30px;
+  color: #111; }
+  .toggle #day {
+    display: none; }
+  .toggle #night {
+    display: inline; }
 
 /*
     RESPONSIVE
