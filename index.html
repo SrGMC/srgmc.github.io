@@ -3,21 +3,18 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Álvaro Galisteo</title>
-		<link rel="stylesheet" id="stylesheet" href="css/light.css">
+		<link rel="stylesheet" id="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/animate.min.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 	</head>
 	<body>
 		<header class="shadow animated fadeInDown"></header>
 		<header class="animated fadeInDown">
 			<h1>Álvaro Galisteo</h1><br>
 			<div class="social">
-				<a href="https://twitter.com/Sr_GMC"><i class="fab fa-twitter"></i></a>
-				<a href="https://github.com/SrGMC"><i class="fab fa-github-alt"></i></a>
-				<a href="https://linkedin.com/in/alvarogalisteo/"><i class="fab fa-linkedin"></i></a>
-				<a href="https://reddit.com/u/Sr_GMC"><i class="fab fa-reddit-alien"></i></a>
-				<a href="javascript:onClick()"><i class="fas fa-envelope"></i></a>
+				<a href="https://twitter.com/Sr_GMC"><img src="images/social/twitter.svg" alt="Twitter" class="twitter"></a>
+				<a href="https://github.com/SrGMC"><img src="images/social/github.svg" alt="GitHub" class="github"></a>
+				<a href="https://linkedin.com/in/alvarogalisteo/"><img src="images/social/linkedin.svg" alt="LinkedIn" class="linkedin"></a>
 			</div>
 		</header>
 		<div class="content">
@@ -34,10 +31,13 @@
 				<div class="title">ESTUDIOS<br><span class="emoji">🏫</span></div>
 				<div class="text">
 					<b><a href="https://www.iesjuandepadilla.com">IES Juan de Padilla (Illescas)</a></b><br>
-					Bachillerato de ciencias / <i>2017</i>
+					Bachillerato de ciencias 
+					<br>
+					⌛️ 2015 - 2017
 					<br><br>
 					<b><a href="https://uc3m.es">Universidad Carlos III de Madrid</a></b><br>
-					Grado Superior en Ingeniería Informática  / <i>actualidad</i>
+					Grado Superior en Ingeniería Informática  <br> 
+					⏳ 2017 - <i>actualidad</i>
 					<br>
 				</div>
 			</div>
@@ -46,7 +46,8 @@
 				<div class="title">EXPERIENCIA LABORAL<br><span class="emoji">💼</span></div>
 				<div class="text">
 					<b>Auxiliar Administrativo</b><br>
-					Grupo Secoex / <i>jun 2018 - sep 2018</i>
+					Grupo Secoex <br> 
+					⌛️ jun 2018 - sep 2018
 				</div>
 			</div>
 			<br>
@@ -63,6 +64,7 @@
 						HTML, CSS y Javascript<br>
 						Java<br>
 						C <br>
+						<br>
 						<br>
 						<b>Hobbys</b><br>
 						Photoshop/GIMP<br>
@@ -98,9 +100,21 @@
 				</div>
 			</div>
 		</div>
-		<div class="toggle"><i class="fas fa-moon" id="night" onclick="document.getElementsByTagName('html')[0].classList.add('dark');document.getElementsByTagName('body')[0].classList.add('dark')"></i><i class="fas fa-sun" id="day" onclick="document.getElementsByTagName('html')[0].classList.remove('dark');document.getElementsByTagName('body')[0].classList.remove('dark')"></i></div>
+		<div class="toggle">
+			<img id="night" onclick="toggleLights('night')" src="images/icons/moon.svg" alt="Modo oscuro">
+			<img id="day" onclick="toggleLights('day')" src="images/icons/sun.svg" alt="Modo claro">
+		</div>
 
 		<script>
+			function toggleLights(state){
+				if(state === "night"){
+					document.getElementsByTagName('html')[0].classList.add('dark');
+					document.getElementsByTagName('body')[0].classList.add('dark');
+				} else if (state === "day"){
+					document.getElementsByTagName('html')[0].classList.remove('dark');
+					document.getElementsByTagName('body')[0].classList.remove('dark');
+				}
+			}
 			var _0x11e7=["","\x73\x70\x6C\x69\x74","\x6D\x67\x63\x73\x66\x62\x72\x7A\x65\x79\x2E\x69\x6E\x61\x70\x6F\x40\x6B\x77\x6C\x78\x71\x64\x75\x68\x74\x6A\x76"];function getAddress(){var _0x3b28x2=_0x11e7[2][_0x11e7[1]](_0x11e7[0]);return _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[15]+ _0x3b28x2[1]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[11]+ _0x3b28x2[3]+ _0x3b28x2[25]+ _0x3b28x2[8]+ _0x3b28x2[15]+ _0x3b28x2[13]+ _0x3b28x2[19]+ _0x3b28x2[27]+ _0x3b28x2[13]+ _0x3b28x2[6]+ _0x3b28x2[8]+ _0x3b28x2[7]+ _0x3b28x2[16]+ _0x3b28x2[15]+ _0x3b28x2[23]+ _0x3b28x2[25]+ _0x3b28x2[19]+ _0x3b28x2[15]+ _0x3b28x2[15]+ _0x3b28x2[17]+ _0x3b28x2[10]+ _0x3b28x2[2]+ _0x3b28x2[15]+ _0x3b28x2[0]};
 			function onClick(){
 				alert(getAddress());
