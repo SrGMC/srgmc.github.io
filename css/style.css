@@ -211,6 +211,9 @@ header a {
 .content.project-info p {
   font-size: 1.5vw;
 }
+.content.project-info img {
+  width: 100%;
+}
 .content.project-info h1 {
   font-size: 3vw;
   margin: 0;
