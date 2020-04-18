@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Primary Meta Tags -->
+        <title>Proyectos personales - Álvaro Galisteo</title>
+        <meta name="title" content="Proyectos personales - Álvaro Galisteo">
+        <meta name="description" content="Estudiante de ingeniería informática. Web personal">
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev">
+
+        <!-- Styles -->
+        <link rel="stylesheet" id="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header id="header">
+            <img src="" id="header-icon">
+            <div id="fade"></div>
+            <h1>Álvaro Galisteo</h1>
+        </header>
+        <div class="background-block"></div>
+        <div class="background-block white top"></div>
+        <div class="background-block white bottom"></div>
+        <div class="menu">
+            <a href="/">Inicio</a>
+            <a href="#">CV</a>
+            <a href="projects.html" class="active">Proyectos</a>
+        </div>
+        <div class="content projects">
+            <h1>Proyectos personales</h1>
+
+            <div class="list" onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
+                <div class="item" onmouseover="showIcon('bricks');" onmouseout="hideIcon('bricks');">
+                    <a href="bricks.html">Bricks</a>
+                    <span>An Open Source Webapp MIPS32 simulator. Inspired on QtSpim for iOS.</span>
+                </div>
+                <div class="item">
+                    <a href="#">Práctica Final IA</a>
+                    <span>Práctica final para la asignatura de inteligencia artificial en la Universidad Carlos III de Madrid, curso 2018/19.</span>
+                </div>
+                <div class="item" onmouseover="showIcon('itacitg');" onmouseout="hideIcon('itacitg');">
+                    <a href="itacitg.html">Is there a car in the garage?</a>
+                    <span>Ask your phone if you can park in your single car garage with a DIY sensor.</span>
+                </div>
+                <div class="item">
+                    <a href="#">Galshtology</a>
+                    <span>Official website of https://www.instagram.com/galshtology/</span>
+                </div>
+                <div class="item" onmouseover="showIcon('musify');" onmouseout="hideIcon('musify');">
+                    <a href="#">Musify</a>
+                    <span>Simple, yet fast, Electron music player.</span>
+                </div>
+                <div class="item" onmouseover="showIcon('mazelight');" onmouseout="hideIcon('mazelight');">
+                    <a href="#">Mazelight</a>
+                    <span>Java-based Open Source CLI tool designed to solve mazes.</span>
+                </div>
+                <div class="item">
+                    <a href="#">DJ GaMbY</a>
+                    <span>Official website of DJ GaMbY.</span>
+                </div>
+                <div class="item">
+                    <a href="#">Random things</a>
+                    <span>Random things and bits I've done over the years.</span>
+                </div>
+            </div>
+        </div>
+        <!--div class="toggle">
+            <img id="night" onclick="toggleLights('night')" src="assets/images/icons/moon.svg" alt="Modo oscuro">
+            <img id="day" onclick="toggleLights('day')" src="assets/images/icons/sun.svg" alt="Modo claro">
+        </div-->
+
+        <script>
+            function fadeBackground() {
+                document.getElementById('fade').style["opacity"] = "1";
+            }
+
+            function unfadeBackground() {
+                document.getElementById('fade').style["opacity"] = "0";
+            }
+
+            function showIcon(name) {
+                document.getElementById('header-icon').src = "assets/images/" + name + ".png";
+            }
+
+            function hideIcon(name) {
+                document.getElementById('header-icon').src = "";
+            }
+
+            /*function toggleLights(state){
+                if(state === "night"){
+                    document.getElementsByTagName('html')[0].classList.add('dark');
+                    document.getElementsByTagName('body')[0].classList.add('dark');
+                } else if (state === "day"){
+                    document.getElementsByTagName('html')[0].classList.remove('dark');
+                    document.getElementsByTagName('body')[0].classList.remove('dark');
+                }
+            }
+
+            var h = new Date().getHours();
+            if(h >= 19 || 7 >= h){
+                document.getElementsByTagName('html')[0].classList.add('dark');
+                document.getElementsByTagName('body')[0].classList.add('dark');
+            }*/
+        </script>
+    </body>
+</html>
