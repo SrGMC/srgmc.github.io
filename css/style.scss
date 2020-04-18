@@ -1,296 +1,296 @@
-@import "mixins";
-$bgimg: url("../images/header.png");
-$bgpos: top center;
-$bgsize: cover;
-$bgrepeat: no-repeat;
+@font-face {
+    font-family: Helvetica-Neue;
+    src: url(../assets/helvetica_neue/Regular.ttf);
+}
 
-html,
-body {
+@font-face {
+    font-family: Helvetica-Neue;
+    src: url(../assets/helvetica_neue/RegularItalic.ttf);
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Helvetica-Neue;
+    src: url(../assets/helvetica_neue/Bold.ttf);
+    font-weight: 700;
+}
+
+body, html {
     height: 100%;
     width: 100%;
     margin: 0;
-
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+    font-family: Helvetica-Neue;
     transition: all .2s ease-in-out 0s;
-
-    color: #111;
-    background: rgba(170,170,170,1);
-    background:    -moz-linear-gradient(left, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 70%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(170,170,170,1)), color-stop(70%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(left, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 70%);
-    background:      -o-linear-gradient(left, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 70%);
-    background:     -ms-linear-gradient(left, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 70%);
-    background:         linear-gradient(to right, rgba(170,170,170,1) 0%, rgba(255,255,255,1) 70%);
+    color: #212522;
 }
 
-html.dark,
-body.dark {
-    color: #f1f1f1;
-    background: rgba(170,170,170,1);
-    background:    -moz-linear-gradient(left, rgba(1,1,1,1) 0%, rgba(33,33,33,1) 45%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1,1,1,1)), color-stop(70%, rgba(33,33,33,1)));
-    background: -webkit-linear-gradient(left, rgba(1,1,1,1) 0%, rgba(33,33,33,1) 45%);
-    background:      -o-linear-gradient(left, rgba(1,1,1,1) 0%, rgba(33,33,33,1) 45%);
-    background:     -ms-linear-gradient(left, rgba(1,1,1,1) 0%, rgba(33,33,33,1) 45%);
-    background:         linear-gradient(to right, rgba(1,1,1,1) 0%, rgba(33,33,33,1) 45%);
+a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #d00000;
 
-    .content {
-        .title {
-            color: #ff851b;
-        }
-        .text {
-            color: #ddd;
-            b {
-                color: #f1f1f1;
-            }
-        }
-
-        a {
-            color: #70bfff;
-        }
-
-        a::after {
-            background-color: #70bfff;
-        }
+    &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        content: "";
+        transition: transform .25s ease-out;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        background-color: #d00000;
     }
 
-    .toggle {
-        color: #ddd;
-        #day {
-            height: 32px;
-            display: inline;
-        }
-        #night {
-            height: 32px;
-            display: none;
-        }
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
     }
 }
 
-/*
-    HEADER
-        Side header. Blur is achieved cloning the header and bluring it
- */
 header {
     position: fixed;
     top: 0;
     right: 66%;
     bottom: 0;
     left: 0;
-    z-index: 2;
-
+    z-index: 5;
     width: 33%;
     margin: 15px;
-
     text-align: center;
-
     color: #fff;
-    background-image: $bgimg;
-    background-repeat: $bgrepeat;
-    background-position: $bgpos;
-    background-size: $bgsize;
+    background: #212522;
+    background-image: url(../assets/images/header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition: background-image .5s;
 
     h1 {
         position: absolute;
         right: 0;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
-
-        margin: 15px;
-
+        padding: 30px 40px;
+        margin: 0;
+        background: rgba(0, 0, 0, 0);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
         font-size: 4.6vw;
-
-        text-align: center;
-
-        text-shadow: 0 0 15px rgba(0, 0, 0, 1);
+        font-family: Helvetica-Neue;
+        text-align: left;
+        z-index: 2;
     }
-    .social {
+
+    #fade {
         position: absolute;
         right: 0;
         bottom: 0;
         left: 0;
-
-        display: inline-block;
-        padding: 20px 0;
+        top: 0;
+        padding: 0;
         margin: 0;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity .5s;
+        z-index: 3;
+    }
 
-        font-size: 2.8vw;
-
-        background: rgba(0,0,0,0);
-        background:    -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,1)));
-        background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-        background:      -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-        background:     -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-        background:         linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
-
-        img {
-            filter: brightness(0) invert(0.9);
-            margin-right: 10px;
-            margin-left: 10px;
-            height: 3.8vw;
-            border-radius: 15px;
-        }
-
-        img:hover {
-            filter: none;
-        }
+    img {
+        transition: all .5s ease-in-out;
+        width: 50%;
+        z-index: 4;
     }
 
     a {
         color: #fff;
     }
 }
-.shadow {
+
+.background-block {
     position: fixed;
-    top: 10px;
-    right: 66.3%;
-    bottom: 5px;
-    left: 10px;
-    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e6e8e6;
+    margin: 120px 20px 30px 20px;
 
-    width: 33.7%;
-    margin: 0;
+    &.white {
+       background: #fff; 
+    }
 
-    opacity: 1;
-    background-image: $bgimg;
-    background-repeat: $bgrepeat;
-    background-position: $bgpos;
-    background-size: $bgsize;
+    &.top {
+        z-index: 4;
+        bottom: unset;
+        height: 120px;
+        margin: 0;
+    }
 
-    @include filter(blur(.5em));
+    &.bottom {
+        z-index: 4;
+        top: unset;
+        height: 30px;
+        margin: 0;
+    }
 }
 
-/*
-    MAIN CONTENT
- */
-.dark .content a{
-    color: #70bfff;
-}
-.dark .content a::after{
-    background-color: #70bfff;
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 35%;
+    z-index: 5;
+    margin: 15px;
+    background: #e6e8e6;
+    padding: 15px;
+    text-align: center;
+    font-size: 24px;
+
+    a {
+        margin: 0 15px;
+        font-weight: 700;
+        color: #212522;
+        text-decoration: none;
+
+        &::after {
+            background-color: #212522;
+        }
+
+        &.active::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 100%;
+            content: "";
+            transition: transform .25s ease-out;
+            transform: scaleX(1);
+            transform-origin: bottom right;
+            background-color: #212522;
+        }
+    }
 }
 
 .content {
     position: absolute;
     right: 0;
+    top: 120px;
     left: 35%;
-
-    display: table;
-    width: 62%;
+    width: 60%;
     padding: 15px;
     overflow-x: auto;
     overflow-y: hidden;
 
-    a {
-        position: relative;
-
-        display: inline-block;
-
-        text-decoration: none;
-
-        color: #1978d7;
-    }
-    a::after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-
-        height: 2px;
-        width: 100%;
-
-        content: "";
-        transition: transform .25s ease-out;
-        transform: scaleX(0);
-        transform-origin: bottom right;
-
-        background-color: #1978d7;
-    }
-    a:hover::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+    h1 {
+        font-size: 4.6vw;
+        margin: 15px;
     }
 
-    a.active {
-        font-weight: bold;
-    }
+    &.landing {
+        .social {
+            font-size: 2vw;
+            margin: 15px;
 
-    .section {
-        display: table-row;
-    }
-
-    .text {
-        display: table-cell;
-        padding: 12px;
-
-        font-size: 18px;
-
-        color: #111;
-        .block {
-            display: inline-block;
-            margin-right: 20px;
+            .link {
+                display: block;
+                margin-bottom: 20px;
+            }
         }
-        b {
-            color: #111;
+
+        .presentation {
+            font-size: 2vw;
+            margin: 15px;
         }
     }
 
-    .title {
-        display: table-cell;
-        width: 160px;
-        padding: 12px;
+    &.projects {
+        .list {
+            font-size: 2vw;
+            margin: 15px;
 
-        font-size: 15px;
-        font-weight: bold;
+            margin-bottom: 40px;
 
-        text-align: right;
+            .item {
+                display: block;
+                margin-bottom: 10px;
 
-        color: #c00;
+                span {
+                    display: block;
+                    font-size: 1.5vw;
+                }
+            }
+        }
+    }
 
-        .emoji {
-            font-size: 36px;
+    &.project-info {
+        font-size: 2vw;
+        margin: 15px;
+
+        p {
+            font-size: 1.5vw;
+        }
+
+        h1 {
+            font-size: 3vw;
+        }
+
+        .links {
+            font-size: 1.8vw;
+
+            .link {
+                display: block;
+                margin-top: 10px;
+            }
+
+            .fab, .fas {
+                width: 25px;
+                text-align: center;
+            }
         }
     }
 }
+
 .toggle {
     position: fixed;
     right: 0;
     bottom: 0;
-
     margin: 20px;
-
     font-size: 30px;
-
     color: #111;
+
     #day {
         height: 32px;
         display: none;
     }
+
     #night {
         height: 32px;
         display: inline;
     }
 }
 
-/*
-    RESPONSIVE
- */
 @media only screen and (max-width: 600px) {
-    /*Same technique as before. This time only ocupies the top part of the screen*/
     header {
         position: absolute;
         top: 0;
         right: 0;
         bottom: 60%;
         left: 0;
-
         width: 100%;
         margin: 0;
-
         text-align: center;
         vertical-align: bottom;
-
         color: #fff;
 
         h1 {
@@ -298,43 +298,23 @@ header {
             right: 0;
             bottom: 60px;
             left: 0;
-
             font-size: 9vw;
-
             text-align: center;
-
-            @include transition(all 1s ease-in-out 0);
+            -webkit-transition: all 1s ease-in-out 0;
+            transition: all 1s ease-in-out 0;
         }
-        .social {
-            img {
-                height: 10vw;
-            }
+
+        .social img {
+            height: 10vw;
         }
     }
 
-    .shadow {
-        position: absolute;
-        top: 10px;
-        right: 0;
-        bottom: 59%;
-        left: 0;
-
-        width: 100%;
-        margin: 0;
-
-        opacity: 1;
-
-        @include filter(blur(.5em));
-    }
-
-    /* Reposition content */
     .content {
         position: absolute;
         top: 42%;
         right: 0;
         bottom: 0;
         left: -20px;
-
         width: 102%;
         padding: 0;
         margin: 10px 0;

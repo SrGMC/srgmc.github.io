@@ -1,176 +1,33 @@
-html,
-body {
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(../assets/helvetica_neue/Regular.ttf);
+}
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(../assets/helvetica_neue/RegularItalic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(../assets/helvetica_neue/Bold.ttf);
+  font-weight: 700;
+}
+body, html {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Helvetica-Neue;
   transition: all 0.2s ease-in-out 0s;
-  color: #111;
-  background: #aaaaaa;
-  background: -moz-linear-gradient(left, #aaaaaa 0%, white 70%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #aaaaaa), color-stop(70%, white));
-  background: -webkit-linear-gradient(left, #aaaaaa 0%, white 70%);
-  background: -o-linear-gradient(left, #aaaaaa 0%, white 70%);
-  background: -ms-linear-gradient(left, #aaaaaa 0%, white 70%);
-  background: linear-gradient(to right, #aaaaaa 0%, white 70%);
+  color: #212522;
 }
 
-html.dark,
-body.dark {
-  color: #f1f1f1;
-  background: #aaaaaa;
-  background: -moz-linear-gradient(left, #010101 0%, #212121 45%);
-  background: -webkit-gradient(left top, right top, color-stop(0%, #010101), color-stop(70%, #212121));
-  background: -webkit-linear-gradient(left, #010101 0%, #212121 45%);
-  background: -o-linear-gradient(left, #010101 0%, #212121 45%);
-  background: -ms-linear-gradient(left, #010101 0%, #212121 45%);
-  background: linear-gradient(to right, #010101 0%, #212121 45%);
-}
-html.dark .content .title,
-body.dark .content .title {
-  color: #ff851b;
-}
-html.dark .content .text,
-body.dark .content .text {
-  color: #ddd;
-}
-html.dark .content .text b,
-body.dark .content .text b {
-  color: #f1f1f1;
-}
-html.dark .content a,
-body.dark .content a {
-  color: #70bfff;
-}
-html.dark .content a::after,
-body.dark .content a::after {
-  background-color: #70bfff;
-}
-html.dark .toggle,
-body.dark .toggle {
-  color: #ddd;
-}
-html.dark .toggle #day,
-body.dark .toggle #day {
-  height: 32px;
-  display: inline;
-}
-html.dark .toggle #night,
-body.dark .toggle #night {
-  height: 32px;
-  display: none;
-}
-
-/*
-    HEADER
-        Side header. Blur is achieved cloning the header and bluring it
- */
-header {
-  position: fixed;
-  top: 0;
-  right: 66%;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
-  width: 33%;
-  margin: 15px;
-  text-align: center;
-  color: #fff;
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-}
-header h1 {
-  position: absolute;
-  right: 0;
-  bottom: 0px;
-  left: 0;
-  margin: 15px;
-  font-size: 4.6vw;
-  text-align: center;
-  text-shadow: 0 0 15px black;
-}
-header .social {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: inline-block;
-  padding: 20px 0;
-  margin: 0;
-  font-size: 2.8vw;
-  background: rgba(0, 0, 0, 0);
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(100%, black));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0%, black 100%);
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
-}
-header .social img {
-  filter: brightness(0) invert(0.9);
-  margin-right: 10px;
-  margin-left: 10px;
-  height: 3.8vw;
-  border-radius: 15px;
-}
-header .social img:hover {
-  filter: none;
-}
-header a {
-  color: #fff;
-}
-
-.shadow {
-  position: fixed;
-  top: 10px;
-  right: 66.3%;
-  bottom: 5px;
-  left: 10px;
-  z-index: 1;
-  width: 33.7%;
-  margin: 0;
-  opacity: 1;
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  -webkit-filter: blur(0.5em);
-  -moz-filter: blur(0.5em);
-  -ms-filter: blur(0.5em);
-  -o-filter: blur(0.5em);
-  filter: blur(0.5em);
-}
-
-/*
-    MAIN CONTENT
- */
-.dark .content a {
-  color: #70bfff;
-}
-
-.dark .content a::after {
-  background-color: #70bfff;
-}
-
-.content {
-  position: absolute;
-  right: 0;
-  left: 35%;
-  display: table;
-  width: 62%;
-  padding: 15px;
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-.content a {
+a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #1978d7;
+  color: #d00000;
 }
-.content a::after {
+a::after {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -180,42 +37,193 @@ header a {
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
   transform-origin: bottom right;
-  background-color: #1978d7;
+  background-color: #d00000;
 }
-.content a:hover::after {
+a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-.content a.active {
-  font-weight: bold;
+
+header {
+  position: fixed;
+  top: 0;
+  right: 66%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 33%;
+  margin: 15px;
+  text-align: center;
+  color: #fff;
+  background: #212522;
+  background-image: url(../assets/images/header.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 0.5s;
 }
-.content .section {
-  display: table-row;
+header h1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px 40px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  font-size: 4.6vw;
+  font-family: Helvetica-Neue;
+  text-align: left;
+  z-index: 2;
 }
-.content .text {
-  display: table-cell;
-  padding: 12px;
-  font-size: 18px;
-  color: #111;
+header #fade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 3;
 }
-.content .text .block {
-  display: inline-block;
-  margin-right: 20px;
+header img {
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+  z-index: 4;
 }
-.content .text b {
-  color: #111;
+header a {
+  color: #fff;
 }
-.content .title {
-  display: table-cell;
-  width: 160px;
-  padding: 12px;
-  font-size: 15px;
-  font-weight: bold;
-  text-align: right;
-  color: #c00;
+
+.background-block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e6e8e6;
+  margin: 120px 20px 30px 20px;
 }
-.content .title .emoji {
-  font-size: 36px;
+.background-block.white {
+  background: #fff;
+}
+.background-block.top {
+  z-index: 4;
+  bottom: unset;
+  height: 120px;
+  margin: 0;
+}
+.background-block.bottom {
+  z-index: 4;
+  top: unset;
+  height: 30px;
+  margin: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 35%;
+  z-index: 5;
+  margin: 15px;
+  background: #e6e8e6;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+.menu a {
+  margin: 0 15px;
+  font-weight: 700;
+  color: #212522;
+  text-decoration: none;
+}
+.menu a::after {
+  background-color: #212522;
+}
+.menu a.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  background-color: #212522;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  left: 35%;
+  width: 60%;
+  padding: 15px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.content h1 {
+  font-size: 4.6vw;
+  margin: 15px;
+}
+.content.landing .social {
+  font-size: 2vw;
+  margin: 15px;
+}
+.content.landing .social .link {
+  display: block;
+  margin-bottom: 20px;
+}
+.content.landing .presentation {
+  font-size: 2vw;
+  margin: 15px;
+}
+.content.projects .list {
+  font-size: 2vw;
+  margin: 15px;
+  margin-bottom: 40px;
+}
+.content.projects .list .item {
+  display: block;
+  margin-bottom: 10px;
+}
+.content.projects .list .item span {
+  display: block;
+  font-size: 1.5vw;
+}
+.content.project-info {
+  font-size: 2vw;
+  margin: 15px;
+}
+.content.project-info p {
+  font-size: 1.5vw;
+}
+.content.project-info h1 {
+  font-size: 3vw;
+}
+.content.project-info .links {
+  font-size: 1.8vw;
+}
+.content.project-info .links .link {
+  display: block;
+  margin-top: 10px;
+}
+.content.project-info .links .fab, .content.project-info .links .fas {
+  width: 25px;
+  text-align: center;
 }
 
 .toggle {
@@ -235,11 +243,7 @@ header a {
   display: inline;
 }
 
-/*
-    RESPONSIVE
- */
 @media only screen and (max-width: 600px) {
-  /*Same technique as before. This time only ocupies the top part of the screen*/
   header {
     position: absolute;
     top: 0;
@@ -266,23 +270,6 @@ header a {
     height: 10vw;
   }
 
-  .shadow {
-    position: absolute;
-    top: 10px;
-    right: 0;
-    bottom: 59%;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    opacity: 1;
-    -webkit-filter: blur(0.5em);
-    -moz-filter: blur(0.5em);
-    -ms-filter: blur(0.5em);
-    -o-filter: blur(0.5em);
-    filter: blur(0.5em);
-  }
-
-  /* Reposition content */
   .content {
     position: absolute;
     top: 42%;
@@ -294,3 +281,5 @@ header a {
     margin: 10px 0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
