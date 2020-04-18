@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!-- Primary Meta Tags -->
+        <title>Is there a car in the garage? - Álvaro Galisteo</title>
+        <meta name="title" content="Proyectos personales - Álvaro Galisteo">
+        <meta name="description" content="Estudiante de ingeniería informática. Web personal">
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev">
+
+        <!-- Styles -->
+        <link rel="stylesheet" id="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header style="background-image: none;">
+            <img src="assets/images/itacitg.png">
+            <h1 style="font-size: 3.8vw;">Is there a car in the garage?</h1>
+        </header>
+        <div class="background-block"></div>
+        <div class="background-block white top"></div>
+        <div class="background-block white bottom"></div>
+        <div class="menu">
+            <a href="/">Inicio</a>
+            <a href="#">CV</a>
+            <a href="projects.html" class="active">Proyectos</a>
+        </div>
+        <div class="content project-info">
+            <b>Is there a car in the garage?</b> es un proyecto de Arduino que utiliza un sensor ultrasónico para saber si hay un coche en el garaje. Accesible a traves de una interfaz web simple.
+
+            <div class="links">
+                <div class="link"><a href="https://github.com/SrGMC/is-there-a-car-in-the-garage/raw/master/is-there-a-car-in-the-garage.ino"><i class="fas fa-download"></i> Descargar código <i class="fas fa-angle-double-right"></i></a></div>
+                <div class="link"><a href="https://www.icloud.com/shortcuts/2c882fd182f14ea6b3fa74673e178815"><i class="fab fa-apple"></i> Apple Shortcut <i class="fas fa-angle-double-right"></i></a></div>
+                <div class="link"><a href="https://github.com/SrGMC/is-there-a-car-in-the-garage"><i class="fab fa-github"></i> GitHub <i class="fas fa-angle-double-right"></i></a></div>
+            </div>
+
+            <p>
+                It is originaly programmed to detect a car in a closed space, but it can be used to detect any static object in a closed space.
+                <br><br>
+                After downloading the code, check out <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#installation">installation instructions</a>.
+                <br><br>
+                Once installed, check out <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">usage instructions</a>. TL;DR: It's easy!. Download the Apple Shortcut on an iOS device (iOS 13 and up), configure with URL, username and password and you're done!. Ask Siri about it next time.
+            </p>
+        </div>
+        <!--div class="toggle">
+            <img id="night" onclick="toggleLights('night')" src="assets/images/icons/moon.svg" alt="Modo oscuro">
+            <img id="day" onclick="toggleLights('day')" src="assets/images/icons/sun.svg" alt="Modo claro">
+        </div-->
+
+        <script>
+            /*function toggleLights(state){
+                if(state === "night"){
+                    document.getElementsByTagName('html')[0].classList.add('dark');
+                    document.getElementsByTagName('body')[0].classList.add('dark');
+                } else if (state === "day"){
+                    document.getElementsByTagName('html')[0].classList.remove('dark');
+                    document.getElementsByTagName('body')[0].classList.remove('dark');
+                }
+            }
+
+            var h = new Date().getHours();
+            if(h >= 19 || 7 >= h){
+                document.getElementsByTagName('html')[0].classList.add('dark');
+                document.getElementsByTagName('body')[0].classList.add('dark');
+            }*/
+        </script>
+    </body>
+</html>
