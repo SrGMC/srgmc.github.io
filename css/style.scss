@@ -189,6 +189,7 @@ header {
     left: 35%;
     width: 60%;
     padding: 15px;
+    padding-bottom: 40px;
     overflow-x: auto;
     overflow-y: hidden;
 
@@ -219,8 +220,6 @@ header {
             font-size: 2vw;
             margin: 15px;
 
-            margin-bottom: 40px;
-
             .item {
                 display: block;
                 margin-bottom: 10px;
@@ -243,6 +242,17 @@ header {
 
         h1 {
             font-size: 3vw;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 2.6vw;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 2.2vw;
+            margin: 0;
         }
 
         .links {
