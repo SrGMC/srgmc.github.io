@@ -206,6 +206,11 @@ header {
             .link {
                 display: block;
                 margin-bottom: 20px;
+                
+                i {
+                    width: 32px;
+                    text-align: center;
+                }
             }
         }
 
@@ -228,6 +233,11 @@ header {
                     display: block;
                     font-size: 1.5vw;
                 }
+                
+                sup {
+                    font-size: 1vw;
+                    margin-left: 10px;
+                }
             }
         }
     }
@@ -236,8 +246,14 @@ header {
         font-size: 2vw;
         margin: 15px;
 
-        p {
+        div.description {
+            margin-top: 15px;
             font-size: 1.5vw;
+        }
+        
+        details {
+            font-size: 1.5vw;
+            margin-bottom: 15px;
         }
 
         img {
@@ -267,8 +283,8 @@ header {
                 margin-top: 10px;
             }
 
-            .fab, .fas {
-                width: 25px;
+            i {
+                width: 32px;
                 text-align: center;
             }
         }

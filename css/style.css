@@ -188,6 +188,10 @@ header a {
   display: block;
   margin-bottom: 20px;
 }
+.content.landing .social .link i {
+  width: 32px;
+  text-align: center;
+}
 .content.landing .presentation {
   font-size: 2vw;
   margin: 15px;
@@ -204,12 +208,21 @@ header a {
   display: block;
   font-size: 1.5vw;
 }
+.content.projects .list .item sup {
+  font-size: 1vw;
+  margin-left: 10px;
+}
 .content.project-info {
   font-size: 2vw;
   margin: 15px;
 }
-.content.project-info p {
+.content.project-info div.description {
+  margin-top: 15px;
   font-size: 1.5vw;
+}
+.content.project-info details {
+  font-size: 1.5vw;
+  margin-bottom: 15px;
 }
 .content.project-info img {
   width: 100%;
@@ -233,8 +246,8 @@ header a {
   display: block;
   margin-top: 10px;
 }
-.content.project-info .links .fab, .content.project-info .links .fas {
-  width: 25px;
+.content.project-info .links i {
+  width: 32px;
   text-align: center;
 }
 
