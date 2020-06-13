@@ -2,8 +2,6 @@
 if(window.innerWidth < 600) {
     window.onscroll = function (){
         var header = document.querySelector('header');
-        console.log(window.pageYOffset);
-        console.log(header.offsetHeight);
 	    if(window.pageYOffset > 80){
 	        header.classList.remove('fadeInDown');
 	        header.classList.add('fadeOutUp');
