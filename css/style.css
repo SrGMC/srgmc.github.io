@@ -1,0 +1,450 @@
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(../assets/helvetica_neue/Regular.ttf);
+}
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(../assets/helvetica_neue/RegularItalic.ttf);
+  font-style: italic;
+}
+@font-face {
+  font-family: Helvetica-Neue;
+  src: url(../assets/helvetica_neue/Bold.ttf);
+  font-weight: 700;
+}
+.hidden {
+  width: 0;
+  height: 0;
+  /*display: none;*/
+}
+.hidden * {
+  width: 0;
+  height: 0;
+  /*display: none;*/
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: Helvetica-Neue;
+  transition: all 0.2s ease-in-out 0s;
+  color: #212522;
+}
+
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #d00000;
+}
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background-color: #d00000;
+}
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 66%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  width: 33%;
+  margin: 15px;
+  text-align: center;
+  color: #fff;
+  background: #212522;
+  background-image: url(../assets/images/header.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-image 0.5s;
+  animation-duration: 0.5s !important;
+}
+header h1 {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 30px 40px;
+  margin: 0;
+  background: rgba(0, 0, 0, 0);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+  font-size: 66pt;
+  font-family: Helvetica-Neue;
+  text-align: left;
+  z-index: 2;
+}
+header #fade {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s;
+  z-index: 3;
+}
+header img {
+  transition: all 0.5s ease-in-out;
+  width: 50%;
+  z-index: 4;
+}
+header a {
+  color: #fff;
+}
+
+.background-block {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e6e8e6;
+  margin: 120px 20px 30px 20px;
+}
+.background-block.white {
+  background: #fff;
+}
+.background-block.top {
+  z-index: 4;
+  bottom: unset;
+  height: 120px;
+  margin: 0;
+}
+.background-block.bottom {
+  z-index: 4;
+  top: unset;
+  height: 30px;
+  margin: 0;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 35%;
+  z-index: 5;
+  margin: 15px;
+  background: #e6e8e6;
+  padding: 15px;
+  text-align: center;
+  font-size: 24px;
+}
+.menu a {
+  margin: 0 15px;
+  font-weight: 700;
+  color: #212522;
+  text-decoration: none;
+}
+.menu a::after {
+  background-color: #212522;
+}
+.menu a.active::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom right;
+  background-color: #212522;
+}
+
+.content {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  left: 35%;
+  width: 60%;
+  padding: 15px;
+  padding-bottom: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.content h1 {
+  font-size: 66pt;
+  margin: 15px;
+}
+.content.landing .social {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.landing .social .link {
+  display: block;
+  margin-bottom: 20px;
+}
+.content.landing .social .link i {
+  width: 32px;
+  text-align: center;
+}
+.content.landing .presentation {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.projects .list {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.projects .list .item {
+  display: block;
+  margin-bottom: 10px;
+}
+.content.projects .list .item span {
+  display: block;
+  font-size: 21pt;
+}
+.content.project-info {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.project-info div.description {
+  margin-top: 15px;
+  font-size: 21pt;
+}
+.content.project-info details {
+  font-size: 21pt;
+  margin-bottom: 15px;
+}
+.content.project-info img {
+  width: 100%;
+}
+.content.project-info h1 {
+  font-size: 43pt;
+  margin: 0;
+}
+.content.project-info h2 {
+  font-size: 38pt;
+  margin: 0;
+}
+.content.project-info h3 {
+  font-size: 32pt;
+  margin: 0;
+}
+.content.project-info .links {
+  font-size: 28pt;
+}
+.content.project-info .links .link {
+  display: block;
+  margin-top: 10px;
+}
+.content.project-info .links i {
+  width: 32px;
+  text-align: center;
+}
+.content.cv .social {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.cv .social .link {
+  display: block;
+  margin-bottom: 20px;
+}
+.content.cv .social .link i {
+  width: 32px;
+  text-align: center;
+}
+.content.cv .presentation {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.cv h2 {
+  padding: 0 15px;
+  font-size: 38pt;
+  margin: 0;
+}
+.content.cv h3 {
+  padding: 0 15px;
+  font-size: 32pt;
+  margin: 0;
+}
+.content.cv p, .content.cv ol, .content.cv ul {
+  padding: 0 15px;
+  font-size: 21pt;
+}
+.content.cv p .main, .content.cv ol .main, .content.cv ul .main {
+  font-size: 28pt;
+}
+.content.cv p .date, .content.cv ol .date, .content.cv ul .date {
+  font-size: 18pt;
+}
+.content.cv ol, .content.cv ul {
+  margin-top: 5px;
+  list-style: none;
+}
+.content.cv p.experience img {
+  float: left;
+  margin: 9px 15px 0 0;
+  height: 100px;
+  border: 1px #212522 solid;
+}
+.content.cv .column {
+  float: left;
+  width: 50%;
+}
+.content.cv .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.toggle {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+  font-size: 30px;
+  color: #111;
+}
+.toggle #day {
+  height: 32px;
+  display: none;
+}
+.toggle #night {
+  height: 32px;
+  display: inline;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    left: 0;
+  }
+
+  body.index header {
+    height: 280px;
+  }
+  body.index .content {
+    top: 350px;
+  }
+
+  body.cv header {
+    height: 280px;
+  }
+  body.cv .content {
+    top: 350px;
+  }
+
+  body.projects header {
+    display: none;
+  }
+  body.projects .content {
+    top: 75px;
+  }
+
+  body.project-info header h1 {
+    display: none;
+  }
+
+  header {
+    width: unset;
+    right: 0;
+    top: 60px;
+    height: 140px;
+  }
+  header h1 {
+    font-size: 33pt;
+  }
+  header img {
+    width: 20%;
+  }
+
+  .background-block {
+    margin: 100px 15px 0 15px;
+  }
+  .background-block.bottom {
+    height: 0;
+  }
+  .background-block.top {
+    height: 100px;
+    margin: 0;
+  }
+
+  .content {
+    top: 200px;
+    left: unset;
+    width: unset;
+  }
+  .content h1 {
+    font-size: 33pt;
+  }
+  .content.landing .social {
+    font-size: 14pt;
+  }
+  .content.landing .presentation {
+    font-size: 14pt;
+  }
+  .content.projects .list {
+    font-size: 14pt;
+  }
+  .content.projects .list .item span {
+    font-size: 11pt;
+  }
+  .content.project-info {
+    font-size: 14pt;
+  }
+  .content.project-info div.description {
+    font-size: 11pt;
+  }
+  .content.project-info details {
+    font-size: 11pt;
+  }
+  .content.project-info h1 {
+    font-size: 22pt;
+  }
+  .content.project-info h2 {
+    font-size: 19pt;
+  }
+  .content.project-info h3 {
+    font-size: 16pt;
+  }
+  .content.project-info .links {
+    font-size: 14pt;
+  }
+  .content.cv .social {
+    font-size: 14pt;
+  }
+  .content.cv .presentation {
+    font-size: 14pt;
+  }
+  .content.cv h2 {
+    font-size: 19pt;
+  }
+  .content.cv h3 {
+    font-size: 16pt;
+  }
+  .content.cv p, .content.cv ol, .content.cv ul {
+    font-size: 11pt;
+  }
+  .content.cv p .main, .content.cv ol .main, .content.cv ul .main {
+    font-size: 14pt;
+  }
+  .content.cv p .date, .content.cv ol .date, .content.cv ul .date {
+    font-size: 9pt;
+  }
+}
