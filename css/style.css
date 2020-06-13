@@ -12,6 +12,17 @@
   src: url(../assets/helvetica_neue/Bold.ttf);
   font-weight: 700;
 }
+.hidden {
+  width: 0;
+  height: 0;
+  /*display: none;*/
+}
+.hidden * {
+  width: 0;
+  height: 0;
+  /*display: none;*/
+}
+
 body, html {
   height: 100%;
   width: 100%;
@@ -64,6 +75,7 @@ header {
   justify-content: center;
   align-items: center;
   transition: background-image 0.5s;
+  animation-duration: 0.5s !important;
 }
 header h1 {
   position: absolute;
@@ -79,7 +91,7 @@ header h1 {
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-  font-size: 4.6vw;
+  font-size: 66pt;
   font-family: Helvetica-Neue;
   text-align: left;
   z-index: 2;
@@ -177,11 +189,11 @@ header a {
   overflow-y: hidden;
 }
 .content h1 {
-  font-size: 4.6vw;
+  font-size: 66pt;
   margin: 15px;
 }
 .content.landing .social {
-  font-size: 2vw;
+  font-size: 28pt;
   margin: 15px;
 }
 .content.landing .social .link {
@@ -193,11 +205,11 @@ header a {
   text-align: center;
 }
 .content.landing .presentation {
-  font-size: 2vw;
+  font-size: 28pt;
   margin: 15px;
 }
 .content.projects .list {
-  font-size: 2vw;
+  font-size: 28pt;
   margin: 15px;
 }
 .content.projects .list .item {
@@ -206,41 +218,37 @@ header a {
 }
 .content.projects .list .item span {
   display: block;
-  font-size: 1.5vw;
-}
-.content.projects .list .item sup {
-  font-size: 1vw;
-  margin-left: 10px;
+  font-size: 21pt;
 }
 .content.project-info {
-  font-size: 2vw;
+  font-size: 28pt;
   margin: 15px;
 }
 .content.project-info div.description {
   margin-top: 15px;
-  font-size: 1.5vw;
+  font-size: 21pt;
 }
 .content.project-info details {
-  font-size: 1.5vw;
+  font-size: 21pt;
   margin-bottom: 15px;
 }
 .content.project-info img {
   width: 100%;
 }
 .content.project-info h1 {
-  font-size: 3vw;
+  font-size: 43pt;
   margin: 0;
 }
 .content.project-info h2 {
-  font-size: 2.6vw;
+  font-size: 38pt;
   margin: 0;
 }
 .content.project-info h3 {
-  font-size: 2.2vw;
+  font-size: 32pt;
   margin: 0;
 }
 .content.project-info .links {
-  font-size: 1.8vw;
+  font-size: 28pt;
 }
 .content.project-info .links .link {
   display: block;
@@ -249,6 +257,61 @@ header a {
 .content.project-info .links i {
   width: 32px;
   text-align: center;
+}
+.content.cv .social {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.cv .social .link {
+  display: block;
+  margin-bottom: 20px;
+}
+.content.cv .social .link i {
+  width: 32px;
+  text-align: center;
+}
+.content.cv .presentation {
+  font-size: 28pt;
+  margin: 15px;
+}
+.content.cv h2 {
+  padding: 0 15px;
+  font-size: 38pt;
+  margin: 0;
+}
+.content.cv h3 {
+  padding: 0 15px;
+  font-size: 32pt;
+  margin: 0;
+}
+.content.cv p, .content.cv ol, .content.cv ul {
+  padding: 0 15px;
+  font-size: 21pt;
+}
+.content.cv p .main, .content.cv ol .main, .content.cv ul .main {
+  font-size: 28pt;
+}
+.content.cv p .date, .content.cv ol .date, .content.cv ul .date {
+  font-size: 18pt;
+}
+.content.cv ol, .content.cv ul {
+  margin-top: 5px;
+  list-style: none;
+}
+.content.cv p.experience img {
+  float: left;
+  margin: 9px 15px 0 0;
+  height: 100px;
+  border: 1px #212522 solid;
+}
+.content.cv .column {
+  float: left;
+  width: 50%;
+}
+.content.cv .row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .toggle {
@@ -269,41 +332,120 @@ header a {
 }
 
 @media only screen and (max-width: 600px) {
-  header {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 60%;
+  .menu {
     left: 0;
-    width: 100%;
-    margin: 0;
-    text-align: center;
-    vertical-align: bottom;
-    color: #fff;
+  }
+
+  body.index header {
+    height: 280px;
+  }
+  body.index .content {
+    top: 350px;
+  }
+
+  body.cv header {
+    height: 280px;
+  }
+  body.cv .content {
+    top: 350px;
+  }
+
+  body.projects header {
+    display: none;
+  }
+  body.projects .content {
+    top: 75px;
+  }
+
+  body.project-info header h1 {
+    display: none;
+  }
+
+  header {
+    width: unset;
+    right: 0;
+    top: 60px;
+    height: 140px;
   }
   header h1 {
-    position: absolute;
-    right: 0;
-    bottom: 60px;
-    left: 0;
-    font-size: 9vw;
-    text-align: center;
-    -webkit-transition: all 1s ease-in-out 0;
-    transition: all 1s ease-in-out 0;
+    font-size: 33pt;
   }
-  header .social img {
-    height: 10vw;
+  header img {
+    width: 20%;
+  }
+
+  .background-block {
+    margin: 100px 15px 0 15px;
+  }
+  .background-block.bottom {
+    height: 0;
+  }
+  .background-block.top {
+    height: 100px;
+    margin: 0;
   }
 
   .content {
-    position: absolute;
-    top: 42%;
-    right: 0;
-    bottom: 0;
-    left: -20px;
-    width: 102%;
-    padding: 0;
-    margin: 10px 0;
+    top: 200px;
+    left: unset;
+    width: unset;
+  }
+  .content h1 {
+    font-size: 33pt;
+  }
+  .content.landing .social {
+    font-size: 14pt;
+  }
+  .content.landing .presentation {
+    font-size: 14pt;
+  }
+  .content.projects .list {
+    font-size: 14pt;
+  }
+  .content.projects .list .item span {
+    font-size: 11pt;
+  }
+  .content.project-info {
+    font-size: 14pt;
+  }
+  .content.project-info div.description {
+    font-size: 11pt;
+  }
+  .content.project-info details {
+    font-size: 11pt;
+  }
+  .content.project-info h1 {
+    font-size: 22pt;
+  }
+  .content.project-info h2 {
+    font-size: 19pt;
+  }
+  .content.project-info h3 {
+    font-size: 16pt;
+  }
+  .content.project-info .links {
+    font-size: 14pt;
+  }
+  .content.cv .social {
+    font-size: 14pt;
+  }
+  .content.cv .presentation {
+    font-size: 14pt;
+  }
+  .content.cv h2 {
+    font-size: 19pt;
+  }
+  .content.cv h3 {
+    font-size: 16pt;
+  }
+  .content.cv p, .content.cv ol, .content.cv ul {
+    font-size: 11pt;
+  }
+  .content.cv p .main, .content.cv ol .main, .content.cv ul .main {
+    font-size: 14pt;
+  }
+  .content.cv p .date, .content.cv ol .date, .content.cv ul .date {
+    font-size: 9pt;
   }
 }
 

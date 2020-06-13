@@ -15,6 +15,18 @@
     font-weight: 700;
 }
 
+.hidden {
+    width: 0;
+    height: 0;
+    /*display: none;*/
+    
+    * {
+        width: 0;
+        height: 0;
+        /*display: none;*/
+    }
+}
+
 body, html {
     height: 100%;
     width: 100%;
@@ -71,6 +83,8 @@ header {
     align-items:center;
 
     transition: background-image .5s;
+    
+    animation-duration: 0.5s !important;
 
     h1 {
         position: absolute;
@@ -86,7 +100,7 @@ header {
         background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
         background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-        font-size: 4.6vw;
+        font-size: 66pt;
         font-family: Helvetica-Neue;
         text-align: left;
         z-index: 2;
@@ -194,13 +208,13 @@ header {
     overflow-y: hidden;
 
     h1 {
-        font-size: 4.6vw;
+        font-size: 66pt;
         margin: 15px;
     }
 
     &.landing {
         .social {
-            font-size: 2vw;
+            font-size: 28pt;
             margin: 15px;
 
             .link {
@@ -215,14 +229,14 @@ header {
         }
 
         .presentation {
-            font-size: 2vw;
+            font-size: 28pt;
             margin: 15px;
         }
     }
 
     &.projects {
         .list {
-            font-size: 2vw;
+            font-size: 28pt;
             margin: 15px;
 
             .item {
@@ -231,28 +245,23 @@ header {
 
                 span {
                     display: block;
-                    font-size: 1.5vw;
-                }
-                
-                sup {
-                    font-size: 1vw;
-                    margin-left: 10px;
+                    font-size: 21pt;
                 }
             }
         }
     }
 
     &.project-info {
-        font-size: 2vw;
+        font-size: 28pt;
         margin: 15px;
 
         div.description {
             margin-top: 15px;
-            font-size: 1.5vw;
+            font-size: 21pt;
         }
         
         details {
-            font-size: 1.5vw;
+            font-size: 21pt;
             margin-bottom: 15px;
         }
 
@@ -261,22 +270,22 @@ header {
         }
 
         h1 {
-            font-size: 3vw;
+            font-size: 43pt;
             margin: 0;
         }
 
         h2 {
-            font-size: 2.6vw;
+            font-size: 38pt;
             margin: 0;
         }
 
         h3 {
-            font-size: 2.2vw;
+            font-size: 32pt;
             margin: 0;
         }
 
         .links {
-            font-size: 1.8vw;
+            font-size: 28pt;
 
             .link {
                 display: block;
@@ -287,6 +296,80 @@ header {
                 width: 32px;
                 text-align: center;
             }
+        }
+    }
+    
+    &.cv {
+        .social {
+            font-size: 28pt;
+            margin: 15px;
+
+            .link {
+                display: block;
+                margin-bottom: 20px;
+                
+                i {
+                    width: 32px;
+                    text-align: center;
+                }
+            }
+        }
+
+        .presentation {
+            font-size: 28pt;
+            margin: 15px;
+        }
+
+        h2 {
+            padding: 0 15px;
+            font-size: 38pt;
+            margin: 0;
+        }
+
+        h3 {
+            padding: 0 15px;
+            font-size: 32pt;
+            margin: 0;
+        }
+        
+        p, ol, ul {
+            padding: 0 15px;
+            font-size: 21pt;
+            
+            .main {
+                font-size: 28pt;
+            }
+            
+            .date {
+                font-size: 18pt;
+            }
+        }
+        
+        ol, ul {
+            margin-top: 5px;
+            list-style: none;
+        }
+        
+        p {
+            &.experience {
+                img {
+                    float: left;
+                    margin: 9px 15px 0 0;
+                    height: 100px;
+                    border: 1px #212522 solid;
+                }
+            }
+        }
+        
+        .column {
+          float: left;
+          width: 50%;
+        }
+
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
         }
     }
 }
@@ -311,42 +394,163 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
-    header {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 60%;
+    .menu {
         left: 0;
-        width: 100%;
-        margin: 0;
-        text-align: center;
-        vertical-align: bottom;
-        color: #fff;
+    }
+        
+    body.index {
+        header {
+            height: 280px;
+        }
+        
+        .content {
+            top: 350px;
+        }
+    }
+    
+    body.cv {
+        header {
+            height: 280px;
+        }
+        
+        .content {
+            top: 350px;
+        }
+    }
+    
+    body.projects {
+        header {
+            display: none;
+        }
+        
+        .content {
+            top: 75px;
+        }
+   }
+    
+    body.project-info {
+        header {
+            h1 {
+                display: none;
+            }
+        }
+    }
 
+    header {
+        width: unset;
+        right: 0;
+        top: 60px;
+        height: 140px;
+        
         h1 {
-            position: absolute;
-            right: 0;
-            bottom: 60px;
-            left: 0;
-            font-size: 9vw;
-            text-align: center;
-            -webkit-transition: all 1s ease-in-out 0;
-            transition: all 1s ease-in-out 0;
+            font-size: 33pt;
         }
 
-        .social img {
-            height: 10vw;
+        img {
+            width: 20%;
+        }
+    }
+    
+    .background-block {
+	    margin: 100px 15px 0 15px;
+
+        &.bottom {
+            height: 0;
+        }
+        
+        &.top {
+            height: 100px;
+            margin: 0;
         }
     }
 
     .content {
-        position: absolute;
-        top: 42%;
-        right: 0;
-        bottom: 0;
-        left: -20px;
-        width: 102%;
-        padding: 0;
-        margin: 10px 0;
+	    top: 200px;
+	    left: unset;
+	    width: unset;
+	    
+        h1 {
+            font-size: 33pt;
+        }
+
+        &.landing {
+            .social {
+                font-size: 14pt;
+            }
+
+            .presentation {
+                font-size: 14pt;
+            }
+        }
+
+        &.projects {
+            .list {
+                font-size: 14pt;
+
+                .item {
+                    span {
+                        font-size: 11pt;
+                    }
+                }
+            }
+        }
+
+        &.project-info {
+            font-size: 14pt;
+
+            div.description {
+                font-size: 11pt;
+            }
+            
+            details {
+                font-size: 11pt;
+            }
+            
+            h1 {
+                font-size: 22pt;
+            }
+
+            h2 {
+                font-size: 19pt;
+            }
+
+            h3 {
+                font-size: 16pt;
+            }
+
+            .links {
+                font-size: 14pt;
+            }
+        }
+        
+        &.cv {
+            .social {
+                font-size: 14pt;
+            }
+
+            .presentation {
+                font-size: 14pt;
+            }
+
+            h2 {
+                font-size: 19pt;
+            }
+
+            h3 {
+                font-size: 16pt;
+            }
+            
+            p, ol, ul {
+                font-size: 11pt;
+                
+                .main {
+                    font-size: 14pt;
+                }
+                
+                .date {
+                    font-size: 9pt;
+                }
+            }
+        }
     }
 }
