@@ -29,14 +29,14 @@ body, html {
   margin: 0;
   font-family: Helvetica-Neue;
   transition: all 0.2s ease-in-out 0s;
-  color: #212522;
+  color: #212121;
 }
 
 a {
   position: relative;
   display: inline-block;
   text-decoration: none;
-  color: #d00000;
+  color: #FF3B30;
 }
 a::after {
   position: absolute;
@@ -48,7 +48,7 @@ a::after {
   transition: transform 0.25s ease-out;
   transform: scaleX(0);
   transform-origin: bottom right;
-  background-color: #d00000;
+  background-color: #FF3B30;
 }
 a:hover::after {
   transform: scaleX(1);
@@ -66,7 +66,7 @@ header {
   margin: 15px;
   text-align: center;
   color: #fff;
-  background: #212522;
+  background: #212121;
   background-image: url(../assets/images/header.png);
   background-repeat: no-repeat;
   background-position: top center;
@@ -91,7 +91,7 @@ header h1 {
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-  font-size: 66pt;
+  font-size: 4vw;
   font-family: Helvetica-Neue;
   text-align: left;
   z-index: 2;
@@ -158,11 +158,11 @@ header a {
 .menu a {
   margin: 0 15px;
   font-weight: 700;
-  color: #212522;
+  color: #212121;
   text-decoration: none;
 }
 .menu a::after {
-  background-color: #212522;
+  background-color: #212121;
 }
 .menu a.active::after {
   position: absolute;
@@ -174,7 +174,7 @@ header a {
   transition: transform 0.25s ease-out;
   transform: scaleX(1);
   transform-origin: bottom right;
-  background-color: #212522;
+  background-color: #212121;
 }
 
 .content {
@@ -302,7 +302,7 @@ header a {
   float: left;
   margin: 9px 15px 0 0;
   height: 100px;
-  border: 1px #212522 solid;
+  border: 1px #212121 solid;
 }
 .content.cv .column {
   float: left;
@@ -331,7 +331,7 @@ header a {
   display: inline;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .menu {
     left: 0;
   }
@@ -446,6 +446,47 @@ header a {
   }
   .content.cv p .date, .content.cv ol .date, .content.cv ul .date {
     font-size: 9pt;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body, html {
+    background: #000;
+    color: #ededed;
+  }
+
+  header {
+    background: #121212;
+    background-image: url(../assets/images/header.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+  }
+
+  .menu {
+    background: #212121;
+  }
+  .menu a {
+    color: #ededed;
+  }
+  .menu a::after {
+    background-color: #ededed;
+  }
+  .menu a.active::after {
+    background-color: #ededed;
+  }
+
+  .background-block {
+    background: #212121;
+  }
+  .background-block.white {
+    background: #000;
+  }
+
+  a {
+    color: #FF453A;
+  }
+  a::after {
+    background-color: #FF453A;
   }
 }
 
