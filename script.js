@@ -23,7 +23,7 @@ function unfadeBackground() {
 }
 
 function showIcon(name) {
-    document.getElementById('header-icon').src = "assets/images/" + name + ".png";
+    document.getElementById('header-icon').src = "/assets/images/" + name + ".png";
 }
 
 function hideIcon(name) {
