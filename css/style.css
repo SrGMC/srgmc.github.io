@@ -335,6 +335,9 @@ header a {
   .menu {
     left: 0;
   }
+  .menu a {
+    margin: 0 5px;
+  }
 
   body.index header {
     height: 280px;
