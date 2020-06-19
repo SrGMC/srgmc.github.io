@@ -33,12 +33,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body class="index">
-        <script>
-            if (navigator.language.toLowerCase().includes('es')) {
-                window.location.href = "/es";
-            } else {
-                window.location.href = "/en";
-            }
-        </script>
+        <header class="animated fadeInDown">
+            <h1>Álvaro Galisteo</h1>
+        </header>
+        <div class="background-block"></div>
+        <div class="background-block white top"></div>
+        <div class="background-block white bottom"></div>
+        <div class="menu">
+            <a href="/en/" style="float: left;">🇬🇧</a>
+            <a href="/es/" class="active">Inicio</a>
+            <a href="/es/cv">CV</a>
+            <a href="/es/projects">Proyectos</a>
+        </div>
+        <div class="content landing">
+            <h1>Bienvenidos</h1>
+            <div class="presentation">
+                Estudio ingeniería informática. Soy una persona abierta y amigable. Me gusta afrontar nuevos retos y problemas. Me encanta la programación, el diseño, la electrónica y la ciencia.
+            </div>
+
+            <div class="social">
+                <div class="link"><a href="https://github.com/SrGMC"><i class="fab fa-github"></i> GitHub</a></div>
+                <div class="link"><a href="https://linkedin.com/in/alvarogalisteo/"><i class="fab fa-linkedin"></i> LinkedIn</a></div>
+                <div class="link"><a href="mailto:alvarogalisteoalvarez@outlook.com"><i class="fas fa-envelope"></i> alvarogalisteoalvarez@outlook.com</a></div>
+            </div>
+        </div>
+
+        <script src="/script.js"></script>
+        <script>window.onscroll = function (){};</script>
     </body>
 </html>
