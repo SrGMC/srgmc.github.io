@@ -19,7 +19,7 @@
     width: 0;
     height: 0;
     /*display: none;*/
-    
+
     * {
         width: 0;
         height: 0;
@@ -27,12 +27,13 @@
     }
 }
 
-body, html {
+body,
+html {
     height: 100%;
     width: 100%;
     margin: 0;
     font-family: Helvetica-Neue;
-    transition: all .2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
     color: #212121;
 }
 
@@ -40,7 +41,7 @@ a {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: #FF3B30;
+    color: #ff3b30;
 
     &::after {
         position: absolute;
@@ -48,11 +49,11 @@ a {
         left: 0;
         height: 2px;
         width: 100%;
-        content: "";
-        transition: transform .25s ease-out;
+        content: '';
+        transition: transform 0.25s ease-out;
         transform: scaleX(0);
         transform-origin: bottom right;
-        background-color: #FF3B30;
+        background-color: #ff3b30;
     }
 
     &:hover::after {
@@ -78,12 +79,12 @@ header {
     background-position: top center;
     background-size: cover;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    transition: background-image .5s;
-    
+    transition: background-image 0.5s;
+
     animation-duration: 0.5s !important;
 
     h1 {
@@ -94,12 +95,37 @@ header {
         padding: 30px 40px;
         margin: 0;
         background: rgba(0, 0, 0, 0);
-        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-        background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
-        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -moz-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+        background: -webkit-gradient(
+            left top,
+            left bottom,
+            color-stop(0, rgba(0, 0, 0, 0)),
+            color-stop(100%, rgba(0, 0, 0, 0.7))
+        );
+        background: -webkit-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+        background: -o-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+        background: -ms-linear-gradient(
+            top,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.7) 100%
+        );
+        background: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0) 0,
+            rgba(0, 0, 0, 0.7) 100%
+        );
         font-size: 4vw;
         font-family: Helvetica-Neue;
         text-align: left;
@@ -116,12 +142,12 @@ header {
         margin: 0;
         background: rgba(0, 0, 0, 0.5);
         opacity: 0;
-        transition: opacity .5s;
+        transition: opacity 0.5s;
         z-index: 3;
     }
 
     img {
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         width: 50%;
         z-index: 4;
     }
@@ -141,7 +167,7 @@ header {
     margin: 120px 20px 30px 20px;
 
     &.white {
-       background: #fff; 
+        background: #fff;
     }
 
     &.top {
@@ -187,8 +213,8 @@ header {
             left: 0;
             height: 2px;
             width: 100%;
-            content: "";
-            transition: transform .25s ease-out;
+            content: '';
+            transition: transform 0.25s ease-out;
             transform: scaleX(1);
             transform-origin: bottom right;
             background-color: #212121;
@@ -220,7 +246,7 @@ header {
             .link {
                 display: block;
                 margin-bottom: 20px;
-                
+
                 i {
                     width: 32px;
                     text-align: center;
@@ -259,7 +285,7 @@ header {
             margin-top: 15px;
             font-size: 21pt;
         }
-        
+
         details {
             font-size: 21pt;
             margin-bottom: 15px;
@@ -298,7 +324,7 @@ header {
             }
         }
     }
-    
+
     &.cv {
         .social {
             font-size: 28pt;
@@ -307,7 +333,7 @@ header {
             .link {
                 display: block;
                 margin-bottom: 20px;
-                
+
                 i {
                     width: 32px;
                     text-align: center;
@@ -331,25 +357,28 @@ header {
             font-size: 32pt;
             margin: 0;
         }
-        
-        p, ol, ul {
+
+        p,
+        ol,
+        ul {
             padding: 0 15px;
             font-size: 21pt;
-            
+
             .main {
                 font-size: 28pt;
             }
-            
+
             .date {
                 font-size: 18pt;
             }
         }
-        
-        ol, ul {
+
+        ol,
+        ul {
             margin-top: 5px;
             list-style: none;
         }
-        
+
         p {
             &.experience {
                 img {
@@ -360,16 +389,16 @@ header {
                 }
             }
         }
-        
+
         .column {
-          float: left;
-          width: 50%;
+            float: left;
+            width: 50%;
         }
 
         .row:after {
-          content: "";
-          display: table;
-          clear: both;
+            content: '';
+            display: table;
+            clear: both;
         }
     }
 }
@@ -396,42 +425,42 @@ header {
 @media only screen and (max-width: 800px) {
     .menu {
         left: 0;
-        
+
         a {
             margin: 0 5px;
         }
     }
-        
+
     body.index {
         header {
             height: 280px;
         }
-        
+
         .content {
             top: 350px;
         }
     }
-    
+
     body.cv {
         header {
             height: 280px;
         }
-        
+
         .content {
             top: 350px;
         }
     }
-    
+
     body.projects {
         header {
             display: none;
         }
-        
+
         .content {
             top: 75px;
         }
-   }
-    
+    }
+
     body.project-info {
         header {
             h1 {
@@ -445,7 +474,7 @@ header {
         right: 0;
         top: 60px;
         height: 140px;
-        
+
         h1 {
             font-size: 33pt;
         }
@@ -454,14 +483,14 @@ header {
             width: 15%;
         }
     }
-    
+
     .background-block {
-	    margin: 100px 15px 0 15px;
+        margin: 100px 15px 0 15px;
 
         &.bottom {
             height: 0;
         }
-        
+
         &.top {
             height: 100px;
             margin: 0;
@@ -469,10 +498,10 @@ header {
     }
 
     .content {
-	    top: 200px;
-	    left: unset;
-	    width: unset;
-	    
+        top: 200px;
+        left: unset;
+        width: unset;
+
         h1 {
             font-size: 33pt;
         }
@@ -505,11 +534,11 @@ header {
             div.description {
                 font-size: 11pt;
             }
-            
+
             details {
                 font-size: 11pt;
             }
-            
+
             h1 {
                 font-size: 22pt;
             }
@@ -526,7 +555,7 @@ header {
                 font-size: 14pt;
             }
         }
-        
+
         &.cv {
             .social {
                 font-size: 14pt;
@@ -543,14 +572,16 @@ header {
             h3 {
                 font-size: 16pt;
             }
-            
-            p, ol, ul {
+
+            p,
+            ol,
+            ul {
                 font-size: 11pt;
-                
+
                 .main {
                     font-size: 14pt;
                 }
-                
+
                 .date {
                     font-size: 9pt;
                 }
@@ -560,11 +591,12 @@ header {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, html {
+    body,
+    html {
         background: #000;
         color: #ededed;
     }
-    
+
     header {
         background: #121212;
         background-image: url(../assets/images/header.png);
@@ -572,10 +604,10 @@ header {
         background-position: top center;
         background-size: cover;
     }
-    
+
     .menu {
         background: #212121;
-        
+
         a {
             color: #ededed;
 
@@ -588,20 +620,20 @@ header {
             }
         }
     }
-    
+
     .background-block {
         background: #212121;
 
         &.white {
-           background: #000; 
+            background: #000;
         }
     }
-    
+
     a {
-        color: #FF453A;
+        color: #ff453a;
 
         &::after {
-            background-color: #FF453A;
+            background-color: #ff453a;
         }
     }
 }
