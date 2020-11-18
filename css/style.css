@@ -71,7 +71,7 @@ header {
     text-align: center;
     color: #fff;
     background: #212121;
-    background-image: url(../assets/images/header.png);
+    background-image: url(../assets/images/header.webp);
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
@@ -491,7 +491,7 @@ header a {
 
     header {
         background: #121212;
-        background-image: url(../assets/images/header.png);
+        background-image: url(../assets/images/header.webp);
         background-repeat: no-repeat;
         background-position: top center;
         background-size: cover;
