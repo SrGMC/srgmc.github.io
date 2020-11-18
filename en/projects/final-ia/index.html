@@ -5,32 +5,20 @@
         <!-- Primary Meta Tags -->
         <title>Final Project: AI - Álvaro Galisteo</title>
         <meta name="title" content="Final Project: AI - Álvaro Galisteo" />
-        <meta
-            name="description"
-            content="Computer engineering student. Personal web"
-        />
-        <meta
-            name="keywords"
-            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
-        />
+        <meta name="description" content="Computer engineering student. Personal web" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
 
         <!-- Styles -->
-        <link rel="stylesheet" id="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="preload" as="style" href="/css/style.css" />
         <link rel="stylesheet" href="/css/animate.min.css" />
-        <script
-            src="https://kit.fontawesome.com/7465cf6e1c.js"
-            crossorigin="anonymous"
-        ></script>
+        <link rel="preload" as="style" href="/css/style.css" />
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Analytics -->
-        <script
-            async
-            src="https://offen.alvaro.ga/script.js"
-            data-account-id="bd79d6fd-b808-4c88-b499-c221de1d7efa"
-        ></script>
+        <link rel="preload" as="script" href="/script.js" />
     </head>
     <body class="project-info">
-        <header style="background-image: none" class="animated fadeInDown">
+        <header class="animated" style="background-image: none">
             <img src="/assets/images/ai.png" />
             <h1>Final Project: AI</h1>
         </header>
@@ -44,82 +32,53 @@
             <a href="/en/projects" class="active">Projects</a>
         </div>
         <div class="content project-info">
-            Created by <a href="https://alvaro.ga">Álvaro Galisteo</a> and
-            <a href="https://djgamby.ml">Javier Fernández</a>, this is the
-            <b>final project</b> for the subject of
-            <b>artificial intelligence</b> 2018/19 at Universidad Carlos III de
-            Madrid.
+            Created by <a href="https://alvaro.galisteo.me">Álvaro Galisteo</a> and <a href="https://djgamby.ml">Javier Fernández</a>, this is the
+            <b>final project</b> for the subject of <b>artificial intelligence</b> 2018/19 at Universidad Carlos III de Madrid.
 
             <div class="links">
                 <div class="link">
-                    <a
-                        href="https://github.com/SrGMC/pf-ia/blob/master/memoria.pdf"
-                        ><i class="fas fa-file-pdf"></i> Memoir (in spanish)
-                        <i class="fas fa-angle-double-right"></i
+                    <a href="https://github.com/SrGMC/pf-ia/blob/master/memoria.pdf"
+                        ><i class="fas fa-file-pdf"></i> Memoir (in spanish) <i class="fas fa-angle-double-right"></i
                     ></a>
                 </div>
                 <div class="link">
-                    <a href="https://github.com/SrGMC/pf-ia"
-                        ><i class="fab fa-github"></i> GitHub
-                        <i class="fas fa-angle-double-right"></i
-                    ></a>
+                    <a href="https://github.com/SrGMC/pf-ia"><i class="fab fa-github"></i> GitHub <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
 
             <div class="description">
                 <p>
-                    The project consisted in route finding in a logistical
-                    problem. Specifically, this is a problem in which a pizza
-                    delivery boy must deliver all the orders from different
-                    stores to different customers. Several improvements were
-                    also implemented to the logistics problem, such as different
-                    types of terrain and the use of electric motorcycles.
+                    The project consisted in route finding in a logistical problem. Specifically, this is a problem in which a pizza delivery boy must deliver
+                    all the orders from different stores to different customers. Several improvements were also implemented to the logistics problem, such as
+                    different types of terrain and the use of electric motorcycles.
                 </p>
 
                 <h1>Design</h1>
                 <p>
-                    The project makes use of different types of search
-                    algorithms, specifically, depth search, breadth search,
-                    Greedy and A*. Together with them, 11 different heuristic
-                    functions were developed, which were designed on the basis
-                    of asking the question
-                    <i
-                        >If you were a pizza delivery man, which houses would
-                        you go to first?</i
-                    >
+                    The project makes use of different types of search algorithms, specifically, depth search, breadth search, Greedy and A*. Together with
+                    them, 11 different heuristic functions were developed, which were designed on the basis of asking the question
+                    <i>If you were a pizza delivery man, which houses would you go to first?</i>
                     to different people.
                 </p>
                 <p>
-                    The aim of this project is to implement different algorithms
-                    to deal with static logistics problems and to analyse the
-                    results to observe the influence of the heuristic functions
-                    and the performance of the different algorithms
+                    The aim of this project is to implement different algorithms to deal with static logistics problems and to analyse the results to observe
+                    the influence of the heuristic functions and the performance of the different algorithms
                 </p>
                 <h1>Structure</h1>
                 <p>The project is split into two parts:</p>
                 <ol>
+                    <li>Basic part: The problem is to deliver 1 to 3 pizzas to a single customer from a single pizza shop.</li>
                     <li>
-                        Basic part: The problem is to deliver 1 to 3 pizzas to a
-                        single customer from a single pizza shop.
-                    </li>
-                    <li>
-                        Advanced part: The problem is to deliver orders from
-                        several customers from several pizza shops with only one
-                        delivery person. Each map has special characteristics
-                        such as different difficulty terrains and limited
-                        distance vehicles.
+                        Advanced part: The problem is to deliver orders from several customers from several pizza shops with only one delivery person. Each map
+                        has special characteristics such as different difficulty terrains and limited distance vehicles.
                     </li>
                 </ol>
                 <p>
-                    In addition, the problem is defined with maps, stored in
-                    text files where each character in this file corresponds to
-                    an element of the problem, such as land, shops, customers,
-                    etc. More information can be found in the project
-                    repository.
+                    In addition, the problem is defined with maps, stored in text files where each character in this file corresponds to an element of the
+                    problem, such as land, shops, customers, etc. More information can be found in the project repository.
                 </p>
             </div>
         </div>
-
         <script src="/script.js"></script>
     </body>
 </html>

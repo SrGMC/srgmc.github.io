@@ -5,32 +5,20 @@
         <!-- Primary Meta Tags -->
         <title>Projects - Álvaro Galisteo</title>
         <meta name="title" content="Projects - Álvaro Galisteo" />
-        <meta
-            name="description"
-            content="Computer engineering student. Personal web"
-        />
-        <meta
-            name="keywords"
-            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
-        />
+        <meta name="description" content="Computer engineering student. Personal web" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
 
         <!-- Styles -->
-        <link rel="stylesheet" id="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="preload" as="style" href="/css/style.css" />
         <link rel="stylesheet" href="/css/animate.min.css" />
-        <script
-            src="https://kit.fontawesome.com/7465cf6e1c.js"
-            crossorigin="anonymous"
-        ></script>
+        <link rel="preload" as="style" href="/css/style.css" />
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Analytics -->
-        <script
-            async
-            src="https://offen.alvaro.ga/script.js"
-            data-account-id="bd79d6fd-b808-4c88-b499-c221de1d7efa"
-        ></script>
+        <link rel="preload" as="script" href="/script.js" />
     </head>
     <body class="projects">
-        <header id="header" class="animate">
+        <header class="animated" id="header" class="animate">
             <img src="" id="header-icon" class="no-filter" />
             <div id="fade"></div>
             <h1>Álvaro Galisteo</h1>
@@ -47,126 +35,49 @@
         <div class="content projects">
             <h1>Personal projects</h1>
 
-            <div
-                class="list"
-                onmouseover="fadeBackground();"
-                onmouseout="unfadeBackground();"
-            >
+            <div class="list" onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
                 <div class="item">
-                    <a
-                        href="/en/projects/tools"
-                        onmouseover="showIcon('tools');"
-                        onmouseout="hideIcon('tools');"
-                        >Tools</a
-                    >
-                    <span
-                        >Collection of tools that I have created and I usually
-                        use.</span
-                    >
+                    <a href="/en/projects/tools" onmouseover="showIcon('tools');" onmouseout="hideIcon('tools');">Tools</a>
+                    <span>Collection of tools that I have created and I usually use.</span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/bricks"
-                        onmouseover="showIcon('bricks');"
-                        onmouseout="hideIcon('bricks');"
-                        >Bricks</a
-                    >
-                    <span
-                        >An Open Source MIPS32 simulator, inspired by QtSpim.
-                        Webapp designed for iOS
-                    </span>
+                    <a href="/en/projects/bricks" onmouseover="showIcon('bricks');" onmouseout="hideIcon('bricks');">Bricks</a>
+                    <span>An Open Source MIPS32 simulator, inspired by QtSpim. Webapp designed for iOS </span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/final-ia"
-                        onmouseover="showIcon('ai');"
-                        onmouseout="hideIcon('ai');"
-                        >Final project: AI</a
-                    >
-                    <span
-                        >Final project for the subject of artificial
-                        intelligence 2018/19 at Universidad Carlos III de
-                        Madrid.</span
-                    >
+                    <a href="/en/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');">Final project: AI</a>
+                    <span>Final project for the subject of artificial intelligence 2018/19 at Universidad Carlos III de Madrid.</span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/itacitg"
-                        onmouseover="showIcon('itacitg');"
-                        onmouseout="hideIcon('itacitg');"
-                        >Is there a car in the garage?</a
-                    >
-                    <span
-                        >Ask your phone if you can park in your single car
-                        garage with a DIY sensor.</span
-                    >
+                    <a href="/en/projects/itacitg" onmouseover="showIcon('itacitg');" onmouseout="hideIcon('itacitg');">Is there a car in the garage?</a>
+                    <span>Ask your phone if you can park in your single car garage with a DIY sensor.</span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/musify"
-                        onmouseover="showIcon('musify');"
-                        onmouseout="hideIcon('musify');"
-                        >Musify</a
-                    >
+                    <a href="/en/projects/musify" onmouseover="showIcon('musify');" onmouseout="hideIcon('musify');">Musify</a>
                     <span>Simple, yet fast, Electron music player.</span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/mazelight"
-                        onmouseover="showIcon('mazelight');"
-                        onmouseout="hideIcon('mazelight');"
-                        >Mazelight</a
-                    >
-                    <span
-                        >Java-based Open Source CLI tool designed to solve
-                        mazes.</span
-                    >
+                    <a href="/en/projects/mazelight" onmouseover="showIcon('mazelight');" onmouseout="hideIcon('mazelight');">Mazelight</a>
+                    <span>Java-based Open Source CLI tool designed to solve mazes.</span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/random-things"
-                        onmouseover="showIcon('random-things');"
-                        onmouseout="hideIcon('random-things');"
-                        >Random things</a
-                    >
-                    <span
-                        >Random things and bits I've done over the years.</span
-                    >
+                    <a href="/en/projects/random-things" onmouseover="showIcon('random-things');" onmouseout="hideIcon('random-things');">Random things</a>
+                    <span>Random things and bits I've done over the years.</span>
                 </div>
             </div>
 
             <h1>Freelance projects</h1>
-            <div
-                class="list"
-                onmouseover="fadeBackground();"
-                onmouseout="unfadeBackground();"
-            >
+            <div class="list" onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
                 <div class="item">
-                    <a
-                        href="/en/projects/galshtology"
-                        onmouseover="showIcon('galshtology');"
-                        onmouseout="hideIcon('galshtology');"
-                        >Galshtology</a
-                    >
-                    <span
-                        >Official website of Sarah Galisteo,
-                        <a href="https://www.instagram.com/galshtology/"
-                            >https://www.instagram.com/galshtology/</a
-                        ></span
-                    >
+                    <a href="/en/projects/galshtology" onmouseover="showIcon('galshtology');" onmouseout="hideIcon('galshtology');">Galshtology</a>
+                    <span>Official website of Sarah Galisteo, <a href="https://www.instagram.com/galshtology/">https://www.instagram.com/galshtology/</a></span>
                 </div>
                 <div class="item">
-                    <a
-                        href="/en/projects/djgamby"
-                        onmouseover="showIcon('djgamby');"
-                        onmouseout="hideIcon('djgamby');"
-                        >DJ GaMbY</a
-                    >
+                    <a href="/en/projects/djgamby" onmouseover="showIcon('djgamby');" onmouseout="hideIcon('djgamby');">DJ GaMbY</a>
                     <span>Official website of DJ GaMbY.</span>
                 </div>
             </div>
         </div>
-
         <script src="/script.js"></script>
     </body>
 </html>

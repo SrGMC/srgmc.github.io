@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Primary Meta Tags -->
+        <title>Informe de transparencia - Álvaro Galisteo</title>
+        <meta name="title" content="Informe de transparencia - Álvaro Galisteo" />
+        <meta name="description" content="Estudiante de ingeniería informática. Web personal" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="preload" as="style" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/animate.min.css" />
+        <link rel="preload" as="style" href="/css/style.css" />
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preload" as="script" href="/script.js" />
+    </head>
+    <body class="project-info">
+        <header class="animated" style="background-image: none">
+            <img src="/assets/images/report.png" />
+            <h1>Informe de transparencia</h1>
+        </header>
+        <div class="background-block"></div>
+        <div class="background-block white top"></div>
+        <div class="background-block white bottom"></div>
+        <div class="menu">
+            <a href="/en/" style="float: left">🇬🇧</a>
+            <a href="/es/">Inicio</a>
+            <a href="/es/cv">CV</a>
+            <a href="/es/projects">Proyectos</a>
+        </div>
+        <div class="content project-info">
+            Bienvenido a tu informe de transparencia.
+
+            <div class="description">
+                <p>
+                    Nuestro internet actual está plagado de rastreadores de Google, Facebook y compañías similares, que obtienen tus datos y los venden al mejor
+                    postor para mostrarte anuncios.
+                </p>
+                <p>
+                    Para mi la privacidad es muy importante, sin embargo, para poder mejorar esta web y otros servicios, necesito datos de usuarios reales para
+                    poder estudiar.
+                </p>
+                <p>Por eso, hago uso del servicio OpenBlick, que recoge datos de forma anónima y no identificable.</p>
+                <p>
+                    <a href="/es/projects/openblick"><i class="fas fa-window-maximize"></i> OpenBlick <i class="fas fa-angle-double-right"></i></a>
+                </p>
+
+                <p>
+                    Aquí encontrarás todos los datos de navegación que he recogido mientras navegabas por esta web. Recuerda, para mi solo son números, no sé,
+                    ni nunca sabré quien eres.
+                </p>
+
+                <h1>Información sobre tu dispositivo</h1>
+                <ul>
+                    <li>
+                        Navegador: <b id="browser"><i>Cargando...</i></b>
+                    </li>
+                    <li>
+                        Sistema Operativo: <b id="os"><i>Cargando...</i></b>
+                    </li>
+                    <li>
+                        Tamaño de pantalla:
+                        <b id="screenSize"><i>Cargando...</i></b>
+                    </li>
+                    <li>
+                        ¿Es un dispositivo móvil?:
+                        <b id="mobile"><i>Cargando...</i></b>
+                    </li>
+                    <li>
+                        Idioma: <b id="language"><i>Cargando...</i></b>
+                    </li>
+                </ul>
+
+                <h1>Datos de navegación</h1>
+                <h2>Tiempos</h2>
+                <ul>
+                    <li>
+                        Tiempo medio de carga:
+                        <b id="avgLoadTime"><i>Cargando...</i></b>
+                    </li>
+                    <li>
+                        ¿Cuánto llevas en esta página?:
+                        <b id="spentTime"><i>Cargando...</i></b>
+                    </li>
+                </ul>
+
+                <h2>Páginas visitadas</h2>
+                <table style="width: 100%; text-align: left">
+                    <thead>
+                        <tr>
+                            <th>Página web</th>
+                            <th style="width: 30%">Veces visitada</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center" colspan="2">
+                                <i>Cargando...</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script>
+            // Request report
+            var report = getReport();
+
+            // Set data
+            document.querySelector("#browser").innerHTML = report.browser.name + " " + report.browser.version;
+            document.querySelector("#os").innerHTML = report.os.name + " " + report.os.version;
+            document.querySelector("#screenSize").innerHTML = report.screenSize;
+            document.querySelector("#mobile").innerHTML = report.browser.mobile ? "Sí" : "No";
+            document.querySelector("#language").innerHTML = report.language;
+            document.querySelector("#avgLoadTime").innerHTML = report.averageLoadTime / 1000 + "s";
+            var time = (new Date(report.dateEnd) - new Date(report.dateStart)) / 1000;
+            var minutes = Math.floor(time / 60);
+            var seconds = Math.floor(time - minutes * 60);
+            document.querySelector("#spentTime").innerHTML = minutes + "min " + seconds + "s";
+
+            // Set table
+            var table = document.querySelector("table");
+            table.querySelector("tbody").innerHTML = "";
+            var pages = Object.keys(report.pages);
+            for (let i = 0; i < pages.length; i++) {
+                table.querySelector("tbody").innerHTML += "<tr><td>" + pages[i] + "</td><td>" + report.pages[pages[i]] + "</td></tr>";
+            }
+        </script>
+        <script src="/script.js"></script>
+    </body>
+</html>

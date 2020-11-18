@@ -5,32 +5,20 @@
         <!-- Primary Meta Tags -->
         <title>Galshtology - Álvaro Galisteo</title>
         <meta name="title" content="Galshtology - Álvaro Galisteo" />
-        <meta
-            name="description"
-            content="Estudiante de ingeniería informática. Web personal"
-        />
-        <meta
-            name="keywords"
-            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
-        />
+        <meta name="description" content="Estudiante de ingeniería informática. Web personal" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
 
         <!-- Styles -->
-        <link rel="stylesheet" id="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="preload" as="style" href="/css/style.css" />
         <link rel="stylesheet" href="/css/animate.min.css" />
-        <script
-            src="https://kit.fontawesome.com/7465cf6e1c.js"
-            crossorigin="anonymous"
-        ></script>
+        <link rel="preload" as="style" href="/css/style.css" />
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Analytics -->
-        <script
-            async
-            src="https://offen.alvaro.ga/script.js"
-            data-account-id="bd79d6fd-b808-4c88-b499-c221de1d7efa"
-        ></script>
+        <link rel="preload" as="script" href="/script.js" />
     </head>
     <body class="project-info">
-        <header style="background-image: none" class="animated fadeInDown">
+        <header class="animated" style="background-image: none">
             <img src="/assets/images/galshtology.png" />
             <h1>Galshtology</h1>
         </header>
@@ -48,55 +36,33 @@
 
             <div class="links">
                 <div class="link">
-                    <a href="https://galshtology.ga"
-                        ><i class="far fa-window-maximize"></i> Web
-                        <i class="fas fa-angle-double-right"></i
-                    ></a>
+                    <a href="https://galshtology.ga"><i class="far fa-window-maximize"></i> Web <i class="fas fa-angle-double-right"></i></a>
                 </div>
             </div>
 
             <div class="description">
                 <p>
-                    Ha sido diseñada completamente por Sarah, en la que mi
-                    trabajo fue la tarea de plasmar esta en la versión digital.
-                    Contiene muy poco código en JavaScript y se centra más en
-                    HTML y CSS3. Las animaciones están, además, creadas
-                    exclusivamente en CSS.
+                    Ha sido diseñada completamente por Sarah, en la que mi trabajo fue la tarea de plasmar esta en la versión digital. Contiene muy poco código
+                    en JavaScript y se centra más en HTML y CSS3. Las animaciones están, además, creadas exclusivamente en CSS.
                 </p>
+                <p>Esta es completamente <i>responsive</i>, visible en cualquier tamaño de pantalla y en cualquier dispositivo.</p>
+                <img src="/assets/images/content/galshtology/galshtology_web.png" />
                 <p>
-                    Esta es completamente <i>responsive</i>, visible en
-                    cualquier tamaño de pantalla y en cualquier dispositivo.
+                    La web está separada en apartados, en distintas páginas, donde el objetivo es diferenciar claramente el contenido de cada una de ellas.
+                    Destaca por un diseño minimalista y simple.
                 </p>
-                <img
-                    src="/assets/images/content/galshtology/galshtology_web.png"
-                />
+                <img src="/assets/images/content/galshtology/galshtology_portfolio.png" />
                 <p>
-                    La web está separada en apartados, en distintas páginas,
-                    donde el objetivo es diferenciar claramente el contenido de
-                    cada una de ellas. Destaca por un diseño minimalista y
-                    simple.
+                    Cabe destacar la implementación del portfolio y del carrusel de fotos. Las categorías de cada imagen están divididas en dos apartados y
+                    almacenados en un fichero JSON de pequeño tamaño que actua como pequeña base de datos.
                 </p>
-                <img
-                    src="/assets/images/content/galshtology/galshtology_portfolio.png"
-                />
+                <img src="/assets/images/content/galshtology/galshtology_carrousel.png" />
                 <p>
-                    Cabe destacar la implementación del portfolio y del carrusel
-                    de fotos. Las categorías de cada imagen están divididas en
-                    dos apartados y almacenados en un fichero JSON de pequeño
-                    tamaño que actua como pequeña base de datos.
-                </p>
-                <img
-                    src="/assets/images/content/galshtology/galshtology_carrousel.png"
-                />
-                <p>
-                    Por su parte, el carrusel de fotografías hace uso de la
-                    organización por directorios de las imágenes en el servidor
-                    para servir la imagen solicitada a través de los parámetros
-                    de la URL.
+                    Por su parte, el carrusel de fotografías hace uso de la organización por directorios de las imágenes en el servidor para servir la imagen
+                    solicitada a través de los parámetros de la URL.
                 </p>
             </div>
         </div>
-
         <script src="/script.js"></script>
     </body>
 </html>

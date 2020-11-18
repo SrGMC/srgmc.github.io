@@ -49,7 +49,7 @@ a {
         left: 0;
         height: 2px;
         width: 100%;
-        content: '';
+        content: "";
         transition: transform 0.25s ease-out;
         transform: scaleX(0);
         transform-origin: bottom right;
@@ -95,37 +95,12 @@ header {
         padding: 30px 40px;
         margin: 0;
         background: rgba(0, 0, 0, 0);
-        background: -moz-linear-gradient(
-            top,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-        background: -webkit-gradient(
-            left top,
-            left bottom,
-            color-stop(0, rgba(0, 0, 0, 0)),
-            color-stop(100%, rgba(0, 0, 0, 0.7))
-        );
-        background: -webkit-linear-gradient(
-            top,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-        background: -o-linear-gradient(
-            top,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-        background: -ms-linear-gradient(
-            top,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0.7) 100%
-        );
-        background: linear-gradient(
-            to bottom,
-            rgba(0, 0, 0, 0) 0,
-            rgba(0, 0, 0, 0.7) 100%
-        );
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.7)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.7) 100%);
         font-size: 4vw;
         font-family: Helvetica-Neue;
         text-align: left;
@@ -213,7 +188,7 @@ header {
             left: 0;
             height: 2px;
             width: 100%;
-            content: '';
+            content: "";
             transition: transform 0.25s ease-out;
             transform: scaleX(1);
             transform-origin: bottom right;
@@ -396,7 +371,7 @@ header {
         }
 
         .row:after {
-            content: '';
+            content: "";
             display: table;
             clear: both;
         }
@@ -420,6 +395,20 @@ header {
         height: 32px;
         display: inline;
     }
+}
+
+.analytics {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    color: #fff;
+    z-index: 6;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
