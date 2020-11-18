@@ -6,7 +6,7 @@ if (window.innerWidth < 600) {
             header.classList.remove("fadeInDown");
             header.classList.add("fadeOutUp");
         }
-        if (window.pageYOffset < 80 && header.classList.contains('fadeOutUp')) {
+        if (window.pageYOffset < 80 && header.classList.contains("fadeOutUp")) {
             header.classList.remove("fadeOutUp");
             header.classList.add("fadeInDown");
         }
