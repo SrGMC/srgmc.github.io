@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="language en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Preloads -->
+        <link rel="preload" as="style" href="/css/style.css" />
+        <link rel="preload" as="script" href="/script.js" />
+        <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
+
+        <!-- Primary Meta Tags -->
+        <title>Bricks - Álvaro Galisteo</title>
+        <meta name="title" content="Bricks - Álvaro Galisteo" />
+        <meta name="description" content="Computer engineering student at UC3M" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+
+        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/grid.css" />
+
+        <!-- Localization -->
+        <script>
+            var currentLanguage = localStorage.getItem('language');
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            function toggleLanguage(lang) {
+                document.querySelector('html').classList.remove('en');
+                document.querySelector('html').classList.remove(currentLanguage);
+                document.querySelector('html').classList.add(lang);
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+            }
+            
+            toggleLanguage(currentLanguage);
+        </script>
+    </head>
+    <body>
+        <header style="background-image: none">
+            <img src="/assets/images/bricks.png" />
+            <h1>Bricks</h1>
+        </header>
+        <div class="menu lang en">
+            <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
+            <a href="/">Home</a>
+            <a href="/projects" class="active">Projects</a>
+        </div>
+        <div class="menu lang es">
+            <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
+            <a href="/">Inicio</a>
+            <a href="/projects" class="active">Proyectos</a>
+        </div>
+        <div class="content">
+            <p class="font-size-14 lang en"><b>Bricks</b> is a Webapp that allows to simulate the execution of code in the MIPS32 architecture. It is inspired by QtSpim with an interface
+                focused mainly on iOS.</p>
+            <p class="font-size-14 lang es"><b>Bricks</b> es una Webapp que permite simular la ejecución de código en la arquitectura MIPS32. Está inspirado por QtSpim con una interfaz enfocada principalmente en iOS. </p>
+
+            <p class="font-size-14 mt-10 pb-10">
+                <a href="https://bricks.alvaro.ga"><i class="far fa-window-maximize"></i>  App </a><br>
+                <a href="https://github.com/SrGMC/bricks"><i class="fab fa-github"></i> GitHub </a>
+            </p>
+
+            <div class="divider mb-20"></div>
+            
+            <p class="lang en"><b>Note</b>: This application is currently <i>Work in Progress</i>.</p>
+            <p class="lang es"><b>Nota</b>: Esta aplicación está actualmente en proceso de desarrollo</p>
+        </div>
+        <script src="/script.js"></script>
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+    </body>
+</html>

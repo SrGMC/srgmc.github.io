@@ -3,24 +3,39 @@
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
-        <link rel="preload" href="/assets/helvetica_neue/Regular.ttf" as="font" />
-        <link rel="preload" href="/assets/helvetica_neue/RegularItalic.ttf" as="font" />
-        <link rel="preload" href="/assets/helvetica_neue/Bold.ttf" as="font" />
         <link rel="preload" as="style" href="/css/style.css" />
-        <link rel="preload" as="style" href="/css/animate.min.css" />
         <link rel="preload" as="script" href="/script.js" />
         <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
 
         <!-- Primary Meta Tags -->
         <title>Template - Álvaro Galisteo</title>
         <meta name="title" content="Template - Álvaro Galisteo" />
-        <meta name="description" content="Estudiante de ingeniería informática. Web personal" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+        <meta name="description" content="Computer engineering student at UC3M" />
+        <meta
+            name="keywords"
+            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
+        />
 
         <!-- Styles -->
         <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/grid.css" />
+
+        <!-- Localization -->
+        <script>
+            var currentLanguage = localStorage.getItem('language');
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            function toggleLanguage(lang) {
+                document.querySelector('html').classList.remove('en');
+                document.querySelector('html').classList.remove(currentLanguage);
+                document.querySelector('html').classList.add(lang);
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+            }
+            
+            toggleLanguage(currentLanguage);
+        </script>
         <link rel="preload" as="style" href="/css/style.css" />
-        <link rel="stylesheet" href="/css/animate.min.css" />
         <link rel="preload" as="style" href="/css/animate.min.css" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -28,78 +43,89 @@
         <script async src="https://offen.alvaro.ga/script.js" data-account-id="bd79d6fd-b808-4c88-b499-c221de1d7efa"></script>
         <link rel="preload" as="script" href="/script.js" />
     </head>
-    <body class="project-info">
-        <header class="animated" style="background-image: none">
+    <body>
+        <header style="background-image: none">
             <img src="/assets/images/placeholder.png" />
             <h1>Project</h1>
         </header>
-        <div class="background-block"></div>
-        <div class="background-block white top"></div>
-        <div class="background-block white bottom"></div>
         <div class="menu">
-            <a href="/en/" style="float: left">🇬🇧</a>
+            <a href="/" style="float: left">🇬🇧</a>
             <a href="/es/">Inicio</a>
             <a href="/es/cv">CV</a>
             <a href="/es/projects" class="active">Proyectos</a>
         </div>
-        <div class="content project-info">
+        <div class="content">
             <b>Project</b> is a quick and extended description of the project.
 
             <div class="links">
                 <div class="link">
-                    <a href="#"><i class="fas fa-download"></i> Download <i class="fas fa-angle-double-right"></i></a>
+                    <a href="#"><i class="fas fa-download"></i> Download</i></a>
                 </div>
                 <div class="link">
-                    <a href="#"><i class="far fa-window-maximize"></i> App <i class="fas fa-angle-double-right"></i></a>
+                    <a href="#"><i class="far fa-window-maximize"></i> App</i></a>
                 </div>
                 <div class="link">
-                    <a href="#"><i class="fab fa-apple"></i> Apple Shortcut <i class="fas fa-angle-double-right"></i></a>
+                    <a href="#"><i class="fab fa-apple"></i> Apple Shortcut</i></a>
                 </div>
                 <div class="link">
-                    <a href="#"><i class="fab fa-github"></i> GitHub <i class="fas fa-angle-double-right"></i></a>
+                    <a href="#"><i class="fab fa-github"></i> GitHub</i></a>
                 </div>
             </div>
 
             <div class="description">
                 <p>
-                    <a href="https://lipsum.com">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit. Quisque eu diam nec libero vulputate suscipit id
-                    sed tortor. Fusce non lacinia neque. Maecenas vitae justo imperdiet, finibus lorem vitae, congue mauris. Vestibulum auctor gravida eros, id
-                    aliquet augue mattis eu. Sed viverra felis id nisi hendrerit molestie. Ut lacinia leo id neque ullamcorper tristique. Integer at est dui.
-                    Suspendisse facilisis ligula a tortor dapibus, eget ornare justo imperdiet. Suspendisse eu consequat nulla, vitae mollis magna. Maecenas ac
-                    arcu ut lacus auctor sodales sit amet eget eros. Donec rutrum metus ac ipsum aliquam, eu auctor urna tincidunt. Donec pretium mauris sed
-                    metus gravida convallis. Nulla et diam dapibus, congue ante eu, sollicitudin lorem. Nam mattis tristique neque sit amet suscipit.
+                    <a href="https://lipsum.com">Lorem ipsum dolor sit amet</a>, consectetur adipiscing elit. Quisque eu diam nec libero
+                    vulputate suscipit id sed tortor. Fusce non lacinia neque. Maecenas vitae justo imperdiet, finibus lorem vitae, congue
+                    mauris. Vestibulum auctor gravida eros, id aliquet augue mattis eu. Sed viverra felis id nisi hendrerit molestie. Ut
+                    lacinia leo id neque ullamcorper tristique. Integer at est dui. Suspendisse facilisis ligula a tortor dapibus, eget
+                    ornare justo imperdiet. Suspendisse eu consequat nulla, vitae mollis magna. Maecenas ac arcu ut lacus auctor sodales sit
+                    amet eget eros. Donec rutrum metus ac ipsum aliquam, eu auctor urna tincidunt. Donec pretium mauris sed metus gravida
+                    convallis. Nulla et diam dapibus, congue ante eu, sollicitudin lorem. Nam mattis tristique neque sit amet suscipit.
                 </p>
 
                 <h1>Title 1</h1>
                 <p>
-                    Nunc nec viverra nisi. Suspendisse in consequat ex, vitae tincidunt turpis. Suspendisse iaculis nibh ac lacinia iaculis. In eget congue leo.
-                    Praesent blandit arcu massa, eget efficitur erat tincidunt id. Sed placerat porttitor massa, tincidunt interdum libero pellentesque a. Sed
-                    leo dolor, elementum luctus enim et, lacinia facilisis elit. Pellentesque malesuada ante nec nunc porta scelerisque. Praesent tincidunt
-                    lobortis lobortis. Donec a placerat tellus. Nullam dictum velit dui, vitae rhoncus risus sagittis convallis. Cras dignissim bibendum nulla,
-                    iaculis efficitur sapien ultrices et.
+                    Nunc nec viverra nisi. Suspendisse in consequat ex, vitae tincidunt turpis. Suspendisse iaculis nibh ac lacinia iaculis.
+                    In eget congue leo. Praesent blandit arcu massa, eget efficitur erat tincidunt id. Sed placerat porttitor massa,
+                    tincidunt interdum libero pellentesque a. Sed leo dolor, elementum luctus enim et, lacinia facilisis elit. Pellentesque
+                    malesuada ante nec nunc porta scelerisque. Praesent tincidunt lobortis lobortis. Donec a placerat tellus. Nullam dictum
+                    velit dui, vitae rhoncus risus sagittis convallis. Cras dignissim bibendum nulla, iaculis efficitur sapien ultrices et.
                 </p>
                 <h2>Title 2</h2>
                 <p>
-                    Maecenas viverra facilisis ligula id ultricies. Pellentesque in ultricies velit, nec tristique tortor. Nulla ac nulla tristique, fermentum
-                    est venenatis, faucibus sapien. Mauris eleifend nibh ac nisi convallis, vitae pharetra enim congue. Vivamus eget sem finibus, hendrerit
-                    lorem in, ultricies orci. Etiam facilisis enim tellus. Proin viverra imperdiet elit, quis posuere eros feugiat consequat. Sed tellus diam,
-                    finibus a vehicula et, vulputate eget magna. Aenean porta egestas sagittis. Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos.<br /><br />
-                    Nulla at odio quis risus dapibus vulputate. Maecenas tempor purus nunc. Mauris ornare quis ex volutpat vehicula. Donec sit amet leo id purus
-                    hendrerit porta. Mauris dignissim eu nunc a iaculis. Maecenas lacinia mi lobortis elit molestie, at aliquet urna viverra. Nulla luctus nisl
-                    non feugiat vulputate. Sed sed malesuada metus. Nunc fringilla enim et commodo elementum. Mauris suscipit sapien vitae nisl tempus, vel
-                    eleifend neque iaculis. In hac habitasse platea dictumst. Praesent mollis et tortor at cursus. Nulla sit amet enim id lectus finibus
-                    eleifend. Donec et mauris porttitor, fermentum erat vitae, placerat est. Phasellus nec lacinia felis. Morbi eget facilisis ipsum.
+                    Maecenas viverra facilisis ligula id ultricies. Pellentesque in ultricies velit, nec tristique tortor. Nulla ac nulla
+                    tristique, fermentum est venenatis, faucibus sapien. Mauris eleifend nibh ac nisi convallis, vitae pharetra enim congue.
+                    Vivamus eget sem finibus, hendrerit lorem in, ultricies orci. Etiam facilisis enim tellus. Proin viverra imperdiet elit,
+                    quis posuere eros feugiat consequat. Sed tellus diam, finibus a vehicula et, vulputate eget magna. Aenean porta egestas
+                    sagittis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.<br /><br />
+                    Nulla at odio quis risus dapibus vulputate. Maecenas tempor purus nunc. Mauris ornare quis ex volutpat vehicula. Donec
+                    sit amet leo id purus hendrerit porta. Mauris dignissim eu nunc a iaculis. Maecenas lacinia mi lobortis elit molestie,
+                    at aliquet urna viverra. Nulla luctus nisl non feugiat vulputate. Sed sed malesuada metus. Nunc fringilla enim et
+                    commodo elementum. Mauris suscipit sapien vitae nisl tempus, vel eleifend neque iaculis. In hac habitasse platea
+                    dictumst. Praesent mollis et tortor at cursus. Nulla sit amet enim id lectus finibus eleifend. Donec et mauris
+                    porttitor, fermentum erat vitae, placerat est. Phasellus nec lacinia felis. Morbi eget facilisis ipsum.
                 </p>
                 <h3>Title 3</h3>
                 <p>
-                    Vestibulum eget dolor non est lobortis imperdiet. Vivamus magna mauris, facilisis ac ullamcorper id, efficitur vitae lacus. Nulla ex tortor,
-                    imperdiet rhoncus consectetur et, consectetur non metus. Duis sit amet semper eros. Nunc ultricies interdum fringilla. In nibh ipsum,
-                    eleifend eget ultrices vel, molestie eget odio. Cras lorem justo, ultrices vel sodales in, commodo at justo. Curabitur bibendum tempus
-                    lectus vel pharetra. Quisque porttitor arcu sapien, laoreet posuere libero varius vitae. Quisque porttitor fermentum pharetra. Morbi
-                    sollicitudin velit nunc, eget finibus diam tincidunt id. Donec quis lectus dui. Donec ornare ac ligula vitae aliquam. Nulla non mi sed
-                    tellus porttitor accumsan in sed sem.
+                    Vestibulum eget dolor non est lobortis imperdiet. Vivamus magna mauris, facilisis ac ullamcorper id, efficitur vitae
+                    lacus. Nulla ex tortor, imperdiet rhoncus consectetur et, consectetur non metus. Duis sit amet semper eros. Nunc
+                    ultricies interdum fringilla. In nibh ipsum, eleifend eget ultrices vel, molestie eget odio. Cras lorem justo, ultrices
+                    vel sodales in, commodo at justo. Curabitur bibendum tempus lectus vel pharetra. Quisque porttitor arcu sapien, laoreet
+                    posuere libero varius vitae. Quisque porttitor fermentum pharetra. Morbi sollicitudin velit nunc, eget finibus diam
+                    tincidunt id. Donec quis lectus dui. Donec ornare ac ligula vitae aliquam. Nulla non mi sed tellus porttitor accumsan in
+                    sed sem.
                 </p>
+
+                <button class="mr-5 ml-5 btn">Button</button>
+                <button class="mr-5 ml-5 btn red">Button</button>
+                <button class="mr-5 ml-5 btn pink">Button</button>
+                <button class="mr-5 ml-5 btn violet">Button</button>
+                <button class="mr-5 ml-5 btn blue">Button</button>
+                <button class="mr-5 ml-5 btn cyan">Button</button>
+                <button class="mr-5 ml-5 btn teal">Button</button>
+                <button class="mr-5 ml-5 btn green">Button</button>
+                <button class="mr-5 ml-5 btn yellow">Button</button>
+                <button class="mr-5 ml-5 btn orange">Button</button>
             </div>
         </div>
         <!--div class="toggle">

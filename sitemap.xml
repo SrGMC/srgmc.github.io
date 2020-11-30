@@ -6,122 +6,52 @@
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/es/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/en/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/cv/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.80</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/en/cv/</loc>
+        <loc>https://alvaro.galisteo.me/projects/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/galshtology/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/djgamby/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/tools/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/bricks/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/final-ia/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/itacitg/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/musify/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/mazelight/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/es/projects/random-things/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/en/projects/galshtology/</loc>
+        <loc>https://alvaro.galisteo.me/projects/galshtology/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/djgamby/</loc>
+        <loc>https://alvaro.galisteo.me/projects/djgamby/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/tools/</loc>
+        <loc>https://alvaro.galisteo.me/projects/tools/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/bricks/</loc>
+        <loc>https://alvaro.galisteo.me/projects/bricks/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/final-ia/</loc>
+        <loc>https://alvaro.galisteo.me/projects/final-ia/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/itacitg/</loc>
+        <loc>https://alvaro.galisteo.me/projects/itacitg/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/musify/</loc>
+        <loc>https://alvaro.galisteo.me/projects/musify/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/mazelight/</loc>
+        <loc>https://alvaro.galisteo.me/projects/mazelight/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>
     <url>
-        <loc>https://alvaro.galisteo.me/en/projects/random-things/</loc>
+        <loc>https://alvaro.galisteo.me/projects/random-things/</loc>
         <lastmod>2020-08-09T10:32:43+00:00</lastmod>
         <priority>0.51</priority>
     </url>

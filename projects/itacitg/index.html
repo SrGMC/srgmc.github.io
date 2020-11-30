@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" class="language en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Preloads -->
+        <link rel="preload" as="style" href="/css/style.css" />
+        <link rel="preload" as="script" href="/script.js" />
+        <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
+
+        <!-- Primary Meta Tags -->
+        <title>Is there a car in the garage? - Álvaro Galisteo</title>
+        <meta name="title" content="Is there a car in the garage? - Álvaro Galisteo" />
+        <meta name="description" content="Computer engineering student at UC3M" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+
+        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/grid.css" />
+
+        <!-- Localization -->
+        <script>
+            var currentLanguage = localStorage.getItem('language');
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            function toggleLanguage(lang) {
+                document.querySelector('html').classList.remove('en');
+                document.querySelector('html').classList.remove(currentLanguage);
+                document.querySelector('html').classList.add(lang);
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+            }
+            
+            toggleLanguage(currentLanguage);
+        </script>
+    </head>
+    <body>
+        <header style="background-image: none">
+            <img src="/assets/images/itacitg.png" />
+            <h1 style="font-size: 3.8vw">Is there a car in the garage?</h1>
+        </header>
+        <div class="menu lang en">
+            <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
+            <a href="/">Home</a>
+            <a href="/projects" class="active">Projects</a>
+        </div>
+        <div class="menu lang es">
+            <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
+            <a href="/">Inicio</a>
+            <a href="/projects" class="active">Proyectos</a>
+        </div>
+        <div class="content">
+            <p class="font-size-14 lang en">
+                <b>Is there a car in the garage?</b> is an Arduino project that uses an ultrasonic sensor to find out if there is a car in the garage.
+                Accessible through a simple web interface.
+            </p>
+            <p class="font-size-14 lang es">
+                <b>Is there a car in the garage?</b> es un proyecto de Arduino que utiliza un sensor ultrasónico para saber si hay un coche en el garaje.
+                Accesible a traves de una interfaz web simple.
+            </p>
+
+            <p class="font-size-14 mt-10 pb-10">
+                <a href="https://github.com/SrGMC/mazelight"><i class="fab fa-github"></i> GitHub</a><br />
+                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage/raw/master/is-there-a-car-in-the-garage.ino">
+                    <i class="fas fa-download"></i> <span class="lang en">Download</span><span class="lang es">Descargar</span> </a
+                ><br />
+                <a href="https://www.icloud.com/shortcuts/19bcd04246704c28b0ec071b5c52406a"><i class="fab fa-apple"></i> Apple Shortcut</a>
+            </p>
+
+            <div class="divider mb-20"></div>
+
+            <p class="lang en">
+                It was originaly programmed to detect a car in a closed space, but it can be used to detect any static object in a closed space.
+                <br /><br />
+                After downloading the code, check out
+                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#installation">installation instructions</a>. <br /><br />
+                Once installed, check out
+                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">usage instructions</a>. TL;DR: It's easy!. Download the Apple Shortcut on
+                an iOS device (iOS 13 and up), configure with URL, username and password and you're done!. Ask Siri about it next time.
+            </p>
+            <p class="lang es">
+                Está programado originalmente para detectar un coche en un espacio cerrado, pero puede ser usado para detectar cualquier objeto estático en un
+                espacio cerrado.
+                <br /><br />
+                Después de descargar el código, revisa las
+                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#installation">instrucciones de instalación</a>. <br /><br />
+                Una vez instalado, revisa las
+                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">instrucciones de uso</a>.<br />
+                TL;DR: ¡Es fácil!. Descarga el Apple Shortcut en un dispositivo iOS (iOS 13 y superior), configúrelo con la URL, el nombre de usuario y la
+                contraseña y ¡ya está!.
+            </p>
+        </div>
+        <script src="/script.js"></script>
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+    </body>
+</html>

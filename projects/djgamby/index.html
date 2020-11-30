@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="language en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Preloads -->
+        <link rel="preload" as="style" href="/css/style.css" />
+        <link rel="preload" as="script" href="/script.js" />
+        <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
+
+        <!-- Primary Meta Tags -->
+        <title>DJ GaMbY - Álvaro Galisteo</title>
+        <meta name="title" content="DJ GaMbY - Álvaro Galisteo" />
+        <meta name="description" content="Computer engineering student at UC3M" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+
+        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/grid.css" />
+
+        <!-- Localization -->
+        <script>
+            var currentLanguage = localStorage.getItem('language');
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            function toggleLanguage(lang) {
+                document.querySelector('html').classList.remove('en');
+                document.querySelector('html').classList.remove(currentLanguage);
+                document.querySelector('html').classList.add(lang);
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+            }
+            
+            toggleLanguage(currentLanguage);
+        </script>
+    </head>
+    <body>
+        <header style="background-image: none">
+            <img class="mt-10" src="/assets/images/djgamby.png" class="no-filter" />
+            <h1>DJ GaMbY</h1>
+        </header>
+        <div class="menu lang en">
+            <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
+            <a href="/">Home</a>
+            <a href="/projects" class="active">Projects</a>
+        </div>
+        <div class="menu lang es">
+            <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
+            <a href="/">Inicio</a>
+            <a href="/projects" class="active">Proyectos</a>
+        </div>
+        <div class="content">
+            <p class="font-size-14 lang en"><b>DJ GaMbY</b> is the official website of DJ and music producer DJ GaMbY.</p>
+            <p class="font-size-14 lang es"><b>DJ GaMbY</b> is the official website of DJ and music producer DJ GaMbY.</p>
+
+            <p class="font-size-14 mt-10 pb-10">
+                <a href="https://djgamby.ml"><i class="far fa-window-maximize"></i> Web</a>
+            </p>
+
+            <div class="divider mb-20"></div>
+
+            <p class="mt-10 lang en">
+                The website is based on a template created from scratch. It contains very little JavaScript code and focuses more on HTML and CSS3. The
+                animations are also created exclusively in CSS.<br /><br />
+                It is completely <i>responsive</i>, visible on any screen size and on any device. It has a <i>One Page</i> structure, showing all the necessary
+                information on a single page.
+            </p>
+            <p class="mt-10 lang es">
+                La web está basada a partir de una plantilla creada desde cero. Contiene muy poco código en JavaScript y se centra más en HTML y CSS3. Las
+                animaciones están, además, creadas exclusivamente en CSS.<br /><br />
+                Es completamente <i>responsive</i>, visible en cualquier tamaño de pantalla y en cualquier dispositivo. Tiene una estructura <i>One Page</i>,
+                móstrandose toda la información necesaria en una única página.
+            </p>
+            <img class="mt-10" src="/assets/images/content/djgamby/djgamby_web.png" />
+            <p class="mt-10 lang en">
+                The website shows information about the DJ and music producer, with a header that features a mosaic with covers of all his albums and singles.
+                Below, all the songs created are shown, as well as new exclusive content and a selection of his best productions.
+            </p>
+            <p class="mt-10 lang es">
+                La web muestra información sobre el DJ y productor musical, con una cabecera en la que destaca un mosaico con carátulas de todos sus álbumes y
+                singles. Más abajo, se muestran todas las canciones creadas, además de nuevo contenido exclusivo y una selección de sus mejores producciones.
+            </p>
+            <img class="mt-10" src="/assets/images/content/djgamby/djgamby_web_content.png" />
+        </div>
+        <script src="/script.js"></script>
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+    </body>
+</html>

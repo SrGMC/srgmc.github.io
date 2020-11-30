@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" class="language en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Preloads -->
+        <link rel="preload" as="style" href="/css/style.css" />
+        <link rel="preload" as="script" href="/script.js" />
+        <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
+
+        <!-- Primary Meta Tags -->
+        <title>Projects - Álvaro Galisteo</title>
+        <meta name="title" content="Projects - Álvaro Galisteo" />
+        <meta name="description" content="Computer engineering student at UC3M" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+
+        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/grid.css" />
+
+        <!-- Localization -->
+        <script>
+            var currentLanguage = localStorage.getItem('language');
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            function toggleLanguage(lang) {
+                document.querySelector('html').classList.remove('en');
+                document.querySelector('html').classList.remove(currentLanguage);
+                document.querySelector('html').classList.add(lang);
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+            }
+            
+            toggleLanguage(currentLanguage);
+        </script>
+    </head>
+    <body>
+        <header id="header" class="animate">
+            <img src="" id="header-icon" class="no-filter" />
+            <div id="fade"></div>
+        </header>
+        <div class="menu lang en">
+            <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
+            <a href="/" >Home</a>
+            <a href="/projects" class="active">Projects</a>
+        </div>
+        <div class="menu lang es">
+            <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
+            <a href="/">Inicio</a>
+            <a href="/projects" class="active">Proyectos</a>
+        </div>
+        <div class="content">
+            <h2 class="lang en">Personal projects</h2>
+            <h2 class="lang es">Proyectos personales</h2>
+            <div class="divider"></div>
+            <div onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/tools" onmouseover="showIcon('tools');" onmouseout="hideIcon('tools');"> Tools </a>
+                    <p class="lang en">Collection of tools that I have created and I usually use.</p>
+                    <p class="lang es">Colección de herramientas que he creado y que suelo utilizar.</p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/bricks" onmouseover="showIcon('bricks');" onmouseout="hideIcon('bricks');"> Bricks </a>
+                    <p class="lang en">An Open Source MIPS32 simulator, inspired by QtSpim. Webapp designed for iOS.</p>
+                    <p class="lang es">Un simulador de Webapp MIPS32 de código abierto. Inspirado en QtSpim para iOS.</p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14 lang en" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');"> Final project: AI </a>
+                    <a class="font-size-14 lang es" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');">
+                        Pŕactica final: IA
+                    </a>
+                    <p class="lang en">Final project for the subject of artificial intelligence 2018/19 at Universidad Carlos III de Madrid.</p>
+                    <p class="lang es">Práctica final para la asignatura de inteligencia artificial en la Universidad Carlos III de Madrid, curso 2018/19.</p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/itacitg" onmouseover="showIcon('itacitg');" onmouseout="hideIcon('itacitg');">
+                        Is there a car in the garage?
+                    </a>
+                    <p class="lang en">Ask your phone if you can park in your single car garage with a DIY sensor.</p>
+                    <p class="lang es">Pregunte a su teléfono si puede aparcar en su garaje de un solo coche con un sensor DIY.</p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/musify" onmouseover="showIcon('musify');" onmouseout="hideIcon('musify');"> Musify </a>
+                    <p class="lang en">Simple, yet fast, Electron music player.</p>
+                    <p class="lang es">Un simple, pero rápido, reproductor de música basado en Electron.</p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/mazelight" onmouseover="showIcon('mazelight');" onmouseout="hideIcon('mazelight');"> Mazelight </a>
+                    <p class="lang en">Java-based Open Source CLI tool designed to solve mazes.</p>
+                    <p class="lang es">Herramienta CLI de código abierto basada en Java, diseñada para resolver laberintos.</p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/random-things" onmouseover="showIcon('random-things');" onmouseout="hideIcon('random-things');">
+                        Random things
+                    </a>
+                    <p class="lang en">Random things and bits I've done over the years.</p>
+                    <p class="lang es">Cosas que he hecho a lo largo de los años.</p>
+                </div>
+            </div>
+
+            <h2 class="mt-20 lang en">Freelance projects</h2>
+            <h2 class="mt-20 lang es">Proyectos freelance</h2>
+            <div class="divider"></div>
+            <div class="list" onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/galshtology" onmouseover="showIcon('galshtology');" onmouseout="hideIcon('galshtology');">
+                        Galshtology
+                    </a>
+                    <p class="lang en">Personal website of <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a></p>
+                    <p class="lang es">Página web personal de <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a></p>
+                </div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/djgamby" onmouseover="showIcon('djgamby');" onmouseout="hideIcon('djgamby');"> DJ GaMbY </a>
+                    <p class="lang en">Official website of DJ GaMbY.</p>
+                    <p class="lang es">Web oficial de DJ GaMbY.</p>
+                </div>
+            </div>
+        </div>
+        <script src="/script.js"></script>
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+    </body>
+</html>

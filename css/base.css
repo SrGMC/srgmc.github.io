@@ -1,0 +1,480 @@
+/*
+ * Main
+ */
+ body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.2s ease-in-out 0s;
+  font-size: 18px;
+}
+
+/* Language */
+.language .lang {
+    display: none;
+}
+
+.language.en .lang.en,
+.language.es .lang.es {
+    display: revert;
+}
+
+/*
+ * Titles
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #ff3b30;
+}
+
+a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    content: "";
+    transition: transform 0.25s ease-out;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background-color: #ff3b30;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/*
+ * Images
+ */
+img {
+    width: 100%;
+}
+
+/* 
+ * Text utilities
+ */
+/* Styling */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* Size */
+.font-size-05 {
+    font-size: 0.5rem;
+}
+.font-size-075 {
+    font-size: 0.75rem;
+}
+.font-size-10 {
+    font-size: 1rem;
+}
+.font-size-12 {
+    font-size: 1.2rem;
+}
+.font-size-14 {
+    font-size: 1.4rem;
+}
+.font-size-16 {
+    font-size: 1.6rem;
+}
+.font-size-18 {
+    font-size: 1.8rem;
+}
+.font-size-20 {
+    font-size: 2rem;
+}
+.font-size-22 {
+    font-size: 2.2rem;
+}
+.font-size-24 {
+    font-size: 2.4rem;
+}
+.font-size-26 {
+    font-size: 2.6rem;
+}
+.font-size-28 {
+    font-size: 2.8rem;
+}
+.font-size-30 {
+    font-size: 3rem;
+}
+.font-size-32 {
+    font-size: 3.2rem;
+}
+.font-size-34 {
+    font-size: 3.4rem;
+}
+
+/* Alignment */
+.text-center {
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+.text-right {
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+}
+
+/* 
+ * List utilities
+ */
+ul.no-bullets,
+ol.no-bullets {
+    list-style: none;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+}
+
+/*
+ * Display
+ */
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+
+.inline-flex {
+    display: inline-flex;
+}
+
+/*
+ * Buttons
+ */
+.btn {
+    min-height: 2.1rem;
+    padding: 0.5rem 2rem;
+
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 1.125rem;
+
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 0.2rem;
+
+    background-color: #ced4da;
+    color: #fff;
+
+    -moz-box-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #e9ecef;
+}
+
+.btn.red {
+    color: #fff;
+    background-color: #c92a2a;
+}
+
+.btn.red:hover {
+    background-color: #f03e3e;
+}
+
+.btn.pink {
+    color: #fff;
+    background-color: #a61e4d;
+}
+
+.btn.pink:hover {
+    background-color: #d6336c;
+}
+
+.btn.violet {
+    color: #fff;
+    background-color: #5f3dc4;
+}
+
+.btn.violet:hover {
+    background-color: #7048e8;
+}
+
+.btn.blue {
+    color: #fff;
+    background-color: #1c7ed6;
+}
+
+.btn.blue:hover {
+    background-color: #339af0;
+}
+
+.btn.cyan {
+    color: #fff;
+    background-color: #1098ad;
+}
+
+.btn.cyan:hover {
+    background-color: #22b8cf;
+}
+
+.btn.teal {
+    color: #fff;
+    background-color: #099268;
+}
+
+.btn.teal:hover {
+    background-color: #12b886;
+}
+
+.btn.green {
+    color: #fff;
+    background-color: #2b8a3e;
+}
+
+.btn.green:hover {
+    background-color: #37b24d;
+}
+
+.btn.yellow {
+    color: #000;
+    background-color: #fcc419;
+}
+
+.btn.yellow:hover {
+    background-color: #ffe066;
+}
+
+.btn.orange {
+    color: #fff;
+    background-color: #e8590c;
+}
+
+.btn.orange:hover {
+    background-color: #fd7e14;
+}
+
+/*
+ * Width
+ */
+.mw-full {
+    width: 100%;
+}
+
+/* 
+ * Margins 
+ */
+.mt-0 {
+    margin-top: 0px !important;
+}
+.mt-5 {
+    margin-top: 5px !important;
+}
+.mt-10 {
+    margin-top: 10px !important;
+}
+.mt-15 {
+    margin-top: 15px !important;
+}
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mb-0 {
+    margin-bottom: 0px !important;
+}
+.mb-5 {
+    margin-bottom: 5px !important;
+}
+.mb-10 {
+    margin-bottom: 10px !important;
+}
+.mb-15 {
+    margin-bottom: 15px !important;
+}
+.mb-20 {
+    margin-bottom: 20px !important;
+}
+
+.ml-0 {
+    margin-left: 0px !important;
+}
+.ml-5 {
+    margin-left: 5px !important;
+}
+.ml-10 {
+    margin-left: 10px !important;
+}
+.ml-15 {
+    margin-left: 15px !important;
+}
+.ml-20 {
+    margin-left: 20px !important;
+}
+
+.mr-0 {
+    margin-right: 0px !important;
+}
+.mr-5 {
+    margin-right: 5px !important;
+}
+.mr-10 {
+    margin-right: 10px !important;
+}
+.mr-15 {
+    margin-right: 15px !important;
+}
+.mr-20 {
+    margin-right: 20px !important;
+}
+
+/* Padding */
+.pt-0 {
+    padding-top: 0px !important;
+}
+.pt-5 {
+    padding-top: 5px !important;
+}
+.pt-10 {
+    padding-top: 10px !important;
+}
+.pt-15 {
+    padding-top: 15px !important;
+}
+.pt-20 {
+    padding-top: 20px !important;
+}
+
+.pb-0 {
+    padding-bottom: 0px !important;
+}
+.pb-5 {
+    padding-bottom: 5px !important;
+}
+.pb-10 {
+    padding-bottom: 10px !important;
+}
+.pb-15 {
+    padding-bottom: 15px !important;
+}
+.pb-20 {
+    padding-bottom: 20px !important;
+}
+
+.pl-0 {
+    padding-left: 0px !important;
+}
+.pl-5 {
+    padding-left: 5px !important;
+}
+.pl-10 {
+    padding-left: 10px !important;
+}
+.pl-15 {
+    padding-left: 15px !important;
+}
+.pl-20 {
+    padding-left: 20px !important;
+}
+
+.pr-0 {
+    padding-right: 0px !important;
+}
+.pr-5 {
+    padding-right: 5px !important;
+}
+.pr-10 {
+    padding-right: 10px !important;
+}
+.pr-15 {
+    padding-right: 15px !important;
+}
+.pr-20 {
+    padding-right: 20px !important;
+}
+
+/* Misc */
+i.fa,
+i.fas,
+i.fab,
+i.far {
+    width: 26px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+div.divider {
+    margin: 10px 0;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (prefers-color-scheme: dark) {
+    .btn {
+        background-color: #212529;
+    }
+
+    .btn:hover {
+        background-color: #495057;
+    }
+
+    div.divider {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+}

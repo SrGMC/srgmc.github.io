@@ -1,17 +1,17 @@
 // Hide header
-if (window.innerWidth < 600) {
-    window.onscroll = function () {
-        var header = document.querySelector("header");
-        if (window.pageYOffset > 80) {
-            header.classList.remove("fadeInDown");
-            header.classList.add("fadeOutUp");
-        }
-        if (window.pageYOffset < 80 && header.classList.contains("fadeOutUp")) {
-            header.classList.remove("fadeOutUp");
-            header.classList.add("fadeInDown");
-        }
-    };
-}
+// if (window.innerWidth < 600) {
+//     window.onscroll = function () {
+//         var header = document.querySelector("header");
+//         if (window.pageYOffset > 80) {
+//             header.classList.remove("fadeInDown");
+//             header.classList.add("fadeOutUp");
+//         }
+//         if (window.pageYOffset < 80 && header.classList.contains("fadeOutUp")) {
+//             header.classList.remove("fadeOutUp");
+//             header.classList.add("fadeInDown");
+//         }
+//     };
+// }
 
 // Show analytics banner
 // if (localStorage.getItem("hideAnalytics") != "true") {
@@ -22,8 +22,15 @@ if (window.innerWidth < 600) {
 //     } else {
 //         console.log("en");
 //         document.querySelector("body").innerHTML +=
-//             '<div class="analytics">Hey! I\'m collecting anonymous data to improve this website. You can review at any time what the web collects in <a href="/en/transparency">this link</a>. <a href="javascript:void" onclick="closeBanner(this);">Close</a>.</div>';
+//             '<div class="analytics">Hey! I\'m collecting anonymous data to improve this website. You can review at any time what the web collects in <a href="/transparency">this link</a>. <a href="javascript:void" onclick="closeBanner(this);">Close</a>.</div>';
 //     }
+// }
+
+// Language
+// if (navigator.language.toLowerCase().includes("es")) {
+//     window.location.href = "/es";
+// } else {
+//     window.location.href = "/en";
 // }
 
 // Projects functions
@@ -36,7 +43,8 @@ function unfadeBackground() {
 }
 
 function showIcon(name) {
-    document.getElementById("header-icon").src = "/assets/images/" + name + ".png";
+    document.getElementById("header-icon").src =
+        "/assets/images/" + name + ".png";
 }
 
 function hideIcon(name) {
