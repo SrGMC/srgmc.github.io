@@ -1,60 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://alvaro.galisteo.me/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>1.00</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/galshtology/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/djgamby/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/tools/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/bricks/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/final-ia/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/itacitg/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/musify/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/mazelight/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://alvaro.galisteo.me/projects/random-things/</loc>
-        <lastmod>2020-08-09T10:32:43+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://alvaro.galisteo.me/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/galshtology/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/djgamby/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/tools/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/bricks/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/final-ia/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/itacitg/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/musify/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/mazelight/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://alvaro.galisteo.me/projects/random-things/</loc>
+  <lastmod>2020-11-30T23:40:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
 
 
 </urlset>
