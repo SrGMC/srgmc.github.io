@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="language en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- Preloads -->
+        <link rel="preload" as="style" href="/css/style.css" />
+        <link rel="preload" as="script" href="/script.js" />
+        <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
+
+        <!-- Primary Meta Tags -->
+        <title>Kanbana - Álvaro Galisteo</title>
+        <meta name="title" content="Kanbana - Álvaro Galisteo" />
+        <meta name="description" content="Computer engineering student at UC3M" />
+        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+
+        <!-- Styles -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/base.css" />
+        <link rel="stylesheet" href="/css/grid.css" />
+
+        <!-- Localization -->
+        <script>
+            var currentLanguage = localStorage.getItem('language');
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            function toggleLanguage(lang) {
+                document.querySelector('html').classList.remove('en');
+                document.querySelector('html').classList.remove(currentLanguage);
+                document.querySelector('html').classList.add(lang);
+                currentLanguage = lang;
+                localStorage.setItem('language', lang);
+            }
+            
+            toggleLanguage(currentLanguage);
+        </script>
+    </head>
+    <body>
+        <header style="background-image: none">
+            <img class="mt-10" src="/assets/images/kanbana.png" />
+            <h1>Kanbana</h1>
+        </header>
+        <div class="menu lang en">
+            <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
+            <a href="/">Home</a>
+            <a href="/projects" class="active">Projects</a>
+        </div>
+        <div class="menu lang es">
+            <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
+            <a href="/">Inicio</a>
+            <a href="/projects" class="active">Proyectos</a>
+        </div>
+        <div class="content">
+            <p class="font-size-14 lang en"><b>Kanbana</b> allows tracking users and projects from flat markdown files using Kanban boards.</p>
+            <p class="font-size-14 lang es"><b>Kanbana</b> permite crear <i>Kanban boards</i> para hacer seguimiento de usuarios y proyectos a partir de archivos Markdown</p>
+
+            <p class="font-size-14 mt-10 pb-10">
+                <a href="https://github.com/SrGMC/kanbana"><i class="fab fa-github"></i> Github</a>
+            </p>
+
+            <div class="divider mb-20"></div>
+
+            <p class="mt-10 lang en">
+                Kanbana is based of the Crepido project by <a href="https://github.com/issmirnov">@issmirnov</a>.
+            </p>
+            <p class="mt-10 lang es">
+                Kanbana está basado en el proyecto Crepido de <a href="https://github.com/issmirnov">@issmirnov</a>.
+            </p>
+
+            <p class="mt-10 lang en">Kanbana is easy to use and uses flat Markdown files that every text editor can open</p>
+            <p class="mt-10 lang es">Kanbana es fácil de usar y usa archivos Markdown que todo editor de texto puede abrir</p>
+
+            <img class="mt-10" src="https://github.com/SrGMC/kanbana/raw/master/screenshots/demo1.png" />
+            <img class="mt-10" src="https://github.com/SrGMC/kanbana/raw/master/screenshots/demo2.png" />
+
+            <p class="mt-10 lang en">It has the following features:</p>
+            <p class="mt-10 lang es">Implementa las siguientes funcionalidades:</p>
+            
+            <ul class="mt-10 lang en">
+                <li>Dark and light mode</li>
+                <li>Markdown formatting</li>
+                <li>Links</li>
+                <li>Labels and custom labels</li>
+                <li>Timers</li>
+                <li>Tasks</li>
+                <li>Multiple boards in the same page</li>
+                <li>Images served from the server</li>
+                <li>Responsive design</li>
+                <li>Integrated caching</li>
+            </ul>
+
+            <ul class="mt-10 lang es">
+                <li>Modo oscuro y claro</li>
+                <li>Formato markdown</li>
+                <li>Enlaces</li>
+                <li>Etiquetas y etiquetas personalizadas</li>
+                <li>Timers</li>
+                <li>Tareas</li>
+                <li>Múltiples <i>boards</i> en una misma página</li>
+                <li>Imagenes servidas desde el servidor</li>
+                <li>Diseño <i>responsive</i></li>
+                <li>Caché integrada</li>
+            </ul>
+        </div>
+        <script src="/script.js"></script>
+        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
+        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+    </body>
+</html>
