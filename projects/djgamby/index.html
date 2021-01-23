@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -60,31 +60,30 @@
             <div class="divider mb-20"></div>
 
             <p class="mt-10 lang en">
-                The website is based on a template created from scratch. It contains very little JavaScript code and focuses more on HTML and CSS3. The
-                animations are also created exclusively in CSS.<br /><br />
-                It is completely <i>responsive</i>, visible on any screen size and on any device. It has a <i>One Page</i> structure, showing all the necessary
-                information on a single page.
+                The website is based on a template created from scratch. It contains very little JavaScript code and focuses more on HTML and CSS3. The animations are also created
+                exclusively in CSS.<br /><br />
+                It is completely <i>responsive</i>, visible on any screen size and on any device. It has a <i>One Page</i> structure, showing all the necessary information on a
+                single page.
             </p>
             <p class="mt-10 lang es">
-                La web está basada a partir de una plantilla creada desde cero. Contiene muy poco código en JavaScript y se centra más en HTML y CSS3. Las
-                animaciones están, además, creadas exclusivamente en CSS.<br /><br />
-                Es completamente <i>responsive</i>, visible en cualquier tamaño de pantalla y en cualquier dispositivo. Tiene una estructura <i>One Page</i>,
-                móstrandose toda la información necesaria en una única página.
+                La web está basada a partir de una plantilla creada desde cero. Contiene muy poco código en JavaScript y se centra más en HTML y CSS3. Las animaciones están,
+                además, creadas exclusivamente en CSS.<br /><br />
+                Es completamente <i>responsive</i>, visible en cualquier tamaño de pantalla y en cualquier dispositivo. Tiene una estructura <i>One Page</i>, móstrandose toda la
+                información necesaria en una única página.
             </p>
             <img class="mt-10" src="/assets/images/content/djgamby/djgamby_web.png" />
             <p class="mt-10 lang en">
-                The website shows information about the DJ and music producer, with a header that features a mosaic with covers of all his albums and singles.
-                Below, all the songs created are shown, as well as new exclusive content and a selection of his best productions.
+                The website shows information about the DJ and music producer, with a header that features a mosaic with covers of all his albums and singles. Below, all the songs
+                created are shown, as well as new exclusive content and a selection of his best productions.
             </p>
             <p class="mt-10 lang es">
-                La web muestra información sobre el DJ y productor musical, con una cabecera en la que destaca un mosaico con carátulas de todos sus álbumes y
-                singles. Más abajo, se muestran todas las canciones creadas, además de nuevo contenido exclusivo y una selección de sus mejores producciones.
+                La web muestra información sobre el DJ y productor musical, con una cabecera en la que destaca un mosaico con carátulas de todos sus álbumes y singles. Más abajo,
+                se muestran todas las canciones creadas, además de nuevo contenido exclusivo y una selección de sus mejores producciones.
             </p>
             <img class="mt-10" src="/assets/images/content/djgamby/djgamby_web_content.png" />
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

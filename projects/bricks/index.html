@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -50,23 +50,27 @@
             <a href="/projects" class="active">Proyectos</a>
         </div>
         <div class="content">
-            <p class="font-size-14 lang en"><b>Bricks</b> is a Webapp that allows to simulate the execution of code in the MIPS32 architecture. It is inspired by QtSpim with an interface
-                focused mainly on iOS.</p>
-            <p class="font-size-14 lang es"><b>Bricks</b> es una Webapp que permite simular la ejecución de código en la arquitectura MIPS32. Está inspirado por QtSpim con una interfaz enfocada principalmente en iOS. </p>
+            <p class="font-size-14 lang en">
+                <b>Bricks</b> is a Webapp that allows to simulate the execution of code in the MIPS32 architecture. It is inspired by QtSpim with an interface focused mainly on
+                iOS.
+            </p>
+            <p class="font-size-14 lang es">
+                <b>Bricks</b> es una Webapp que permite simular la ejecución de código en la arquitectura MIPS32. Está inspirado por QtSpim con una interfaz enfocada principalmente
+                en iOS.
+            </p>
 
             <p class="font-size-14 mt-10 pb-10">
-                <a href="https://bricks.alvaro.ga"><i class="far fa-window-maximize"></i>  App </a><br>
+                <a href="https://bricks.alvaro.ga"><i class="far fa-window-maximize"></i> App </a><br />
                 <a href="https://github.com/SrGMC/bricks"><i class="fab fa-github"></i> GitHub </a>
             </p>
 
             <div class="divider mb-20"></div>
-            
+
             <p class="lang en"><b>Note</b>: This application is currently <i>Work in Progress</i>.</p>
             <p class="lang es"><b>Nota</b>: Esta aplicación está actualmente en proceso de desarrollo</p>
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

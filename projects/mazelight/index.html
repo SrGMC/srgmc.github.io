@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -62,25 +62,24 @@
             <p class="lang en"><b>Note</b>: This application is not currently maintained. It is possible that I will take it up again in the future.</p>
             <p class="lang es"><b>Nota</b>: Esta aplicación no la mantengo actualmente. Es posible que la retome en un futuro.</p>
             <p class="lang en mt-10">
-                Mazelight uses an algorithm to find nodes and paths in the maze that are then added to a graph that can be used to solve the maze with path
-                finding algorithms, such as Dijkstra's algorithm.
+                Mazelight uses an algorithm to find nodes and paths in the maze that are then added to a graph that can be used to solve the maze with path finding algorithms, such
+                as Dijkstra's algorithm.
             </p>
             <p class="lang es mt-10">
-                Mazelight utiliza un algoritmo para encontrar nodos y caminos en el laberinto que luego se agregan a un gráfico que puede utilizarse para
-                resolver el laberinto con el algoritmo de búsqueda de caminos más corto, como el algoritmo de Dijkstra.
+                Mazelight utiliza un algoritmo para encontrar nodos y caminos en el laberinto que luego se agregan a un gráfico que puede utilizarse para resolver el laberinto con
+                el algoritmo de búsqueda de caminos más corto, como el algoritmo de Dijkstra.
             </p>
             <p class="lang en mt-10">
-                It currently supports images up to 512x512 in black and white (although the resolved image contains color for the solution). Labyrinths must be
-                surrounded by a wall and only contain a starting point and an exit point.
+                It currently supports images up to 512x512 in black and white (although the resolved image contains color for the solution). Labyrinths must be surrounded by a wall
+                and only contain a starting point and an exit point.
             </p>
             <p class="lang es mt-10">
-                Actualmente soporta imágenes de hasta 512x512 en blanco y negro (aunque la imagen resuelta contiene color para la solución). Los laberintos
-                deben estar rodeados por una pared y sólo contienen un punto de inicio y un punto de salida.
+                Actualmente soporta imágenes de hasta 512x512 en blanco y negro (aunque la imagen resuelta contiene color para la solución). Los laberintos deben estar rodeados por
+                una pared y sólo contienen un punto de inicio y un punto de salida.
             </p>
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

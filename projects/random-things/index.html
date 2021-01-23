@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -62,20 +62,20 @@
             <h2 class="mt-20">¡Mientes!</h2>
             <img alt="" src="/assets/images/content/random-things/mientes_screenshot.png" />
             <p class="lang en">
-                A game where you can destroy relationships and friendships. A user answers some questions (some are hot, some are not) and share them with their
-                friends to test how well does one know them. In Spanish. Sign up does not work.
+                A game where you can destroy relationships and friendships. A user answers some questions (some are hot, some are not) and share them with their friends to test how
+                well does one know them. In Spanish. Sign up does not work.
             </p>
             <p class="lang es">
-                Un juego en el que puedes destruir relaciones y amistades. Un usuario responde algunas preguntas y las comparte con sus amigos para comprobar lo
-                bien que les conoce. En español. Registrarse no funciona.
+                Un juego en el que puedes destruir relaciones y amistades. Un usuario responde algunas preguntas y las comparte con sus amigos para comprobar lo bien que les
+                conoce. En español. Registrarse no funciona.
             </p>
 
             <h2 class="mt-20 lang en">Shitty Login Prototype (submitted to r/ProgrammerHumor)</h2>
             <h2 class="mt-20 lang es">Shitty Login Prototype (post en r/ProgrammerHumor)</h2>
             <img alt="" src="/assets/images/content/random-things/login_screenshot.png" />
             <p class="lang en">
-                A prototype for a login webpage. It implements many things programmers should not do when managing a user database with passwords, such as
-                hardcoding usernames and passwords, storing them in plain text or showing them while login in.<br />
+                A prototype for a login webpage. It implements many things programmers should not do when managing a user database with passwords, such as hardcoding usernames and
+                passwords, storing them in plain text or showing them while login in.<br />
                 It was
                 <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8r9xua/so_ive_heard_we_are_now_making_logins_right/">submitted</a>
                 to
@@ -83,8 +83,8 @@
                 on <a href="https://reddit.com">Reddit</a> for an ongoing joke
             </p>
             <p class="lang es">
-                Un prototipo para el inicio de sesión de una página web. Implementa muchas cosas que nunca se deberían hacer al gestionar una base de datos de
-                usuarios con contraseñas, como nombres de usuario y contraseñas hardcoded, almacenarlos en texto plano o mostrar todo iniciar la sesión.<br />
+                Un prototipo para el inicio de sesión de una página web. Implementa muchas cosas que nunca se deberían hacer al gestionar una base de datos de usuarios con
+                contraseñas, como nombres de usuario y contraseñas hardcoded, almacenarlos en texto plano o mostrar todo iniciar la sesión.<br />
                 Publicado en
                 <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8r9xua/so_ive_heard_we_are_now_making_logins_right/">un post</a>
                 en el subreddit de
@@ -103,10 +103,8 @@
                 Meet a Shrek, a time unit based on the length of the original Shrek film. Available for all your JavaScript projects.
             </p>
             <p class="lang es">
-                <a href="https://www.bbc.com/news/technology-42787529">Facebook inventó el flick</a>, una nueva unidad de tiempo. ¿Por qué no creamos una nueva
-                también?<br />
-                Conoce a un Shrek, una unidad de tiempo basada en la duración de la película original de Shrek. Disponible para todos sus proyectos en
-                JavaScript.
+                <a href="https://www.bbc.com/news/technology-42787529">Facebook inventó el flick</a>, una nueva unidad de tiempo. ¿Por qué no creamos una nueva también?<br />
+                Conoce a un Shrek, una unidad de tiempo basada en la duración de la película original de Shrek. Disponible para todos sus proyectos en JavaScript.
             </p>
 
             <h2 class="mt-20">8bit guy</h2>
@@ -123,19 +121,17 @@
             <h2 class="mt-20">Twister</h2>
             <img alt="" src="/assets/images/content/random-things/twister.png" />
             <p class="lang en">
-                Twister is a smart twister roulette that tracks which players' body parts are placed, to prevent selection of a color with all its dots already
-                occupied.
+                Twister is a smart twister roulette that tracks which players' body parts are placed, to prevent selection of a color with all its dots already occupied.
             </p>
             <p class="lang es">
-                Twister es una inteligente ruleta twister que rastrea qué partes del cuerpo de los jugadores se colocan, para evitar la selección de un color
-                con todos sus puntos ya ocupados.
+                Twister es una inteligente ruleta twister que rastrea qué partes del cuerpo de los jugadores se colocan, para evitar la selección de un color con todos sus puntos
+                ya ocupados.
             </p>
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script>
-            document.querySelectorAll("#years").forEach(e => e.innerHTML = new Date().getFullYear() - 2017);
+            document.querySelectorAll("#years").forEach((e) => (e.innerHTML = new Date().getFullYear() - 2017));
         </script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>

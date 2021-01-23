@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -41,7 +41,7 @@
         </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
-            <a href="/" >Home</a>
+            <a href="/">Home</a>
             <a href="/projects" class="active">Projects</a>
         </div>
         <div class="menu lang es">
@@ -71,16 +71,12 @@
                 </div>
                 <div class="block mt-15">
                     <a class="font-size-14 lang en" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');"> Final project: AI </a>
-                    <a class="font-size-14 lang es" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');">
-                        Pŕactica final: IA
-                    </a>
+                    <a class="font-size-14 lang es" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');"> Pŕactica final: IA </a>
                     <p class="lang en">Final project for the subject of artificial intelligence 2018/19 at Universidad Carlos III de Madrid.</p>
                     <p class="lang es">Práctica final para la asignatura de inteligencia artificial en la Universidad Carlos III de Madrid, curso 2018/19.</p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/itacitg" onmouseover="showIcon('itacitg');" onmouseout="hideIcon('itacitg');">
-                        Is there a car in the garage?
-                    </a>
+                    <a class="font-size-14" href="/projects/itacitg" onmouseover="showIcon('itacitg');" onmouseout="hideIcon('itacitg');"> Is there a car in the garage? </a>
                     <p class="lang en">Ask your phone if you can park in your single car garage with a DIY sensor.</p>
                     <p class="lang es">Pregunte a su teléfono si puede aparcar en su garaje de un solo coche con un sensor DIY.</p>
                 </div>
@@ -95,9 +91,7 @@
                     <p class="lang es">Herramienta CLI de código abierto basada en Java, diseñada para resolver laberintos.</p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/random-things" onmouseover="showIcon('random-things');" onmouseout="hideIcon('random-things');">
-                        Random things
-                    </a>
+                    <a class="font-size-14" href="/projects/random-things" onmouseover="showIcon('random-things');" onmouseout="hideIcon('random-things');"> Random things </a>
                     <p class="lang en">Random things and bits I've done over the years.</p>
                     <p class="lang es">Cosas que he hecho a lo largo de los años.</p>
                 </div>
@@ -108,9 +102,7 @@
             <div class="divider"></div>
             <div class="list" onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/galshtology" onmouseover="showIcon('galshtology');" onmouseout="hideIcon('galshtology');">
-                        Galshtology
-                    </a>
+                    <a class="font-size-14" href="/projects/galshtology" onmouseover="showIcon('galshtology');" onmouseout="hideIcon('galshtology');"> Galshtology </a>
                     <p class="lang en">Personal website of <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a></p>
                     <p class="lang es">Página web personal de <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a></p>
                 </div>
@@ -122,8 +114,7 @@
             </div>
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

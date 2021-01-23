@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -51,12 +51,12 @@
         </div>
         <div class="content">
             <p class="font-size-14 lang en">
-                <b>Is there a car in the garage?</b> is an Arduino project that uses an ultrasonic sensor to find out if there is a car in the garage.
-                Accessible through a simple web interface.
+                <b>Is there a car in the garage?</b> is an Arduino project that uses an ultrasonic sensor to find out if there is a car in the garage. Accessible through a simple
+                web interface.
             </p>
             <p class="font-size-14 lang es">
-                <b>Is there a car in the garage?</b> es un proyecto de Arduino que utiliza un sensor ultrasónico para saber si hay un coche en el garaje.
-                Accesible a traves de una interfaz web simple.
+                <b>Is there a car in the garage?</b> es un proyecto de Arduino que utiliza un sensor ultrasónico para saber si hay un coche en el garaje. Accesible a traves de una
+                interfaz web simple.
             </p>
 
             <p class="font-size-14 mt-10 pb-10">
@@ -75,24 +75,21 @@
                 After downloading the code, check out
                 <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#installation">installation instructions</a>. <br /><br />
                 Once installed, check out
-                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">usage instructions</a>. TL;DR: It's easy!. Download the Apple Shortcut on
-                an iOS device (iOS 13 and up), configure with URL, username and password and you're done!. Ask Siri about it next time.
+                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">usage instructions</a>. TL;DR: It's easy!. Download the Apple Shortcut on an iOS device (iOS
+                13 and up), configure with URL, username and password and you're done!. Ask Siri about it next time.
             </p>
             <p class="lang es">
-                Está programado originalmente para detectar un coche en un espacio cerrado, pero puede ser usado para detectar cualquier objeto estático en un
-                espacio cerrado.
+                Está programado originalmente para detectar un coche en un espacio cerrado, pero puede ser usado para detectar cualquier objeto estático en un espacio cerrado.
                 <br /><br />
                 Después de descargar el código, revisa las
                 <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#installation">instrucciones de instalación</a>. <br /><br />
                 Una vez instalado, revisa las
                 <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">instrucciones de uso</a>.<br />
-                TL;DR: ¡Es fácil!. Descarga el Apple Shortcut en un dispositivo iOS (iOS 13 y superior), configúrelo con la URL, el nombre de usuario y la
-                contraseña y ¡ya está!.
+                TL;DR: ¡Es fácil!. Descarga el Apple Shortcut en un dispositivo iOS (iOS 13 y superior), configúrelo con la URL, el nombre de usuario y la contraseña y ¡ya está!.
             </p>
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

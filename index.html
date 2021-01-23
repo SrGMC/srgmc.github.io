@@ -39,16 +39,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -69,12 +69,12 @@
             <p class="font-size-28 bold lang es">¡Hola!</p>
             <p class="font-size-26"><span class="lang en">I'm</span><span class="lang es">Soy</span> <span class="font-size-32 bold">Álvaro Galisteo</span></p>
             <p class="font-size-14 lang en">
-                I'm a computer engineering student at UC3M. I'm an open and responsible person. I like to face new challenges and problems. I love programming,
-                design, electronics and science.
+                I'm a computer engineering student at UC3M. I'm an open and responsible person. I like to face new challenges and problems. I love programming, design, electronics
+                and science.
             </p>
             <p class="font-size-14 lang es">
-                Estudio ingeniería informática en la UC3M. Soy una persona abierta y responsable. Me gusta afrontar nuevos retos y problemas. Me encanta la
-                programación, el diseño, la electrónica y la ciencia.
+                Estudio ingeniería informática en la UC3M. Soy una persona abierta y responsable. Me gusta afrontar nuevos retos y problemas. Me encanta la programación, el diseño,
+                la electrónica y la ciencia.
             </p>
 
             <p class="font-size-14 mt-10 pb-20">
@@ -245,8 +245,7 @@
         </div>
 
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

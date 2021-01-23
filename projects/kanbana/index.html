@@ -21,16 +21,16 @@
 
         <!-- Localization -->
         <script>
-            var currentLanguage = localStorage.getItem('language');
-            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? 'es' : 'en') : currentLanguage;
+            var currentLanguage = localStorage.getItem("language");
+            currentLanguage = currentLanguage == null ? (navigator.language.toLowerCase().includes("es") ? "es" : "en") : currentLanguage;
             function toggleLanguage(lang) {
-                document.querySelector('html').classList.remove('en');
-                document.querySelector('html').classList.remove(currentLanguage);
-                document.querySelector('html').classList.add(lang);
+                document.querySelector("html").classList.remove("en");
+                document.querySelector("html").classList.remove(currentLanguage);
+                document.querySelector("html").classList.add(lang);
                 currentLanguage = lang;
-                localStorage.setItem('language', lang);
+                localStorage.setItem("language", lang);
             }
-            
+
             toggleLanguage(currentLanguage);
         </script>
     </head>
@@ -59,12 +59,8 @@
 
             <div class="divider mb-20"></div>
 
-            <p class="mt-10 lang en">
-                Kanbana is based of the Crepido project by <a href="https://github.com/issmirnov">@issmirnov</a>.
-            </p>
-            <p class="mt-10 lang es">
-                Kanbana está basado en el proyecto Crepido de <a href="https://github.com/issmirnov">@issmirnov</a>.
-            </p>
+            <p class="mt-10 lang en">Kanbana is based of the Crepido project by <a href="https://github.com/issmirnov">@issmirnov</a>.</p>
+            <p class="mt-10 lang es">Kanbana está basado en el proyecto Crepido de <a href="https://github.com/issmirnov">@issmirnov</a>.</p>
 
             <p class="mt-10 lang en">Kanbana is easy to use and uses flat Markdown files that every text editor can open</p>
             <p class="mt-10 lang es">Kanbana es fácil de usar y usa archivos Markdown que todo editor de texto puede abrir</p>
@@ -74,7 +70,7 @@
 
             <p class="mt-10 lang en">It has the following features:</p>
             <p class="mt-10 lang es">Implementa las siguientes funcionalidades:</p>
-            
+
             <ul class="mt-10 lang en">
                 <li>Dark and light mode</li>
                 <li>Markdown formatting</li>
@@ -102,8 +98,7 @@
             </ul>
         </div>
         <script src="/script.js"></script>
-        <noscript><img src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/pixel.gif"></noscript>
-        <script src="https://openblick.galisteo.me/ingress/bb9a6d31-2a48-4ecb-b65d-a74ffda11dbc/script.js"></script> 
+        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>
