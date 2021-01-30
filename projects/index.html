@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="language en">
+<html lang="es" class="language en">
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
@@ -11,7 +11,10 @@
         <title>Projects - Álvaro Galisteo</title>
         <meta name="title" content="Projects - Álvaro Galisteo" />
         <meta name="description" content="Computer engineering student at UC3M" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+        <meta
+            name="keywords"
+            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
+        />
 
         <!-- Styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +23,6 @@
         <link rel="stylesheet" href="/css/grid.css" />
     </head>
     <body>
-        <header id="header" class="animate">
-            <img src="" id="header-icon" class="no-filter" />
-            <div id="fade"></div>
-        </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
             <a href="/">Home</a>
@@ -34,72 +33,133 @@
             <a href="/">Inicio</a>
             <a href="/projects" class="active">Proyectos</a>
         </div>
-        <div class="content">
-            <h2 class="lang en">Personal projects</h2>
-            <h2 class="lang es">Proyectos personales</h2>
+        <div class="content main">
+            <h2 class="lang en">Freelance projects</h2>
+            <h2 class="lang es">Proyectos freelance</h2>
             <div class="divider"></div>
-            <div onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
+            <div class="font-size-20 mt-15 lang en">
+                Starred
+            </div>
+            <div class="font-size-20 mt-15 lang es">
+                Destacados
+            </div>
+            <div class="lang en">
+                I design, implement and host websites. Let's <!-- <a href="https://freelance.galisteo.me" class="bold"> --><a href="mailto:alvaro@galisteo.me" class="bold">get in touch</a>!
+            </div>
+            <div class="lang es">
+                Ofrezco servicios de diseño, implementación y <i>hosting</i> web. ¡Pongámonos <!-- <a href="https://freelance.galisteo.me" class="bold"> --><a href="mailto:alvaro@galisteo.me" class="bold">en contacto</a>!
+            </div>
+            <div class="text-center mt-15">
+                <div class="card">
+                    <img src="../assets/images/content/galshtology/galshtology_card.png" />
+                    <div class="content text-left">
+                        <a class="font-size-14" href="/projects/galshtology"> Galshtology </a>
+                        <p class="lang en">
+                            Personal website of <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a>
+                        </p>
+                        <p class="lang es">
+                            Página web personal de <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/images/content/djgamby/djgamby_card.png" />
+                    <div class="content text-left">
+                        <a class="font-size-14" href="/projects/djgamby"> DJ GaMbY </a>
+                        <p class="lang en">Official website of DJ GaMbY.</p>
+                        <p class="lang es">Web oficial de DJ GaMbY.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="list">
+                <div class="block mt-20">
+                    <a class="font-size-14" href="/projects/galshtology"> Galshtology </a>
+                    <p class="lang en">
+                        Personal website of <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a>
+                    </p>
+                    <p class="lang es">
+                        Página web personal de <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a>
+                    </p>
+                </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/tools" onmouseover="showIcon('tools');" onmouseout="hideIcon('tools');"> Tools </a>
+                    <a class="font-size-14" href="/projects/djgamby"> DJ GaMbY </a>
+                    <p class="lang en">Official website of DJ GaMbY.</p>
+                    <p class="lang es">Web oficial de DJ GaMbY.</p>
+                </div>
+            </div> -->
+
+            <h2 class="mt-20 lang en">Personal projects</h2>
+            <h2 class="mt-20 lang es">Proyectos personales</h2>
+            <div class="divider"></div>
+            <div>
+                <div class="block mt-15">
+                    <a class="font-size-14" href="/projects/tools"> Tools </a>
                     <p class="lang en">Collection of tools that I have created and I usually use.</p>
                     <p class="lang es">Colección de herramientas que he creado y que suelo utilizar.</p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/bricks" onmouseover="showIcon('bricks');" onmouseout="hideIcon('bricks');"> Bricks </a>
+                    <a class="font-size-14" href="/projects/bricks"> Bricks </a>
                     <p class="lang en">An Open Source MIPS32 simulator, inspired by QtSpim. Webapp designed for iOS.</p>
-                    <p class="lang es">Un simulador de Webapp MIPS32 de código abierto. Inspirado en QtSpim para iOS.</p>
+                    <p class="lang es">
+                        Un simulador de Webapp MIPS32 de código abierto. Inspirado en QtSpim para iOS.
+                    </p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/kanbana" onmouseover="showIcon('kanbana');" onmouseout="hideIcon('kanbana');"> Kanbana </a>
-                    <p class="lang en">Kanbana allows tracking users and projects from flat markdown files using Kanban boards.</p>
-                    <p class="lang es">Kanbana permite crear <i>Kanban boards</i> para hacer seguimiento de usuarios y proyectos a partir de archivos Markdown</p>
+                    <a class="font-size-14" href="/projects/kanbana"> Kanbana </a>
+                    <p class="lang en">
+                        Kanbana allows tracking users and projects from flat markdown files using Kanban boards.
+                    </p>
+                    <p class="lang es">
+                        Kanbana permite crear <i>Kanban boards</i> para hacer seguimiento de usuarios y proyectos a
+                        partir de archivos Markdown
+                    </p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14 lang en" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');"> Final project: AI </a>
-                    <a class="font-size-14 lang es" href="/projects/final-ia" onmouseover="showIcon('ai');" onmouseout="hideIcon('ai');"> Pŕactica final: IA </a>
-                    <p class="lang en">Final project for the subject of artificial intelligence 2018/19 at Universidad Carlos III de Madrid.</p>
-                    <p class="lang es">Práctica final para la asignatura de inteligencia artificial en la Universidad Carlos III de Madrid, curso 2018/19.</p>
+                    <a class="font-size-14 lang en" href="/projects/final-ia"> Final project: AI </a>
+                    <a class="font-size-14 lang es" href="/projects/final-ia"> Pŕactica final: IA </a>
+                    <p class="lang en">
+                        Final project for the subject of artificial intelligence 2018/19 at Universidad Carlos III de
+                        Madrid.
+                    </p>
+                    <p class="lang es">
+                        Práctica final para la asignatura de inteligencia artificial en la Universidad Carlos III de
+                        Madrid, curso 2018/19.
+                    </p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/itacitg" onmouseover="showIcon('itacitg');" onmouseout="hideIcon('itacitg');"> Is there a car in the garage? </a>
+                    <a class="font-size-14" href="/projects/itacitg"> Is there a car in the garage? </a>
                     <p class="lang en">Ask your phone if you can park in your single car garage with a DIY sensor.</p>
-                    <p class="lang es">Pregunte a su teléfono si puede aparcar en su garaje de un solo coche con un sensor DIY.</p>
+                    <p class="lang es">
+                        Pregunte a su teléfono si puede aparcar en su garaje de un solo coche con un sensor DIY.
+                    </p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/musify" onmouseover="showIcon('musify');" onmouseout="hideIcon('musify');"> Musify </a>
+                    <a class="font-size-14" href="/projects/musify"> Musify </a>
                     <p class="lang en">Simple, yet fast, Electron music player.</p>
                     <p class="lang es">Un simple, pero rápido, reproductor de música basado en Electron.</p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/mazelight" onmouseover="showIcon('mazelight');" onmouseout="hideIcon('mazelight');"> Mazelight </a>
+                    <a class="font-size-14" href="/projects/mazelight"> Mazelight </a>
                     <p class="lang en">Java-based Open Source CLI tool designed to solve mazes.</p>
-                    <p class="lang es">Herramienta CLI de código abierto basada en Java, diseñada para resolver laberintos.</p>
+                    <p class="lang es">
+                        Herramienta CLI de código abierto basada en Java, diseñada para resolver laberintos.
+                    </p>
                 </div>
                 <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/random-things" onmouseover="showIcon('random-things');" onmouseout="hideIcon('random-things');"> Random things </a>
+                    <a class="font-size-14" href="/projects/random-things"> Random things </a>
                     <p class="lang en">Random things and bits I've done over the years.</p>
                     <p class="lang es">Cosas que he hecho a lo largo de los años.</p>
                 </div>
             </div>
-
-            <h2 class="mt-20 lang en">Freelance projects</h2>
-            <h2 class="mt-20 lang es">Proyectos freelance</h2>
-            <div class="divider"></div>
-            <div class="list" onmouseover="fadeBackground();" onmouseout="unfadeBackground();">
-                <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/galshtology" onmouseover="showIcon('galshtology');" onmouseout="hideIcon('galshtology');"> Galshtology </a>
-                    <p class="lang en">Personal website of <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a></p>
-                    <p class="lang es">Página web personal de <a href="https://www.instagram.com/galshtology/">Sarah Galisteo</a></p>
-                </div>
-                <div class="block mt-15">
-                    <a class="font-size-14" href="/projects/djgamby" onmouseover="showIcon('djgamby');" onmouseout="hideIcon('djgamby');"> DJ GaMbY </a>
-                    <p class="lang en">Official website of DJ GaMbY.</p>
-                    <p class="lang es">Web oficial de DJ GaMbY.</p>
-                </div>
-            </div>
         </div>
         <script src="/script.js"></script>
-        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
+        <script
+            async
+            defer
+            data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc"
+            src="https://u.fcld.ml/umami.js"
+        ></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

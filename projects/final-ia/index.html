@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="language en">
+<html lang="es" class="language en">
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
@@ -11,7 +11,10 @@
         <title>Final Project: AI - Álvaro Galisteo</title>
         <meta name="title" content="Final Project: AI - Álvaro Galisteo" />
         <meta name="description" content="Computer engineering student at UC3M" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+        <meta
+            name="keywords"
+            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
+        />
 
         <!-- Styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,11 +23,6 @@
         <link rel="stylesheet" href="/css/grid.css" />
     </head>
     <body>
-        <header style="background-image: none">
-            <img src="/assets/images/ai.png" />
-            <h1 class="lang en">Final Project: AI</h1>
-            <h1 class="lang es">Práctica final: IA</h1>
-        </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
             <a href="/">Home</a>
@@ -36,87 +34,125 @@
             <a href="/projects" class="active">Proyectos</a>
         </div>
         <div class="content">
-            <p class="font-size-14 lang en">
-                Created by <a href="https://alvaro.galisteo.me">Álvaro Galisteo</a> and <a href="https://djgamby.ml">Javier Fernández</a>, this is the <b>final project</b> for the
-                subject of <b>artificial intelligence</b> 2018/19 at Universidad Carlos III de Madrid.
-            </p>
-            <p class="font-size-14 lang es">
-                Creada por <a href="https://alvaro.galisteo.me">Álvaro Galisteo</a> y <a href="https://djgamby.ml">Javier Fernández</a>, esta es la <b>práctica final</b> para la
-                asignatura de <b>artificial intelligence</b> en la Universidad Carlos III de Madrid, curso 2018/19.
-            </p>
+            <div class="row header mt-10 mb-10">
+                <div class="col col-40 profile project">
+                    <img src="/assets/images/ai.png" />
+                </div>
+                <div class="col col-60">
+                    <p class="font-size-26 bold lang en">Final project: AI</p>
+                    <p class="font-size-26 bold lang es">Pŕactica final: IA</p>
+                    <p class="font-size-14 lang en">
+                        Created by <a href="https://alvaro.galisteo.me">Álvaro Galisteo</a> and
+                        <a href="https://djgamby.ml">Javier Fernández</a>, this is the <b>final project</b> for the
+                        subject of <b>artificial intelligence</b> 2018/19 at Universidad Carlos III de Madrid.
+                    </p>
+                    <p class="font-size-14 lang es">
+                        Creada por <a href="https://alvaro.galisteo.me">Álvaro Galisteo</a> y
+                        <a href="https://djgamby.ml">Javier Fernández</a>, esta es la <b>práctica final</b> para la
+                        asignatura de <b>artificial intelligence</b> en la Universidad Carlos III de Madrid, curso
+                        2018/19.
+                    </p>
 
-            <p class="font-size-14 mt-10 pb-10">
-                <a href="https://github.com/SrGMC/pf-ia/blob/master/memoria.pdf">
-                    <i class="fas fa-file-pdf"></i>
-                    <span class="lang en">Technical document (in spanish)</span><span class="lang es">Memoria (en español)</span> </a
-                ><br />
-                <a href="https://github.com/SrGMC/pf-ia"><i class="fab fa-github"></i> GitHub</a>
-            </p>
+                    <p class="font-size-14 mt-10 pb-10">
+                        <a href="https://github.com/SrGMC/pf-ia/blob/master/memoria.pdf">
+                            <i class="fas fa-file-pdf"></i>
+                            <span class="lang en">Technical document (in spanish)</span
+                            ><span class="lang es">Memoria (en español)</span> </a
+                        ><br />
+                        <a href="https://github.com/SrGMC/pf-ia"><i class="fab fa-github"></i> GitHub</a>
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <p class="mt-10 lang en">
+                    The project consisted in route finding in a logistical problem. Specifically, this is a problem in
+                    which a pizza delivery boy must deliver all the orders from different stores to different customers.
+                    Several improvements were also implemented to the logistics problem, such as different types of
+                    terrain and the use of electric motorcycles.
+                </p>
+                <p class="mt-10 lang es">
+                    La práctica consistió en una búsqueda de rutas en problemas de logística. En específico, se trata de
+                    un problema en el que un repartidor de pizza debe entregar todos los pedidos de distintas tiendas a
+                    distintos clientes. Se implementaron además varias mejoras en el problema de logística tales como
+                    terrenos de distinta dificultad o el uso de motocicleta eléctrica.
+                </p>
 
-            <div class="divider mb-20"></div>
-
-            <p class="mt-10 lang en">
-                The project consisted in route finding in a logistical problem. Specifically, this is a problem in which a pizza delivery boy must deliver all the orders from
-                different stores to different customers. Several improvements were also implemented to the logistics problem, such as different types of terrain and the use of
-                electric motorcycles.
-            </p>
-            <p class="mt-10 lang es">
-                La práctica consistió en una búsqueda de rutas en problemas de logística. En específico, se trata de un problema en el que un repartidor de pizza debe entregar
-                todos los pedidos de distintas tiendas a distintos clientes. Se implementaron además varias mejoras en el problema de logística tales como terrenos de distinta
-                dificultad o el uso de motocicleta eléctrica.
-            </p>
-
-            <h2 class="mt-20 lang en">Design</h2>
-            <h2 class="mt-20 lang es">Diseño</h2>
-            <p class="mt-10 lang en">
-                The project makes use of different types of search algorithms, specifically, depth search, breadth search, Greedy and A*. Together with them, 11 different heuristic
-                functions were developed, which were designed on the basis of asking the following question to different people:
-                <br />
-                <i class="text-center mw-full inline-block">If you were a pizza delivery man, which houses would you go to first?</i>
-            </p>
-            <p class="mt-10 lang es">
-                La práctica hace uso de distintos tipos de algoritmos de búsqueda, en específico, búsqueda en profundidad, búsqueda en amplitud, Greedy y A*. Junto a ellos, se
-                desarrollaron 11 funciones heurísticas distintas, que se diseñaron en base a realizar la siguiente pregunta a distintas personas:
-                <br />
-                <i class="text-center mw-full inline-block">¿Sí fueses un repartidor de pizza, a que casas irías primero?</i>
-            </p>
-            <p class="mt-20 lang en">
-                The aim of this project is to implement different algorithms to deal with static logistics problems and to analyse the results to observe the influence of the
-                heuristic functions and the performance of the different algorithms.
-            </p>
-            <p class="mt-20 lang es">
-                El objetivo de este proyecto es implementar distintos algoritmos frente a problemas de logística estáticos y analizar los resultados para observar la influencia de
-                las funciones heurísticas y el rendimiento de los distintos algoritmos.
-            </p>
-            <h2 class="mt-20 lang en">Structure</h2>
-            <h2 class="mt-20 lang es">Estructura</h2>
-            <p class="mt-10 lang en">The project is split into two parts:</p>
-            <p class="mt-10 lang es">La práctica consiste en dos partes:</p>
-            <ol class="lang en">
-                <li><b>Basic part</b>: The problem is to deliver 1 to 3 pizzas to a single customer from a single pizza shop.</li>
-                <li>
-                    <b>Advanced part</b>: The problem is to deliver orders from several customers from several pizza shops with only one delivery person. Each map has special
-                    characteristics such as different difficulty terrains and limited distance vehicles.
-                </li>
-            </ol>
-            <ol class="lang es">
-                <li><b>Parte básica</b>: El problema consiste en entregar de 1 a 3 pizzas a un único cliente desde una única pizzería.</li>
-                <li>
-                    <b>Parte avanzada</b>: El problema consiste en entregar pedidos de varios clientes desde varias pizzerías con un único repartidor. Cada mapa tiene
-                    características especiales tales como terrenos de distinta dificultad así como vehículo de distancia limitada.
-                </li>
-            </ol>
-            <p class="mt-10 lang en">
-                In addition, the problem is defined with maps, stored in text files where each character in this file corresponds to an element of the problem, such as land, shops,
-                customers, etc. More information can be found in the project repository.
-            </p>
-            <p class="mt-10 lang es">
-                Además, el problema se define mediante mapas, almacenados en archivos de texto donde cada caracter de este archivo se corresponde a un elemento del problema, tales
-                como terrenos, tiendas, clientes, etc. Más información se podrá encontrar en el repositorio del proyecto.
-            </p>
+                <h2 class="mt-20 lang en">Design</h2>
+                <h2 class="mt-20 lang es">Diseño</h2>
+                <p class="mt-10 lang en">
+                    The project makes use of different types of search algorithms, specifically, depth search, breadth
+                    search, Greedy and A*. Together with them, 11 different heuristic functions were developed, which
+                    were designed on the basis of asking the following question to different people:
+                    <br />
+                    <i class="text-center mw-full inline-block"
+                        >If you were a pizza delivery man, which houses would you go to first?</i
+                    >
+                </p>
+                <p class="mt-10 lang es">
+                    La práctica hace uso de distintos tipos de algoritmos de búsqueda, en específico, búsqueda en
+                    profundidad, búsqueda en amplitud, Greedy y A*. Junto a ellos, se desarrollaron 11 funciones
+                    heurísticas distintas, que se diseñaron en base a realizar la siguiente pregunta a distintas
+                    personas:
+                    <br />
+                    <i class="text-center mw-full inline-block"
+                        >¿Sí fueses un repartidor de pizza, a que casas irías primero?</i
+                    >
+                </p>
+                <p class="mt-20 lang en">
+                    The aim of this project is to implement different algorithms to deal with static logistics problems
+                    and to analyse the results to observe the influence of the heuristic functions and the performance
+                    of the different algorithms.
+                </p>
+                <p class="mt-20 lang es">
+                    El objetivo de este proyecto es implementar distintos algoritmos frente a problemas de logística
+                    estáticos y analizar los resultados para observar la influencia de las funciones heurísticas y el
+                    rendimiento de los distintos algoritmos.
+                </p>
+                <h2 class="mt-20 lang en">Structure</h2>
+                <h2 class="mt-20 lang es">Estructura</h2>
+                <p class="mt-10 lang en">The project is split into two parts:</p>
+                <p class="mt-10 lang es">La práctica consiste en dos partes:</p>
+                <ol class="lang en">
+                    <li>
+                        <b>Basic part</b>: The problem is to deliver 1 to 3 pizzas to a single customer from a single
+                        pizza shop.
+                    </li>
+                    <li>
+                        <b>Advanced part</b>: The problem is to deliver orders from several customers from several pizza
+                        shops with only one delivery person. Each map has special characteristics such as different
+                        difficulty terrains and limited distance vehicles.
+                    </li>
+                </ol>
+                <ol class="lang es">
+                    <li>
+                        <b>Parte básica</b>: El problema consiste en entregar de 1 a 3 pizzas a un único cliente desde
+                        una única pizzería.
+                    </li>
+                    <li>
+                        <b>Parte avanzada</b>: El problema consiste en entregar pedidos de varios clientes desde varias
+                        pizzerías con un único repartidor. Cada mapa tiene características especiales tales como
+                        terrenos de distinta dificultad así como vehículo de distancia limitada.
+                    </li>
+                </ol>
+                <p class="mt-10 lang en">
+                    In addition, the problem is defined with maps, stored in text files where each character in this
+                    file corresponds to an element of the problem, such as land, shops, customers, etc. More information
+                    can be found in the project repository.
+                </p>
+                <p class="mt-10 lang es">
+                    Además, el problema se define mediante mapas, almacenados en archivos de texto donde cada caracter
+                    de este archivo se corresponde a un elemento del problema, tales como terrenos, tiendas, clientes,
+                    etc. Más información se podrá encontrar en el repositorio del proyecto.
+                </p>
+            </div>
         </div>
         <script src="/script.js"></script>
-        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
+        <script
+            async
+            defer
+            data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc"
+            src="https://u.fcld.ml/umami.js"
+        ></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

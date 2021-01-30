@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="language en">
+<html lang="es" class="language en">
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
@@ -11,7 +11,10 @@
         <title>Musify - Álvaro Galisteo</title>
         <meta name="title" content="Musify - Álvaro Galisteo" />
         <meta name="description" content="Computer engineering student at UC3M" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+        <meta
+            name="keywords"
+            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
+        />
 
         <!-- Styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +23,6 @@
         <link rel="stylesheet" href="/css/grid.css" />
     </head>
     <body>
-        <header style="background-image: none">
-            <img src="/assets/images/musify.png" class="no-filter" />
-            <h1>Musify</h1>
-        </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
             <a href="/">Home</a>
@@ -35,52 +34,74 @@
             <a href="/projects" class="active">Proyectos</a>
         </div>
         <div class="content">
-            <p class="font-size-14 lang en">
-                <b>Musify</b> is a simple and fast music player, built from the ground up, using web technologies such as HTML, CSS and JavaScript, all wrapped on Electron
-                Framework, available for macOS.
-            </p>
-            <p class="font-size-14 lang es">
-                <b>Musify</b> es un simple y rápido reproductor de música, construido desde cero, usando tecnologías web como HTML, CSS y JavaScript, e implementado con Electron
-                actualmente disponible para macOS.
-            </p>
+            <div class="row header mt-10 mb-10">
+                <div class="col col-40 profile project">
+                    <img src="/assets/images/musify.png" />
+                </div>
+                <div class="col col-60">
+                    <p class="font-size-26 bold">Musify</p>
+                    <p class="font-size-14 lang en">
+                        <b>Musify</b> is a simple and fast music player, built from the ground up, using web
+                        technologies such as HTML, CSS and JavaScript, all wrapped on Electron Framework, available for
+                        macOS.
+                    </p>
+                    <p class="font-size-14 lang es">
+                        <b>Musify</b> es un simple y rápido reproductor de música, construido desde cero, usando
+                        tecnologías web como HTML, CSS y JavaScript, e implementado con Electron actualmente disponible
+                        para macOS.
+                    </p>
 
-            <p class="font-size-14 mt-10 pb-10">
-                <a href="https://github.com/SrGMC/musify"><i class="fab fa-github"></i> GitHub</a><br />
-                <a href="https://github.com/SrGMC/musify/releases/tag/0.8.3">
-                    <i class="fas fa-download"></i> <span class="lang en">Download</span><span class="lang es">Descargar</span>
-                </a>
-            </p>
-
-            <div class="divider mb-20"></div>
-
-            <p class="lang en"><b>Note</b>: This application is not currently maintained. It is possible that I will take it up again in the future.</p>
-            <p class="lang es"><b>Nota</b>: Esta aplicación no la mantengo actualmente. Es posible que la retome en un futuro.</p>
-            <img src="/assets/images/content/musify/screenshot.png" />
-            <h2 class="lang en">Features</h2>
-            <h2 class="lang es">Características</h2>
-            <p class="lang en">Musify is a simple music player that features:</p>
-            <p class="lang es">Musify es un simple reproductor de música que cuenta con:</p>
-            <ul class="lang en">
-                <li>Dark and light modes</li>
-                <li>Loop mode</li>
-                <li>Notifications about song change</li>
-            </ul>
-            <ul class="lang es">
-                <li>Modo oscuro y claro</li>
-                <li>Reptición</li>
-                <li>Notificaciones sobre cambios de canción</li>
-            </ul>
-            <p class="lang en">
-                This is my first project as a computer science student. I've tried my best to write a code that follows common coding conventions, but keep in mind that you may
-                find common beginner errors. If so, feel free to help and contribute to improve this app.
-            </p>
-            <p class="lang es">
-                Como este es mi primer proyecto como estudiante de informática, he hecho todo lo posible para escribir un código que siga las convenciones de codificación comunes.
-                Si encuentras algún error o problema, siéntete libre de contribuir al proyecto. Puede encontrar más información aquí.
-            </p>
+                    <p class="font-size-14 mt-10 pb-10">
+                        <a href="https://github.com/SrGMC/musify"><i class="fab fa-github"></i> GitHub</a><br />
+                        <a href="https://github.com/SrGMC/musify/releases/tag/0.8.3">
+                            <i class="fas fa-download"></i> <span class="lang en">Download</span
+                            ><span class="lang es">Descargar</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <p class="lang en">
+                    <b>Note</b>: This application is not currently maintained. It is possible that I will take it up
+                    again in the future.
+                </p>
+                <p class="lang es">
+                    <b>Nota</b>: Esta aplicación no la mantengo actualmente. Es posible que la retome en un futuro.
+                </p>
+                <img src="/assets/images/content/musify/screenshot.png" />
+                <h2 class="lang en">Features</h2>
+                <h2 class="lang es">Características</h2>
+                <p class="lang en">Musify is a simple music player that features:</p>
+                <p class="lang es">Musify es un simple reproductor de música que cuenta con:</p>
+                <ul class="lang en">
+                    <li>Dark and light modes</li>
+                    <li>Loop mode</li>
+                    <li>Notifications about song change</li>
+                </ul>
+                <ul class="lang es">
+                    <li>Modo oscuro y claro</li>
+                    <li>Reptición</li>
+                    <li>Notificaciones sobre cambios de canción</li>
+                </ul>
+                <p class="lang en">
+                    This is my first project as a computer science student. I've tried my best to write a code that
+                    follows common coding conventions, but keep in mind that you may find common beginner errors. If so,
+                    feel free to help and contribute to improve this app.
+                </p>
+                <p class="lang es">
+                    Como este es mi primer proyecto como estudiante de informática, he hecho todo lo posible para
+                    escribir un código que siga las convenciones de codificación comunes. Si encuentras algún error o
+                    problema, siéntete libre de contribuir al proyecto. Puede encontrar más información aquí.
+                </p>
+            </div>
         </div>
         <script src="/script.js"></script>
-        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
+        <script
+            async
+            defer
+            data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc"
+            src="https://u.fcld.ml/umami.js"
+        ></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="language en">
+<html lang="es" class="language en">
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
@@ -20,10 +20,6 @@
         <link rel="stylesheet" href="/css/grid.css" />
     </head>
     <body>
-        <header style="background-image: none">
-            <img src="/assets/images/itacitg.png" />
-            <h1 style="font-size: 3.8vw">Is there a car in the garage?</h1>
-        </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
             <a href="/">Home</a>
@@ -35,25 +31,31 @@
             <a href="/projects" class="active">Proyectos</a>
         </div>
         <div class="content">
-            <p class="font-size-14 lang en">
-                <b>Is there a car in the garage?</b> is an Arduino project that uses an ultrasonic sensor to find out if there is a car in the garage. Accessible through a simple
-                web interface.
-            </p>
-            <p class="font-size-14 lang es">
-                <b>Is there a car in the garage?</b> es un proyecto de Arduino que utiliza un sensor ultrasónico para saber si hay un coche en el garaje. Accesible a traves de una
-                interfaz web simple.
-            </p>
-
-            <p class="font-size-14 mt-10 pb-10">
-                <a href="https://github.com/SrGMC/mazelight"><i class="fab fa-github"></i> GitHub</a><br />
-                <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage/raw/master/is-there-a-car-in-the-garage.ino">
-                    <i class="fas fa-download"></i> <span class="lang en">Download</span><span class="lang es">Descargar</span> </a
-                ><br />
-                <a href="https://www.icloud.com/shortcuts/19bcd04246704c28b0ec071b5c52406a"><i class="fab fa-apple"></i> Apple Shortcut</a>
-            </p>
-
-            <div class="divider mb-20"></div>
-
+            <div class="row header mt-10 mb-10">
+                <div class="col col-40 profile project">
+                    <img src="/assets/images/itacitg.png" />
+                </div>
+                <div class="col col-60">
+                    <p class="font-size-26 bold">Is there a car in the garage?</p>
+                    <p class="font-size-14 lang en">
+                        <b>Is there a car in the garage?</b> is an Arduino project that uses an ultrasonic sensor to find out if there is a car in the garage. Accessible through a simple
+                        web interface.
+                    </p>
+                    <p class="font-size-14 lang es">
+                        <b>Is there a car in the garage?</b> es un proyecto de Arduino que utiliza un sensor ultrasónico para saber si hay un coche en el garaje. Accesible a traves de una
+                        interfaz web simple.
+                    </p>
+        
+                    <p class="font-size-14 mt-10 pb-10">
+                        <a href="https://github.com/SrGMC/mazelight"><i class="fab fa-github"></i> GitHub</a><br />
+                        <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage/raw/master/is-there-a-car-in-the-garage.ino">
+                            <i class="fas fa-download"></i> <span class="lang en">Download</span><span class="lang es">Descargar</span> </a
+                        ><br />
+                        <a href="https://www.icloud.com/shortcuts/19bcd04246704c28b0ec071b5c52406a"><i class="fab fa-apple"></i> Apple Shortcut</a>
+                    </p>
+                </div>
+            </div>
+            <div class="main">
             <p class="lang en">
                 It was originaly programmed to detect a car in a closed space, but it can be used to detect any static object in a closed space.
                 <br /><br />
@@ -72,6 +74,7 @@
                 <a href="https://github.com/SrGMC/is-there-a-car-in-the-garage#usage">instrucciones de uso</a>.<br />
                 TL;DR: ¡Es fácil!. Descarga el Apple Shortcut en un dispositivo iOS (iOS 13 y superior), configúrelo con la URL, el nombre de usuario y la contraseña y ¡ya está!.
             </p>
+            </div>
         </div>
         <script src="/script.js"></script>
         <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>

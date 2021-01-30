@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="language en">
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
@@ -11,7 +11,10 @@
         <title>Random things - Álvaro Galisteo</title>
         <meta name="title" content="Proyectos personales - Álvaro Galisteo" />
         <meta name="description" content="Computer engineering student at UC3M" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+        <meta
+            name="keywords"
+            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
+        />
 
         <!-- Styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +23,6 @@
         <link rel="stylesheet" href="/css/grid.css" />
     </head>
     <body>
-        <header style="background-image: none">
-            <img src="/assets/images/random-things.png" />
-            <h1>Random things</h1>
-        </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
             <a href="/">Home</a>
@@ -35,86 +34,121 @@
             <a href="/projects" class="active">Proyectos</a>
         </div>
         <div class="content">
-            <p class="font-size-14 lang en">Small works and projects that I carried out over the years.</p>
-            <p class="font-size-14 lang es">Pequeños trabajos y proyectos (algunos absurdos) realizados a lo largo de los años.</p>
+            <div class="row header mt-10 mb-10">
+                <div class="col col-40 profile project">
+                    <img src="/assets/images/random-things.png" />
+                </div>
+                <div class="col col-60">
+                    <p class="font-size-26 bold">Random things</p>
+                    <p class="font-size-14 lang en">Small works and projects that I carried out over the years.</p>
+                    <p class="font-size-14 lang es">
+                        Pequeños trabajos y proyectos (algunos absurdos) realizados a lo largo de los años.
+                    </p>
 
-            <p class="font-size-14 mt-10 pb-10">
-                <a href="https://github.com/SrGMC/random-things"><i class="fab fa-github"></i> GitHub</a>
-            </p>
+                    <p class="font-size-14 mt-10 pb-10">
+                        <a href="https://github.com/SrGMC/random-things"><i class="fab fa-github"></i> GitHub</a>
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <h2 class="mt-20">¡Mientes!</h2>
+                <img alt="" src="/assets/images/content/random-things/mientes_screenshot.png" />
+                <p class="lang en">
+                    A game where you can destroy relationships and friendships. A user answers some questions (some are
+                    hot, some are not) and share them with their friends to test how well does one know them. In
+                    Spanish. Sign up does not work.
+                </p>
+                <p class="lang es">
+                    Un juego en el que puedes destruir relaciones y amistades. Un usuario responde algunas preguntas y
+                    las comparte con sus amigos para comprobar lo bien que les conoce. En español. Registrarse no
+                    funciona.
+                </p>
 
-            <div class="divider mb-20"></div>
+                <h2 class="mt-20 lang en">Shitty Login Prototype (submitted to r/ProgrammerHumor)</h2>
+                <h2 class="mt-20 lang es">Shitty Login Prototype (post en r/ProgrammerHumor)</h2>
+                <img alt="" src="/assets/images/content/random-things/login_screenshot.png" />
+                <p class="lang en">
+                    A prototype for a login webpage. It implements many things programmers should not do when managing a
+                    user database with passwords, such as hardcoding usernames and passwords, storing them in plain text
+                    or showing them while login in.<br />
+                    It was
+                    <a
+                        href="https://www.reddit.com/r/ProgrammerHumor/comments/8r9xua/so_ive_heard_we_are_now_making_logins_right/"
+                        >submitted</a
+                    >
+                    to
+                    <a href="https://reddit.com/r/ProgrammerHumor">r/ProgrammerHumor</a>
+                    on <a href="https://reddit.com">Reddit</a> for an ongoing joke
+                </p>
+                <p class="lang es">
+                    Un prototipo para el inicio de sesión de una página web. Implementa muchas cosas que nunca se
+                    deberían hacer al gestionar una base de datos de usuarios con contraseñas, como nombres de usuario y
+                    contraseñas hardcoded, almacenarlos en texto plano o mostrar todo iniciar la sesión.<br />
+                    Publicado en
+                    <a
+                        href="https://www.reddit.com/r/ProgrammerHumor/comments/8r9xua/so_ive_heard_we_are_now_making_logins_right/"
+                        >un post</a
+                    >
+                    en el subreddit de
+                    <a href="https://reddit.com/r/ProgrammerHumor">r/ProgrammerHumor</a>
+                </p>
 
-            <h2 class="mt-20">¡Mientes!</h2>
-            <img alt="" src="/assets/images/content/random-things/mientes_screenshot.png" />
-            <p class="lang en">
-                A game where you can destroy relationships and friendships. A user answers some questions (some are hot, some are not) and share them with their friends to test how
-                well does one know them. In Spanish. Sign up does not work.
-            </p>
-            <p class="lang es">
-                Un juego en el que puedes destruir relaciones y amistades. Un usuario responde algunas preguntas y las comparte con sus amigos para comprobar lo bien que les
-                conoce. En español. Registrarse no funciona.
-            </p>
+                <h2 class="mt-20">Rick Roll Roulette</h2>
+                <img alt="" src="/assets/images/content/random-things/rickroll_screenshot.png" />
+                <p class="lang en">
+                    Want to risk your luck? Don't want to be rickrolled? Duel with friends to see who has the least luck
+                    in the world.
+                </p>
+                <p class="lang es">
+                    ¿Quieres arriesgar tu suerte? ¿Quieres rickrollear a tus amigos? Rétalos para ver quién tiene menos
+                    suerte en el mundo.
+                </p>
 
-            <h2 class="mt-20 lang en">Shitty Login Prototype (submitted to r/ProgrammerHumor)</h2>
-            <h2 class="mt-20 lang es">Shitty Login Prototype (post en r/ProgrammerHumor)</h2>
-            <img alt="" src="/assets/images/content/random-things/login_screenshot.png" />
-            <p class="lang en">
-                A prototype for a login webpage. It implements many things programmers should not do when managing a user database with passwords, such as hardcoding usernames and
-                passwords, storing them in plain text or showing them while login in.<br />
-                It was
-                <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8r9xua/so_ive_heard_we_are_now_making_logins_right/">submitted</a>
-                to
-                <a href="https://reddit.com/r/ProgrammerHumor">r/ProgrammerHumor</a>
-                on <a href="https://reddit.com">Reddit</a> for an ongoing joke
-            </p>
-            <p class="lang es">
-                Un prototipo para el inicio de sesión de una página web. Implementa muchas cosas que nunca se deberían hacer al gestionar una base de datos de usuarios con
-                contraseñas, como nombres de usuario y contraseñas hardcoded, almacenarlos en texto plano o mostrar todo iniciar la sesión.<br />
-                Publicado en
-                <a href="https://www.reddit.com/r/ProgrammerHumor/comments/8r9xua/so_ive_heard_we_are_now_making_logins_right/">un post</a>
-                en el subreddit de
-                <a href="https://reddit.com/r/ProgrammerHumor">r/ProgrammerHumor</a>
-            </p>
+                <h2 class="mt-20">TimeToShreks</h2>
+                <img alt="" src="/assets/images/content/random-things/shreks_screenshot.png" />
+                <p class="lang en">
+                    <a href="https://www.bbc.com/news/technology-42787529">Facebook invented the flick</a>, a new time
+                    unit. Why don't we create a new one too?<br />
+                    Meet a Shrek, a time unit based on the length of the original Shrek film. Available for all your
+                    JavaScript projects.
+                </p>
+                <p class="lang es">
+                    <a href="https://www.bbc.com/news/technology-42787529">Facebook inventó el flick</a>, una nueva
+                    unidad de tiempo. ¿Por qué no creamos una nueva también?<br />
+                    Conoce a un Shrek, una unidad de tiempo basada en la duración de la película original de Shrek.
+                    Disponible para todos sus proyectos en JavaScript.
+                </p>
 
-            <h2 class="mt-20">Rick Roll Roulette</h2>
-            <img alt="" src="/assets/images/content/random-things/rickroll_screenshot.png" />
-            <p class="lang en">Want to risk your luck? Don't want to be rickrolled? Duel with friends to see who has the least luck in the world.</p>
-            <p class="lang es">¿Quieres arriesgar tu suerte? ¿Quieres rickrollear a tus amigos? Rétalos para ver quién tiene menos suerte en el mundo.</p>
+                <h2 class="mt-20">8bit guy</h2>
+                <img alt="" src="/assets/images/content/random-things/8bitguy_screenshot.png" />
+                <p class="lang en">
+                    8Bit Guy is a game developed in Scratch,
+                    <span id="years"> </span> years ago by me and a friend. In Spanish
+                </p>
+                <p class="lang es">
+                    8Bit Guy es un juego desarrollado por mi, junto a un amigo, hace
+                    <span id="years"> </span> años. En español
+                </p>
 
-            <h2 class="mt-20">TimeToShreks</h2>
-            <img alt="" src="/assets/images/content/random-things/shreks_screenshot.png" />
-            <p class="lang en">
-                <a href="https://www.bbc.com/news/technology-42787529">Facebook invented the flick</a>, a new time unit. Why don't we create a new one too?<br />
-                Meet a Shrek, a time unit based on the length of the original Shrek film. Available for all your JavaScript projects.
-            </p>
-            <p class="lang es">
-                <a href="https://www.bbc.com/news/technology-42787529">Facebook inventó el flick</a>, una nueva unidad de tiempo. ¿Por qué no creamos una nueva también?<br />
-                Conoce a un Shrek, una unidad de tiempo basada en la duración de la película original de Shrek. Disponible para todos sus proyectos en JavaScript.
-            </p>
-
-            <h2 class="mt-20">8bit guy</h2>
-            <img alt="" src="/assets/images/content/random-things/8bitguy_screenshot.png" />
-            <p class="lang en">
-                8Bit Guy is a game developed in Scratch,
-                <span id="years"> </span> years ago by me and a friend. In Spanish
-            </p>
-            <p class="lang es">
-                8Bit Guy es un juego desarrollado por mi, junto a un amigo, hace
-                <span id="years"> </span> años. En español
-            </p>
-
-            <h2 class="mt-20">Twister</h2>
-            <img alt="" src="/assets/images/content/random-things/twister.png" />
-            <p class="lang en">
-                Twister is a smart twister roulette that tracks which players' body parts are placed, to prevent selection of a color with all its dots already occupied.
-            </p>
-            <p class="lang es">
-                Twister es una inteligente ruleta twister que rastrea qué partes del cuerpo de los jugadores se colocan, para evitar la selección de un color con todos sus puntos
-                ya ocupados.
-            </p>
+                <h2 class="mt-20">Twister</h2>
+                <img alt="" src="/assets/images/content/random-things/twister.png" />
+                <p class="lang en">
+                    Twister is a smart twister roulette that tracks which players' body parts are placed, to prevent
+                    selection of a color with all its dots already occupied.
+                </p>
+                <p class="lang es">
+                    Twister es una inteligente ruleta twister que rastrea qué partes del cuerpo de los jugadores se
+                    colocan, para evitar la selección de un color con todos sus puntos ya ocupados.
+                </p>
+            </div>
         </div>
         <script src="/script.js"></script>
-        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
+        <script
+            async
+            defer
+            data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc"
+            src="https://u.fcld.ml/umami.js"
+        ></script>
         <script>
             document.querySelectorAll("#years").forEach((e) => (e.innerHTML = new Date().getFullYear() - 2017));
         </script>

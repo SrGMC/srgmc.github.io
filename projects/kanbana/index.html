@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="language en">
+<html lang="es" class="language en">
     <head>
         <meta charset="UTF-8" />
         <!-- Preloads -->
@@ -11,7 +11,10 @@
         <title>Kanbana - Álvaro Galisteo</title>
         <meta name="title" content="Kanbana - Álvaro Galisteo" />
         <meta name="description" content="Computer engineering student at UC3M" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev" />
+        <meta
+            name="keywords"
+            content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev"
+        />
 
         <!-- Styles -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,10 +23,6 @@
         <link rel="stylesheet" href="/css/grid.css" />
     </head>
     <body>
-        <header style="background-image: none">
-            <img class="mt-10" src="/assets/images/kanbana.png" />
-            <h1>Kanbana</h1>
-        </header>
         <div class="menu lang en">
             <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
             <a href="/">Home</a>
@@ -35,55 +34,80 @@
             <a href="/projects" class="active">Proyectos</a>
         </div>
         <div class="content">
-            <p class="font-size-14 lang en"><b>Kanbana</b> allows tracking users and projects from flat markdown files using Kanban boards.</p>
-            <p class="font-size-14 lang es"><b>Kanbana</b> permite crear <i>Kanban boards</i> para hacer seguimiento de usuarios y proyectos a partir de archivos Markdown</p>
+            <div class="row header mt-10 mb-10">
+                <div class="col col-40 profile project">
+                    <img src="/assets/images/kanbana.png" />
+                </div>
+                <div class="col col-60">
+                    <p class="font-size-26 bold">Kanbana</p>
+                    <p class="font-size-14 lang en">
+                        <b>Kanbana</b> allows tracking users and projects from flat markdown files using Kanban boards.
+                    </p>
+                    <p class="font-size-14 lang es">
+                        <b>Kanbana</b> permite crear <i>Kanban boards</i> para hacer seguimiento de usuarios y proyectos
+                        a partir de archivos Markdown
+                    </p>
 
-            <p class="font-size-14 mt-10 pb-10">
-                <a href="https://github.com/SrGMC/kanbana"><i class="fab fa-github"></i> Github</a>
-            </p>
+                    <p class="font-size-14 mt-10 pb-10">
+                        <a href="https://github.com/SrGMC/kanbana"><i class="fab fa-github"></i> Github</a>
+                    </p>
+                </div>
+            </div>
+            <div class="main">
+                <p class="mt-10 lang en">
+                    Kanbana is based of the Crepido project by <a href="https://github.com/issmirnov">@issmirnov</a>.
+                </p>
+                <p class="mt-10 lang es">
+                    Kanbana está basado en el proyecto Crepido de <a href="https://github.com/issmirnov">@issmirnov</a>.
+                </p>
 
-            <div class="divider mb-20"></div>
+                <p class="mt-10 lang en">
+                    Kanbana is easy to use and uses flat Markdown files that every text editor can open
+                </p>
+                <p class="mt-10 lang es">
+                    Kanbana es fácil de usar y usa archivos Markdown que todo editor de texto puede abrir
+                </p>
 
-            <p class="mt-10 lang en">Kanbana is based of the Crepido project by <a href="https://github.com/issmirnov">@issmirnov</a>.</p>
-            <p class="mt-10 lang es">Kanbana está basado en el proyecto Crepido de <a href="https://github.com/issmirnov">@issmirnov</a>.</p>
+                <img class="mt-10" src="https://github.com/SrGMC/kanbana/raw/master/screenshots/demo1.png" />
+                <img class="mt-10" src="https://github.com/SrGMC/kanbana/raw/master/screenshots/demo2.png" />
 
-            <p class="mt-10 lang en">Kanbana is easy to use and uses flat Markdown files that every text editor can open</p>
-            <p class="mt-10 lang es">Kanbana es fácil de usar y usa archivos Markdown que todo editor de texto puede abrir</p>
+                <p class="mt-10 lang en">It has the following features:</p>
+                <p class="mt-10 lang es">Implementa las siguientes funcionalidades:</p>
 
-            <img class="mt-10" src="https://github.com/SrGMC/kanbana/raw/master/screenshots/demo1.png" />
-            <img class="mt-10" src="https://github.com/SrGMC/kanbana/raw/master/screenshots/demo2.png" />
+                <ul class="mt-10 lang en">
+                    <li>Dark and light mode</li>
+                    <li>Markdown formatting</li>
+                    <li>Links</li>
+                    <li>Labels and custom labels</li>
+                    <li>Timers</li>
+                    <li>Tasks</li>
+                    <li>Multiple boards in the same page</li>
+                    <li>Images served from the server</li>
+                    <li>Responsive design</li>
+                    <li>Integrated caching</li>
+                </ul>
 
-            <p class="mt-10 lang en">It has the following features:</p>
-            <p class="mt-10 lang es">Implementa las siguientes funcionalidades:</p>
-
-            <ul class="mt-10 lang en">
-                <li>Dark and light mode</li>
-                <li>Markdown formatting</li>
-                <li>Links</li>
-                <li>Labels and custom labels</li>
-                <li>Timers</li>
-                <li>Tasks</li>
-                <li>Multiple boards in the same page</li>
-                <li>Images served from the server</li>
-                <li>Responsive design</li>
-                <li>Integrated caching</li>
-            </ul>
-
-            <ul class="mt-10 lang es">
-                <li>Modo oscuro y claro</li>
-                <li>Formato markdown</li>
-                <li>Enlaces</li>
-                <li>Etiquetas y etiquetas personalizadas</li>
-                <li>Timers</li>
-                <li>Tareas</li>
-                <li>Múltiples <i>boards</i> en una misma página</li>
-                <li>Imagenes servidas desde el servidor</li>
-                <li>Diseño <i>responsive</i></li>
-                <li>Caché integrada</li>
-            </ul>
+                <ul class="mt-10 lang es">
+                    <li>Modo oscuro y claro</li>
+                    <li>Formato markdown</li>
+                    <li>Enlaces</li>
+                    <li>Etiquetas y etiquetas personalizadas</li>
+                    <li>Timers</li>
+                    <li>Tareas</li>
+                    <li>Múltiples <i>boards</i> en una misma página</li>
+                    <li>Imagenes servidas desde el servidor</li>
+                    <li>Diseño <i>responsive</i></li>
+                    <li>Caché integrada</li>
+                </ul>
+            </div>
         </div>
         <script src="/script.js"></script>
-        <script async defer data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc" src="https://u.fcld.ml/umami.js"></script>
+        <script
+            async
+            defer
+            data-website-id="77ff7968-9829-4858-90a8-6a917bb8d1dc"
+            src="https://u.fcld.ml/umami.js"
+        ></script>
         <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
     </body>
 </html>
