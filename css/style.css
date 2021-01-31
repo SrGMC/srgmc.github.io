@@ -3,6 +3,35 @@ html {
   color: #212121;
 }
 
+a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #ff3b30;
+}
+
+a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  content: "";
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  background-color: #ff3b30;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+a.btn::after {
+  height: 0px;
+}
+
 /* Main */
 header {
   position: absolute;
@@ -256,6 +285,11 @@ html {
   }
   a::after {
     background-color: #ff453a;
+  }
+
+  .card {
+    background-color: #000;
+    color: #fff;
   }
 }
 
