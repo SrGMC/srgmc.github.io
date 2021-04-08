@@ -18,7 +18,9 @@
     -webkit-box-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.1);
 
-    margin-top: 5px;
+    margin: 5px;
+
+    transition: all 0.1s ease-in-out;
 }
 
 a.btn {
@@ -32,6 +34,7 @@ a.btn {
 }
 
 .btn:hover {
+    color: inherit;
     background-color: #e9ecef;
 }
 
@@ -50,7 +53,7 @@ a.btn {
 }
 
 .btn.black:hover {
-    background-color: rgba(0,0,0,.6);
+    background-color: #212529;
 }
 
 .btn.red {
@@ -141,6 +144,6 @@ a.btn {
     }
 
     .btn:hover {
-        background-color: rgba(0,0,0,.6);
+        background-color: #212529;
     }
 }

@@ -135,7 +135,7 @@ img {
     font-size: 3.8rem;
 }
 .font-size-40 {
-    font-size: 4.0rem;
+    font-size: 4rem;
 }
 .font-size-42 {
     font-size: 4.2rem;
@@ -153,8 +153,6 @@ img {
     font-size: 5rem;
 }
 
-
-
 /* Alignment */
 .text-center {
     text-align: center;
@@ -167,6 +165,95 @@ img {
 }
 .text-justify {
     text-align: justify;
+}
+
+/* Colors */
+.text-white {
+    color: #fff;
+}
+
+.text-white-alt {
+    color: #e9ecef;
+}
+
+.text-black {
+    color: #000;
+}
+
+.text-black-alt {
+    color:  #212529;
+}
+
+.text-red {
+    color: #c92a2a;
+}
+
+.text-red-alt {
+    color: #f03e3e;
+}
+
+.text-pink {
+    color: #a61e4d;
+}
+
+.text-pink-alt {
+    color: #d6336c;
+}
+
+.text-violet {
+    color: #5f3dc4;
+}
+
+.text-violet-alt {
+    color: #7048e8;
+}
+
+.text-blue {
+    color: #1c7ed6;
+}
+
+.text-blue-alt {
+    color: #339af0;
+}
+
+.text-cyan {
+    color: #1098ad;
+}
+
+.text-cyan-alt {
+    color: #22b8cf;
+}
+
+.text-teal {
+    color: #099268;
+}
+
+.text-teal-alt {
+    color: #12b886;
+}
+
+.text-green {
+    color: #2b8a3e;
+}
+
+.text-green-alt {
+    color: #37b24d;
+}
+
+.text-yellow {
+    color: #fcc419;
+}
+
+.text-yellow-alt {
+    color: #ffe066;
+}
+
+.text-orange {
+    color: #e8590c;
+}
+
+.text-orange-alt {
+    color: #fd7e14;
 }
 
 /* 
@@ -486,6 +573,95 @@ ol li {
 }
 .pr-128 {
     padding-right: 128px !important;
+}
+
+/* Backgrounds */
+.bg-white {
+    background-color: #fff;
+}
+
+.bg-white-alt {
+    background-color: #e9ecef;
+}
+
+.bg-black {
+    background-color: #000;
+}
+
+.bg-black-alt {
+    background-color: #212529;
+}
+
+.bg-red {
+    background-color: #c92a2a;
+}
+
+.bg-red-alt {
+    background-color: #f03e3e;
+}
+
+.bg-pink {
+    background-color: #a61e4d;
+}
+
+.bg-pink-alt {
+    background-color: #d6336c;
+}
+
+.bg-violet {
+    background-color: #5f3dc4;
+}
+
+.bg-violet-alt {
+    background-color: #7048e8;
+}
+
+.bg-blue {
+    background-color: #1c7ed6;
+}
+
+.bg-blue-alt {
+    background-color: #339af0;
+}
+
+.bg-cyan {
+    background-color: #1098ad;
+}
+
+.bg-cyan-alt {
+    background-color: #22b8cf;
+}
+
+.bg-teal {
+    background-color: #099268;
+}
+
+.bg-teal-alt {
+    background-color: #12b886;
+}
+
+.bg-green {
+    background-color: #2b8a3e;
+}
+
+.bg-green-alt {
+    background-color: #37b24d;
+}
+
+.bg-yellow {
+    background-color: #fcc419;
+}
+
+.bg-yellow-alt {
+    background-color: #ffe066;
+}
+
+.bg-orange {
+    background-color: #e8590c;
+}
+
+.bg-orange-alt {
+    background-color: #fd7e14;
 }
 
 /* Misc */
