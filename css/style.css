@@ -10,26 +10,8 @@ a {
   color: #ff3b30;
 }
 
-a::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 2px;
-  width: 100%;
-  content: "";
-  transition: transform 0.25s ease-out;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  background-color: #ff3b30;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-a.btn::after {
-  height: 0px;
+a:hover {
+  text-decoration: underline;
 }
 
 /* Main */
@@ -238,7 +220,7 @@ header a {
     text-align: center;
   }
   .content .header .profile img {
-    width: 100%;
+    width: 75%;
     margin: 0 auto;
   }
   .content .header .col {
