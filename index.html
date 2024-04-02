@@ -1,433 +1,496 @@
 <!DOCTYPE html>
 <html lang="es" class="language en">
-    <head>
-        <meta charset="UTF-8" />
-        <!-- Preloads -->
-        <link rel="preload" as="style" href="/css/base.css" />
-        <link rel="preload" as="style" href="/css/buttons.css" />
-        <link rel="preload" as="style" href="/css/grid.css" />
-        <link rel="preload" as="style" href="/css/style.css" />
-        <link rel="preload" as="style" href="/css/animate.min.css" />
-        <link rel="preload" as="script" href="/script.js" />
-        <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
 
-        <!-- Primary Meta Tags -->
-        <title>Álvaro Galisteo</title>
-        <meta name="title" content="Álvaro Galisteo" />
-        <meta name="description" content="DevOps Engineer and graduated Computer Engineer at UC3M" />
-        <meta name="keywords" content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev,devops" />
+<head>
+    <meta charset="UTF-8" />
+    <!-- Preloads -->
+    <link rel="preload" as="style" href="/css/base.css" />
+    <link rel="preload" as="style" href="/css/buttons.css" />
+    <link rel="preload" as="style" href="/css/grid.css" />
+    <link rel="preload" as="style" href="/css/style.css" />
+    <link rel="preload" as="style" href="/css/animate.min.css" />
+    <link rel="preload" as="script" href="/script.js" />
+    <link rel="preload" as="script" href="https://kit.fontawesome.com/7465cf6e1c.js" />
 
-        <!-- Robots -->
-        <meta name="revisit-after" content="90 days" />
-        <meta name="robots" content="all" />
+    <!-- Primary Meta Tags -->
+    <title>Álvaro Galisteo</title>
+    <meta name="title" content="Álvaro Galisteo" />
+    <meta name="description" content="DevOps Engineer and graduated Computer Engineer at UC3M" />
+    <meta name="keywords"
+        content="srgmc,sr_gmc,personal,engineering,ingenieria,informatica,computer,resume,curriculum,programming,programacion,dev,devops" />
 
-        <!-- Open Graph / Facebook -->
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://alvaro.galisteo.me/" />
-        <meta property="og:title" content="Álvaro Galisteo" />
-        <meta property="og:description" content="DevOps Engineer at wefox and graduated computer engineer at UC3M" />
+    <!-- Robots -->
+    <meta name="revisit-after" content="90 days" />
+    <meta name="robots" content="all" />
 
-        <!-- Twitter -->
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://alvaro.galisteo.me/" />
-        <meta property="twitter:title" content="Álvaro Galisteo" />
-        <meta property="twitter:description" content="DevOps Engineer at wefox and graduated computer engineer at UC3M" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alvaro.galisteo.me/" />
+    <meta property="og:title" content="Álvaro Galisteo" />
+    <meta property="og:description" content="DevOps Engineer at wefox and graduated computer engineer at UC3M" />
 
-        <!-- Styles -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/css/base.css" />
-        <link rel="stylesheet" href="/css/buttons.css" />
-        <link rel="stylesheet" href="/css/grid.css" />
-        <link rel="stylesheet" href="/css/style.css" />
-    </head>
-    <body>
-        <div class="menu lang en">
-            <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
-            <a href="/" class="active">Home</a>
-            <a href="/projects">Projects</a>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://alvaro.galisteo.me/" />
+    <meta property="twitter:title" content="Álvaro Galisteo" />
+    <meta property="twitter:description" content="DevOps Engineer at wefox and graduated computer engineer at UC3M" />
+
+    <!-- Styles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+    <div class="menu lang en">
+        <a href="javascript:toggleLanguage('es')" style="float: left">🇪🇸</a>
+        <a href="/" class="active">Home</a>
+        <a href="/projects">Projects</a>
+    </div>
+    <div class="menu lang es">
+        <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
+        <a href="/" class="active">Inicio</a>
+        <a href="/projects">Proyectos</a>
+    </div>
+    <div class="content">
+        <div class="row header">
+            <div class="col col-40 profile">
+                <img src="/assets/images/header.jpg" />
+            </div>
+            <div class="col col-60">
+                <p class="font-size-20 mt-10">
+                    <span class="lang en">Hi! I'm</span><span class="lang es">¡Hola! Soy</span><br />
+                    <span class="font-size-36 bold">Álvaro Galisteo</span>
+                </p>
+                <p class="font-size-14 lang en">I am a computer engineer that works hard to make software and AI run
+                    smoothly, as if by magic.</p>
+                <p class="font-size-14 lang es">
+                    Soy un ingeniero informático que trabaja duro para que el software y la IA funcionen sin problemas,
+                    como si fuese por arte de magia.
+                </p>
+
+                <p class="font-size-12 mt-10 pb-10 links">
+                    <a href="https://github.com/SrGMC"><i class="fab fa-github mr-5"></i>GitHub</a></br>
+                    <a href="https://linkedin.com/in/alvarogalisteo/"><i
+                            class="fab fa-linkedin mr-5"></i>LinkedIn</a></br>
+                    <a href="mailto:alvaro@galisteo.me"><i class="fas fa-envelope mr-5"></i>Email</a> + <a
+                        href="/publickey.asc">PGP key</a></br>
+                </p>
+
+                <p class="font-size-12 mt-10 pb-20 lang en">
+                    <a href="#cv" class="btn">My profile<i class="fas fa-arrow-down"></i></a>
+                    <a href="/projects" class="btn">Projects<i class="fas fa-arrow-right"></i></a>
+                    <!-- <a href="https://freelance.galisteo.me" class="btn blue">
+                            Freelance <i class="fas fa-external-link-alt"></i>
+                        </a> -->
+                </p>
+
+                <p class="font-size-12 mt-10 pb-20 lang es">
+                    <a href="#cv" class="btn">Mi perfil<i class="fas fa-arrow-down"></i></a>
+                    <a href="/projects" class="btn">Proyectos<i class="fas fa-arrow-right"></i></a>
+                    <!-- <a href="https://freelance.galisteo.me" class="btn blue">
+                            Freelance <i class="fas fa-external-link-alt"></i>
+                        </a> -->
+                </p>
+            </div>
         </div>
-        <div class="menu lang es">
-            <a href="javascript:toggleLanguage('en')" style="float: left">🇬🇧</a>
-            <a href="/" class="active">Inicio</a>
-            <a href="/projects">Proyectos</a>
-        </div>
-        <div class="content">
-            <div class="row header">
-                <div class="col col-40 profile">
-                    <img src="/assets/images/header.jpg" />
+        <a id="cv" style="position: relative; top: -100px"></a>
+        <div class="main">
+            <p class="font-size-14 lang en">
+                I'm a <b>caring</b>, <b>open minded</b> and <b>responsible</b> person that loves everything about
+                software,
+                open source, infrastructure, design, electronics and science. Facing new challenges is <b>never</b> a
+                problem.
+            </p>
+            <p class="font-size-14 lang es">
+                Soy una persona que le gusta <b>ayudar</b>, de <b>mente abierta</b> y <b>responsable</b> a la que le
+                encanta todo lo
+                relacionado con el software, open source, infraestructura, el diseño, la electrónica y la ciencia.
+                Afrontar nuevos retos <b>nunca</b> es un problema.
+            </p>
+
+            <h2 class="mt-64 lang en"><i class="fas fa-briefcase mr-10 font-size-20"></i> Work experience</h2>
+            <h2 class="mt-64 lang es"><i class="fas fa-briefcase mr-10 font-size-20"></i> Experiencia</h2>
+            <div class="divider"></div>
+            <div class="row header mt-32 mb-48">
+                <div class="col col-30 profile project mb-15">
+                    <img src="/assets/images/icons/work/wefox.png" />
                 </div>
-                <div class="col col-60">
-                    <p class="font-size-20 mt-10">
-                        <span class="lang en">Hi! I'm</span><span class="lang es">¡Hola! Soy</span><br />
-                        <span class="font-size-36 bold">Álvaro Galisteo</span>
+                <div class="col col-70">
+                    <p class="font-size-12 mb-5">
+                        <span class="date lang en"><i class="fas fa-calendar-week"></i> aug 2023 - <i>present</i>
+                        </span>
+                        <span class="date lang es"><i class="fas fa-calendar-week"></i> ago 2023 - <i>actualidad</i>
+                        </span>
                     </p>
-                    <p class="font-size-14 lang en">I am a computer engineer that works hard to make software and AI run smoothly, as if by magic.</p>
-                    <p class="font-size-14 lang es">
-                        Soy un ingeniero informático que trabaja duro para que el software y la IA funcionen sin problemas, como si fuese por arte de magia.
+                    <p class="font-size-22 bold mb-15" style="line-height: 2.5rem">
+                        Site Reliability Engineer
                     </p>
-
-                    <p class="font-size-12 mt-10 pb-10 links">
-                        <a href="https://github.com/SrGMC"><i class="fab fa-github mr-5"></i>GitHub</a></br>
-                        <a href="https://linkedin.com/in/alvarogalisteo/"><i class="fab fa-linkedin mr-5"></i>LinkedIn</a></br>
-                        <a href="mailto:alvaro@galisteo.me"><i class="fas fa-envelope mr-5"></i>Email</a> + <a href="/publickey.asc">PGP key</a></br>
+                    <p class="font-size-12 mb-5">
+                        <span class="date lang en"><i class="fas fa-calendar-week"></i> oct 2022 - aug 2023
+                        </span>
+                        <span class="date lang es"><i class="fas fa-calendar-week"></i> oct 2022 - ago 2023
+                        </span>
                     </p>
-
-                    <p class="font-size-12 mt-10 pb-20 lang en">
-                        <a href="#cv" class="btn">My profile<i class="fas fa-arrow-down"></i></a>
-                        <a href="/projects" class="btn">Projects<i class="fas fa-arrow-right"></i></a>
-                        <!-- <a href="https://freelance.galisteo.me" class="btn blue">
-                            Freelance <i class="fas fa-external-link-alt"></i>
-                        </a> -->
+                    <p class="font-size-22 bold" style="line-height: 2.5rem">
+                        DevOps Engineer<br />
+                        <a href="https://wefox.com" class="font-size-16">wefox</a>
                     </p>
 
-                    <p class="font-size-12 mt-10 pb-20 lang es">
-                        <a href="#cv" class="btn">Mi perfil<i class="fas fa-arrow-down"></i></a>
-                        <a href="/projects" class="btn">Proyectos<i class="fas fa-arrow-right"></i></a>
-                        <!-- <a href="https://freelance.galisteo.me" class="btn blue">
-                            Freelance <i class="fas fa-external-link-alt"></i>
-                        </a> -->
+                    <p class="font-size-14 mb-15 lang en"><b>wefox</b> is the world's #1 Insurtech company, present in
+                        five European countries.</p>
+                    <p class="lang en">
+                        I am part of a transversal team dedicated to the Cloud used by the entire organisation. I deploy, maintain
+                        and develop monitoring tools, cost optimisation, task automation and acceleration of development
+                        processes as well deploy and maintain infrastructure on AWS using Terraform and Kubernetes.
+                    </p>
+                    <p class="font-size-14 mb-15 lang es">
+                        <b>wefox</b> es la compañía Insurtech número #1 del mundo, presente en cinco países europeos.
+                    </p>
+                    <p class="lang es">
+                        Formo parte de un equipo transversal dedicado a la Nube utilizada por toda la organización. Despliego, mantengo
+                        y desarrollo herramientas de monitorización, optimización de costes, automatización de tareas y aceleración de
+                        procesos de desarrollo, así como despliego y mantengo infraestructura en AWS utilizando Terraform y Kubernetes.
                     </p>
                 </div>
             </div>
-            <a id="cv" style="position: relative; top: -100px"></a>
-            <div class="main">
-                <p class="font-size-14 lang en">
-                    I'm a <b>caring</b>, <b>open minded</b> and <b>responsible</b> person that loves everything about software,
-                    open source, infrastructure, design, electronics and science. Facing new challenges is <b>never</b> a problem. 
-                </p>
-                <p class="font-size-14 lang es">
-                    Soy una persona que le gusta <b>ayudar</b>, de <b>mente abierta</b> y <b>responsable</b> a la que le encanta todo lo
-                    relacionado con el software, open source, infraestructura, el diseño, la electrónica y la ciencia. Afrontar nuevos retos <b>nunca</b> es un problema. 
-                </p>
-
-                <div class="font-size-14 mt-20 lang en">
-                    Sometimes I work as a freelancer in infrastructure or web programming. Let's
-                    <!-- <a href="https://freelance.galisteo.me" class="bold"> --><a href="mailto:alvaro@galisteo.me" class="bold">get in touch</a>!
+            <div class="row header mt-32 mb-48">
+                <div class="col col-30 profile project mb-15">
+                    <img src="/assets/images/icons/work/jets.png" />
                 </div>
-                <div class="font-size-14 mt-20 lang es">
-                    A veces trabajo como freelancer en infraestructura o programación web. ¡Pongámonos
-                    <!-- <a href="https://freelance.galisteo.me" class="bold"> --><a href="mailto:alvaro@galisteo.me" class="bold">en contacto</a>!
+                <div class="col col-70">
+                    <p class="font-size-12 mb-5">
+                        <span class="date lang en"><i class="fas fa-calendar-week"></i> sep 2023 - <i>present</i>
+                        </span>
+                        <span class="date lang es"><i class="fas fa-calendar-week"></i> sep 2023 - <i>actualidad</i>
+                        </span>
+                    </p>
+                    <p class="font-size-22 bold" style="line-height: 2.5rem">
+                        Full Stack Developer (Freelance)<br />
+                        <a href="https://jetsmarivent.com" class="font-size-16">Jets Marivent</a>
+                    </p>
+
+                    <p class="font-size-14 mb-15 lang en"><b>Jets Marivent</b> is a Spanish group specialized in the manufacture and international distribution of motorcycles, ATVs, UTVs, jet skis, bicycles and e-bikes, among others.</p>
+                    <p class="lang en">
+                        I develop, deploy and maintain the company's websites as a freelancer, working with different people from different teams such as designers, sales and marketing.
+                    </p>
+                    <p class="font-size-14 mb-15 lang es">
+                        <b>Jets Marivent</b> es un grupo español especializado en la fabricación y distribución internacional de motocicletas, ATVs, UTVs, motos acuáticas, bicicletas y e-bikes, entre otros.
+                    </p>
+                    <p class="lang es">
+                        Desarrollo, despliego y mantengo los sitios web de la empresa como autónomo, trabajando con distintas personas de diferentes equipos, como diseñadores, ventas y marketing.
+                    </p>
                 </div>
-
-                <h2 class="mt-64 lang en"><i class="fas fa-briefcase mr-10 font-size-20"></i> Work experience</h2>
-                <h2 class="mt-64 lang es"><i class="fas fa-briefcase mr-10 font-size-20"></i> Experiencia</h2>
-                <div class="divider"></div>
-                <div class="row header mt-32 mb-48">
-                    <div class="col col-30 profile project mb-15">
-                        <img src="/assets/images/icons/work/wefox.png" />
-                    </div>
-                    <div class="col col-70">
-                        <p class="font-size-12 mb-5">
-                            <span class="date lang en"><i class="fas fa-calendar-week"></i> oct 2022 - <i>present</i> </span>
-                            <span class="date lang es"><i class="fas fa-calendar-week"></i> oct 2022 - <i>actualidad</i> </span>
-                        </p>
-
-                        <p class="font-size-26 bold" style="line-height: 2.5rem">DevOps Engineer<br /><a href="https://wefox.com" class="font-size-16">wefox</a></p>
-                        <p class="font-size-14 mb-15 lang en"><b>wefox</b> is the world's #1 Insurtech company, present in five European countries.</p>
-                        <p class="lang en">
-                            I deploy, scale and maintain cloud services for wefox services using Kubernetes, Ansible and Terraform. I also work developing tools 
-                            to help teams automate tasks and processes.
-                        </p>
-                        <p class="font-size-14 mb-15 lang es">
-                            <b>wefox</b> es la compañía Insurtech número #1 del mundo, presente en cinco países europeos.
-                        </p>
-                        <p class="lang es">
-                            Despliego, escalo y mantengo servicios en la nube para los servicios de wefox utilizando Kubernetes, Ansible y Terraform. También trabajo desarrollando herramientas 
-                            para ayudar a los equipos a automatizar tareas y procesos.
-                        </p>
-                    </div>
+            </div>
+            <div class="row header mt-32 mb-48">
+                <div class="col col-30 profile project mb-15">
+                    <img src="/assets/images/icons/work/totepass.png" />
                 </div>
-                <div class="row header mt-32 mb-48">
-                    <div class="col col-30 profile project mb-15">
-                        <img src="/assets/images/icons/work/totepass.png" />
-                    </div>
-                    <div class="col col-70">
-                        <p class="font-size-12 mb-5">
-                            <span class="date lang en"><i class="fas fa-calendar-week"></i> jan 2023 - <i>present</i> </span>
-                            <span class="date lang es"><i class="fas fa-calendar-week"></i> jan 2023 - <i>actualidad</i> </span>
-                        </p>
+                <div class="col col-70">
+                    <p class="font-size-12 mb-5">
+                        <span class="date lang en"><i class="fas fa-calendar-week"></i> jan 2023 - <i>present</i>
+                        </span>
+                        <span class="date lang es"><i class="fas fa-calendar-week"></i> jan 2023 - <i>actualidad</i>
+                        </span>
+                    </p>
 
-                        <p class="font-size-26 bold lang en" style="line-height: 2.5rem">Creator and developer<br /><a href="https://totepass.com" class="font-size-16">Totepass</a></p>
-                        <p class="font-size-26 bold lang es" style="line-height: 2.5rem">Creador y desarollador<br /><a href="https://totepass.com" class="font-size-16">Totepass</a></p>
-                        <p class="font-size-14 mb-15 lang en"><b>Totepass</b> is the simplest and easiest way to organize and share trips with your friends and family.</p>
-                        <p class="lang en">
-                            Totepass is my main personal project, which came from the need of a tool to organise trips with friends. I am in charge of developing the frontend and backend of the platform using Go, Node.js and HTML/CSS/JS, as well as deploying, scaling, optimizing and maintaining the platform.
-                        </p>
-                        <p class="font-size-14 mb-15 lang es">
-                            <b>Totepass</b> es la forma más sencilla y fácil de organizar y compartir viajes con tus amigos y familiares.
-                        </p>
-                        <p class="lang es">
-                            Totepass es mi proyecto personal principal, que surgió de la necesidad de una herramienta para organizar viajes con amigos. Me encargo de desarrollar el frontend y backend de la plataforma usando Go, Node.js y HTML/CSS/JS, así como de desplegar, escalar, optimizar y mantener la plataforma.
-                        </p>
-                    </div>
+                    <p class="font-size-22 bold lang en" style="line-height: 2.5rem">Creator and developer<br /><a
+                            href="https://totepass.com" class="font-size-16">Totepass</a></p>
+                    <p class="font-size-22 bold lang es" style="line-height: 2.5rem">Creador y desarollador<br /><a
+                            href="https://totepass.com" class="font-size-16">Totepass</a></p>
+                    <p class="font-size-14 mb-15 lang en"><b>Totepass</b> is the simplest and easiest way to organize
+                        and share trips with your friends and family.</p>
+                    <p class="lang en">
+                        Totepass is my main personal project, which came from the need of a tool to organise trips with
+                        friends. I am in charge of developing the frontend and backend of the platform using Go, Node.js
+                        and HTML/CSS/JS, as well as deploying, scaling, optimizing and maintaining the platform.
+                    </p>
+                    <p class="font-size-14 mb-15 lang es">
+                        <b>Totepass</b> es la forma más sencilla y fácil de organizar y compartir viajes con tus amigos
+                        y familiares.
+                    </p>
+                    <p class="lang es">
+                        Totepass es mi proyecto personal principal, que surgió de la necesidad de una herramienta para
+                        organizar viajes con amigos. Me encargo de desarrollar el frontend y backend de la plataforma
+                        usando Go, Node.js y HTML/CSS/JS, así como de desplegar, escalar, optimizar y mantener la
+                        plataforma.
+                    </p>
                 </div>
+            </div>
 
-                <h3 class="bold mt-32">DevOps Engineer</h3>
-                <p>
-                    <a href="https://taiger.com">TAIGER</a><br />
-                    <span class="date"><i class="fas fa-calendar-week"></i> jul 2021 - jul 2022 </span>
-                </p>
-                <p class="lang en">
-                    <b>TAIGER</b> is and Artificial Intelligence startup that develops next-gen cognitive automation tools.<br>
-                    I worked on deploying, scaling and maintaining cloud (AWS and Azure) and on-premise services for clients in Spain 
-                    and Mexico, using Docker, Kubernetes, Ansible and Terraform. I also worked developing tools 
-                    to help teams automate tasks and processes, while improving and adding new features to 
-                    existing software.
-                </p>
-                <p class="lang es">
-                    <b>TAIGER</b> es una startup de Inteligencia Artificial que desarrolla herramientas de automatización cognitiva de última generación.<br>
-                    Trabajé en despliegar, escalar y mantener servicios en la nube (AWS y Azure) y on-premise para clientes en 
-                    España y México, utilizando Docker, Kubernetes, Ansible y Terraform. También trabajé 
-                    desarrollando herramientas para ayudar a los equipos a automatizar tareas y procesos, al tiempo 
-                    que mejoré y añadí nuevas características al software existente.
-                </p>
+            <h3 class="bold mt-32">DevOps Engineer</h3>
+            <p>
+                <a href="https://taiger.com">TAIGER</a><br />
+                <span class="date"><i class="fas fa-calendar-week"></i> jul 2021 - jul 2022 </span>
+            </p>
+            <p class="lang en">
+                <b>TAIGER</b> is and Artificial Intelligence startup that develops next-gen cognitive automation
+                tools.<br>
+                I worked on deploying, scaling and maintaining cloud (AWS and Azure) and on-premise services for clients
+                in Spain
+                and Mexico, using Docker, Kubernetes, Ansible and Terraform. I also worked developing tools
+                to help teams automate tasks and processes, while improving and adding new features to
+                existing software.
+            </p>
+            <p class="lang es">
+                <b>TAIGER</b> es una startup de Inteligencia Artificial que desarrolla herramientas de automatización
+                cognitiva de última generación.<br>
+                Trabajé en despliegar, escalar y mantener servicios en la nube (AWS y Azure) y on-premise para clientes
+                en
+                España y México, utilizando Docker, Kubernetes, Ansible y Terraform. También trabajé
+                desarrollando herramientas para ayudar a los equipos a automatizar tareas y procesos, al tiempo
+                que mejoré y añadí nuevas características al software existente.
+            </p>
 
-                <h3 class="bold mt-32">Data Engineer - Freelance</h3>
-                <p>
-                    <span class="date"><i class="fas fa-calendar-week"></i> 2022 </span>
-                </p>
-                <p class="lang en">
-                    I developed software to analyse and process data from multiple data sources and also supported 
-                    clients as a software and cloud infrastructure consultant.
-                </p>
-                <p class="lang es">
-                    Desarrollé software para analizar y procesar datos de múltiples fuentes de datos y además de 
-                    apoyar a los clientes como consultor de software e infraestructura en la nube.
-                </p>
+            <h3 class="bold mt-32">Data Engineer - Freelance</h3>
+            <p>
+                <span class="date"><i class="fas fa-calendar-week"></i> 2022 </span>
+            </p>
+            <p class="lang en">
+                I developed software to analyse and process data from multiple data sources and also supported
+                clients as a software and cloud infrastructure consultant.
+            </p>
+            <p class="lang es">
+                Desarrollé software para analizar y procesar datos de múltiples fuentes de datos y además de
+                apoyar a los clientes como consultor de software e infraestructura en la nube.
+            </p>
 
-                <h3 class="bold mt-32 lang en">IT Consultant - Internship</h3>
-                <h3 class="bold mt-32 lang es">IT Consultant - Prácticas en empresa</h3>
-                <p>
-                    <a href="http://www.sotec-consulting.com/">SOTEC Consulting S.L.</a><br />
-                    <span class="date"><i class="fas fa-calendar-week"></i> may 2020 - nov 2020 </span>
-                </p>
-                <p class="lang en">
-                    I worked on developing software in C# and HTML/CSS/JS, using .NET, MSSQL, Angular and 
-                    Ionic. I also worked on deploying software to the AWS cloud and building and testing code.
-                </p>
-                <p class="lang es">
-                    Trabajé en el desarrollo de software en C# y HTML/CSS/JS, utilizando .NET, MSSQL, Angular e 
-                    Ionic. También trabajé en el despliegue de software en la nube de AWS y en la compilaciones y 
-                    pruebas de código.
-                </p>
+            <h3 class="bold mt-32 lang en">IT Consultant - Internship</h3>
+            <h3 class="bold mt-32 lang es">IT Consultant - Prácticas en empresa</h3>
+            <p>
+                <a href="http://www.sotec-consulting.com/">SOTEC Consulting S.L.</a><br />
+                <span class="date"><i class="fas fa-calendar-week"></i> may 2020 - nov 2020 </span>
+            </p>
+            <p class="lang en">
+                I worked on developing software in C# and HTML/CSS/JS, using .NET, MSSQL, Angular and
+                Ionic. I also worked on deploying software to the AWS cloud and building and testing code.
+            </p>
+            <p class="lang es">
+                Trabajé en el desarrollo de software en C# y HTML/CSS/JS, utilizando .NET, MSSQL, Angular e
+                Ionic. También trabajé en el despliegue de software en la nube de AWS y en la compilaciones y
+                pruebas de código.
+            </p>
 
-                <h3 class="bold mt-32">Web developer - Freelance</h3>
-                <p class="lang en">
-                    Developed websites for
-                    <a href="/projects/galshtology">Galshtology</a>, JM Fisioterapia, IES Juan de Padilla<br />
-                </p>
-                <p class="lang es">
-                    He desarrollado páginas web para
-                    <a href="/projects/galshtology">Galshtology</a>, JM Fisioterapia, IES Juan de Padilla<br />
-                </p>
+            <h3 class="bold mt-32">Web developer - Freelance</h3>
+            <p class="lang en">
+                Developed websites for
+                <a href="/projects/galshtology">Galshtology</a>, JM Fisioterapia, IES Juan de Padilla<br />
+            </p>
+            <p class="lang es">
+                He desarrollado páginas web para
+                <a href="/projects/galshtology">Galshtology</a>, JM Fisioterapia, IES Juan de Padilla<br />
+            </p>
 
-                <h2 class="mt-64 lang en"><i class="fas fa-award mr-10 font-size-20"></i> Certifications and courses</h2>
-                <h2 class="mt-64 lang es"><i class="fas fa-award mr-10 font-size-20"></i> Certificaciones y cursos</h2>
-                <div class="divider"></div>
-                <h3 class="bold mt-32">AWS Certified DevOps Engineer – Professional</h3>
-                <p>
-                    <span class="date"><i class="fas fa-calendar-week"></i> 2023-12-12 </span>
-                </p>
-                <p class="lang en">
-                    <a href="https://www.credly.com/badges/c92b5b0f-fe5d-4675-b364-b2122773071d"><i class="fas fa-award mr-0"></i>View badge</a>
-                </p>
-                <p class="lang es">
-                    <a href="https://www.credly.com/badges/c92b5b0f-fe5d-4675-b364-b2122773071d"><i class="fas fa-award mr-0"></i>Ver credencial</a>
-                </p>
-                <h3 class="bold mt-32">Microsoft Certified: Azure Fundamentals</h3>
-                <p>
-                    <span class="date"><i class="fas fa-calendar-week"></i> 2022-07-14 </span>
-                </p>
-                <p class="lang en">
-                    <a href="https://www.credly.com/badges/7221cd73-ab57-4009-8a40-a222581f4844"><i class="fas fa-award mr-0"></i>View badge</a>
-                </p>
-                <p class="lang es">
-                    <a href="https://www.credly.com/badges/7221cd73-ab57-4009-8a40-a222581f4844"><i class="fas fa-award mr-0"></i>Ver credencial</a>
-                </p>
+            <h2 class="mt-64 lang en"><i class="fas fa-award mr-10 font-size-20"></i> Certifications and courses</h2>
+            <h2 class="mt-64 lang es"><i class="fas fa-award mr-10 font-size-20"></i> Certificaciones y cursos</h2>
+            <div class="divider"></div>
+            <h3 class="bold mt-32">AWS Certified DevOps Engineer – Professional</h3>
+            <p>
+                <span class="date"><i class="fas fa-calendar-week"></i> 2023-12-12 </span>
+            </p>
+            <p class="lang en">
+                <a href="https://www.credly.com/badges/c92b5b0f-fe5d-4675-b364-b2122773071d"><i
+                        class="fas fa-award mr-0"></i>View badge</a>
+            </p>
+            <p class="lang es">
+                <a href="https://www.credly.com/badges/c92b5b0f-fe5d-4675-b364-b2122773071d"><i
+                        class="fas fa-award mr-0"></i>Ver credencial</a>
+            </p>
+            <h3 class="bold mt-32">Microsoft Certified: Azure Fundamentals</h3>
+            <p>
+                <span class="date"><i class="fas fa-calendar-week"></i> 2022-07-14 </span>
+            </p>
+            <p class="lang en">
+                <a href="https://www.credly.com/badges/7221cd73-ab57-4009-8a40-a222581f4844"><i
+                        class="fas fa-award mr-0"></i>View badge</a>
+            </p>
+            <p class="lang es">
+                <a href="https://www.credly.com/badges/7221cd73-ab57-4009-8a40-a222581f4844"><i
+                        class="fas fa-award mr-0"></i>Ver credencial</a>
+            </p>
 
-                <h2 class="mt-64 lang en"><i class="fas fa-university mr-10 font-size-20"></i> Education</h2>
-                <h2 class="mt-64 lang es"><i class="fas fa-university mr-10 font-size-20"></i> Educación</h2>
-                <div class="divider"></div>
-                <div class="row header mt-32 mb-15">
-                    <div class="col col-30 profile project mb-15">
-                        <img src="/assets/images/icons/studies/uc3m.png" />
-                    </div>
-                    <div class="col col-70">
-                        <p class="font-size-12 mb-5">
-                            <span class="date"><i class="fas fa-calendar-week"></i> 2017 - 2021 </span>
-                        </p>
-
-                        <p class="font-size-26 bold" style="line-height: 2.5rem">
-                            <span class="lang en">Computer Engineering</span>
-                            <span class="lang es">Ingeniería informática</span>
-                            <a href="https://uc3m.es" class="font-size-14">Universidad Carlos III de Madrid</a>
-                        </p>
-                        <p class="font-size-14 mb-15 lang en">Mention in computation (Artificial Intelligence and Graphics)</p>
-                        <p class="lang en">
-                            I excelled in subjects related to Networks, Artificial Intelligence and Computer Architecture. I also developed
-                            <a href="https://github.com/SrGMC/hermes">Hermes</a> as my final year thesis.
-                        </p>
-                        <p class="font-size-14 mb-15 lang es">Mención de Computación (Inteligencia Artificial y Gráficos)</p>
-                        <p class="lang es">
-                            Destaqué en las asignaturas relacionadas con Redes, Inteligencia Artificial y Arquitectura de Computadores. También he desarrollado
-                            <a href="https://github.com/SrGMC/hermes">Hermes</a> como proyecto de fin de carrera.
-                        </p>
-                    </div>
+            <h2 class="mt-64 lang en"><i class="fas fa-university mr-10 font-size-20"></i> Education</h2>
+            <h2 class="mt-64 lang es"><i class="fas fa-university mr-10 font-size-20"></i> Educación</h2>
+            <div class="divider"></div>
+            <div class="row header mt-32 mb-15">
+                <div class="col col-30 profile project mb-15">
+                    <img src="/assets/images/icons/studies/uc3m.png" />
                 </div>
+                <div class="col col-70">
+                    <p class="font-size-12 mb-5">
+                        <span class="date"><i class="fas fa-calendar-week"></i> 2017 - 2021 </span>
+                    </p>
 
-                <div class="row header mt-32 mb-48">
-                    <div class="col col-30 profile project mb-15">
-                        <img src="/assets/images/icons/studies/tuwien.png" />
-                    </div>
-                    <div class="col col-70">
-                        <p class="font-size-12 mb-5">
-                            <span class="date"><i class="fas fa-calendar-week"></i> 2019 - 2020 </span>
-                        </p>
-
-                        <p class="font-size-26 bold" style="line-height: 2.5rem">
-                            Computer Engineering
-                            <a href="https://www.tuwien.at" class="font-size-14">Technische Universität Wien</a>
-                        </p>
-                        <p class="font-size-12">Erasmus</p>
-                    </div>
+                    <p class="font-size-26 bold" style="line-height: 2.5rem">
+                        <span class="lang en">Computer Engineering</span>
+                        <span class="lang es">Ingeniería informática</span>
+                        <a href="https://uc3m.es" class="font-size-14">Universidad Carlos III de Madrid</a>
+                    </p>
+                    <p class="font-size-14 mb-15 lang en">Mention in computation (Artificial Intelligence and Graphics)
+                    </p>
+                    <p class="lang en">
+                        I excelled in subjects related to Networks, Artificial Intelligence and Computer Architecture. I
+                        also developed
+                        <a href="https://github.com/SrGMC/hermes">Hermes</a> as my final year thesis.
+                    </p>
+                    <p class="font-size-14 mb-15 lang es">Mención de Computación (Inteligencia Artificial y Gráficos)
+                    </p>
+                    <p class="lang es">
+                        Destaqué en las asignaturas relacionadas con Redes, Inteligencia Artificial y Arquitectura de
+                        Computadores. También he desarrollado
+                        <a href="https://github.com/SrGMC/hermes">Hermes</a> como proyecto de fin de carrera.
+                    </p>
                 </div>
+            </div>
 
-                <h3 class="bold mt-15 lang en">Bachelor of technology</h3>
-                <h3 class="bold mt-15 lang es">Bachillerato tecnológico</h3>
-                <p>
-                    <a href="https://www.iesjuandepadilla.com">IES Juan de Padilla (Illescas)</a>
-                    <br />
-                    <span class="date"> <i class="fas fa-calendar-week"></i> 2015 - 2017 </span>
-                </p>
-                <h3 class="bold mt-15 lang en">Robotics and LEGO Tournaments</h3>
-                <h3 class="bold mt-15 lang es">Torneos de Robótica y LEGO</h3>
-                <p>
-                    <a href="https://www.uclm.es/">Universidad de Castilla-La Mancha</a>
-                    <br />
-                    <span class="date"> <i class="fas fa-calendar-week"></i> 2014, 2015 y 2017 </span>
-                </p>
-                <h3 class="bold mt-15 lang en">Humanoid robot programming course</h3>
-                <h3 class="bold mt-15 lang es">Cursos de programación de robótica humanoide</h3>
-                <p>
-                    <a href="https://www.uclm.es/">Universidad de Castilla-La Mancha</a>
-                    <br />
-                    <span class="date"> <i class="fas fa-calendar-week"></i> 2016 </span>
-                </p>
+            <div class="row header mt-32 mb-48">
+                <div class="col col-30 profile project mb-15">
+                    <img src="/assets/images/icons/studies/tuwien.png" />
+                </div>
+                <div class="col col-70">
+                    <p class="font-size-12 mb-5">
+                        <span class="date"><i class="fas fa-calendar-week"></i> 2019 - 2020 </span>
+                    </p>
 
-                <h2 class="mt-64 lang en"><i class="fas fa-brain mr-10 font-size-20"></i> Skills</h2>
-                <h2 class="mt-64 lang es"><i class="fas fa-brain mr-10 font-size-20"></i> Habilidades</h2>
-                <div class="divider"></div>
-                <div class="row header mt-32 mb-48">
-                    <div class="col col-30 profile project mb-15">
-                        <img src="/assets/images/icons/star.png" />
-                    </div>
-                    <div class="col col-70">
-                        <p class="font-size-26 bold mb-0">
-                            <span class="lang en">Highlights</span>
-                            <span class="lang es">Destacados</span>
-                        </p>
-                        <div class="row">
-                            <div class="col col-50">
-                                <ul class="no-bullets pl-24 mt-5 font-size-14">
-                                    <li>Docker and Kubernetes</li>
-                                    <li>Ansible, Terraform and Helm</li>
-                                    <li>Azure & AWS</li>
-                                    <li>Linux</li>
-                                </ul>
-                            </div>
-                            <div class="col col-50">
-                                <ul class="no-bullets pl-24 mt-5 font-size-14">
-                                    <li>Bash</li>
-                                    <li>Python</li>
-                                    <li>Node.js</li>
-                                    <li class="lang en">Teamwork</li>
-                                    <li class="lang es">Trabajo en equipo</li>
-                                </ul>
-                            </div>
+                    <p class="font-size-26 bold" style="line-height: 2.5rem">
+                        Computer Engineering
+                        <a href="https://www.tuwien.at" class="font-size-14">Technische Universität Wien</a>
+                    </p>
+                    <p class="font-size-12">Erasmus</p>
+                </div>
+            </div>
+
+            <h3 class="bold mt-15 lang en">Bachelor of technology</h3>
+            <h3 class="bold mt-15 lang es">Bachillerato tecnológico</h3>
+            <p>
+                <a href="https://www.iesjuandepadilla.com">IES Juan de Padilla (Illescas)</a>
+                <br />
+                <span class="date"> <i class="fas fa-calendar-week"></i> 2015 - 2017 </span>
+            </p>
+
+            <h2 class="mt-64 lang en"><i class="fas fa-brain mr-10 font-size-20"></i> Skills</h2>
+            <h2 class="mt-64 lang es"><i class="fas fa-brain mr-10 font-size-20"></i> Habilidades</h2>
+            <div class="divider"></div>
+            <div class="row header mt-32 mb-48">
+                <div class="col col-30 profile project mb-15">
+                    <img src="/assets/images/icons/star.png" />
+                </div>
+                <div class="col col-70">
+                    <p class="font-size-26 bold mb-0">
+                        <span class="lang en">Highlights</span>
+                        <span class="lang es">Destacados</span>
+                    </p>
+                    <div class="row">
+                        <div class="col col-50">
+                            <ul class="no-bullets pl-24 mt-5 font-size-14">
+                                <li>Docker and Kubernetes</li>
+                                <li>Terraform, Helm, GitHub Actions</li>
+                                <li>Azure & AWS</li>
+                                <li>Linux</li>
+                            </ul>
+                        </div>
+                        <div class="col col-50">
+                            <ul class="no-bullets pl-24 mt-5 font-size-14">
+                                <li>Bash, Python</li>
+                                <li>JS/TS, Go</li>
+                                <li>HTML/CSS, SvelteKit</li>
+                                <li class="lang en">Teamwork</li>
+                                <li class="lang es">Trabajo en equipo</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
-                <div class="row">
-                    <div class="col r-break col-50">
-                        <h3>Cloud</h3>
-                        <ul class="no-bullets pl-0">
-                            <li>Microsoft Azure</li>
-                            <li>Amazon Web Services (AWS)</li>
-                            <li>On-premise</li>
-                            <li><br></li>
-                            <li>Azure DevOps</li>
-                            <li>GitHub Actions</li>
-                        </ul>
-                    </div>
-                    <div class="col r-break col-50">
-                        <h3 class="lang en">Tools and systems</h3>
-                        <h3 class="lang es">Herramientas y sistemas</h3>
-                        <ul class="no-bullets pl-0">
-                            <li>Linux</li>
-                            <li>Docker and Kubernetes</li>
-                            <li>Ansible, Terraform and Helm</li>
-                            <li>Bash</li>
-                            <li>Git/Github</li>
-                            <li>Grafana</li>
-                            <li>Prometheus</li>
-                            <li>Telegraf</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col r-break col-50">
-                        <h3 class="lang en">Languages and frameworks</h3>
-                        <h3 class="lang es">Lenguajes y frameworks</h3>
-                        <ul class="no-bullets pl-0">
-                            <li>Python</li>
-                            <li>JavaScript / Node.js</li>
-                            <li>Java</li>
-                            <li>C/C++</li>
-                            <li>Rust</li>
-                            <li>HTML & CSS</li>
-                        </ul>
-                    </div>
-                    <div class="col r-break col-50">
-                        <h3 class="lang en">Databases</h3>
-                        <h3 class="lang es">Bases de datos</h3>
-                        <ul class="no-bullets pl-0">
-                            <li>SQL</li>
-                            <li>MySQL and PostgreSQL</li>
-                            <li>Elasticsearch</li>
-                            <li>Redis</li>
-                            <li>InfluxDB</li>
-                            <li>MongoDB</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <h2 class="mt-64 lang en"><i class="fas fa-globe-europe mr-10 font-size-20"></i> Languages</h2>
-                <h2 class="mt-64 lang es"><i class="fas fa-globe-europe mr-10 font-size-20"></i> Idiomas</h2>
-                <div class="divider"></div>
-                <h3 class="bold mt-15 lang en">🇪🇸 Spanish, Native</h3>
-                <h3 class="bold mt-15 lang en">🇬🇧 English, B2 level</h3>
-                <p class="lang en">Cambridge English Language Assessment (First)</p>
-                <h3 class="bold mt-15 lang en">🇬🇧 English, C1 level</h3>
-                <p class="lang en">Erasmus+ OLS language assessment</p>
-                <h3 class="bold mt-15 lang en">🇩🇪 German, A1.1 level course</h3>
-                <p class="lang en">Innes Vienna Language Courses</p>
-
-                <h3 class="bold mt-15 lang es">🇪🇸 Español, Nativo</h3>
-                <h3 class="bold mt-15 lang es">🇬🇧 Inglés, nivel B2</h3>
-                <p class="lang es">Cambridge English Language Assessment (First)</p>
-                <h3 class="bold mt-15 lang es">🇬🇧 Inglés, nivel C1</h3>
-                <p class="lang es">Erasmus+ OLS language assessment</p>
-                <h3 class="bold mt-15 lang es">🇩🇪 Alemán, curso de nivel A1.1</h3>
-                <p class="lang es">Innes Vienna Language Courses</p>
             </div>
-        </div>
 
-        <script src="/script.js"></script>
-        <noscript>
-            <img src="https://insights.galisteo.me/ingress/beb892be-6a88-4cb9-8df2-288eb1b69959/pixel.gif" />
-        </noscript>
-        <script defer src="https://insights.galisteo.me/ingress/beb892be-6a88-4cb9-8df2-288eb1b69959/script.js"></script>
-        <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
-    </body>
+            <div class="row">
+                <div class="col r-break col-50">
+                    <h3>Cloud</h3>
+                    <ul class="no-bullets pl-0">
+                        <li>Amazon Web Services (AWS)</li>
+                        <li>Microsoft Azure</li>
+                        <li>fly.io</li>
+                        <li>On-premise</li>
+                        <li><br></li>
+                        <li>Azure DevOps</li>
+                        <li>GitHub Actions</li>
+                        <li><br></li>
+                        <li>Cloudflare</li>
+                    </ul>
+                </div>
+                <div class="col r-break col-50">
+                    <h3 class="lang en">Tools and systems</h3>
+                    <h3 class="lang es">Herramientas y sistemas</h3>
+                    <ul class="no-bullets pl-0">
+                        <li>Docker, Kubernetes</li>
+                        <li>Linux</li>
+                        <li>Terraform, cdktf</li>
+                        <li>Helm</li>
+                        <li>Git/Github</li>
+                        <li>Grafana, Prometheus, Loki</li>
+                        <li>fluentd</li>
+                        <li>Ansible</li>
+                        <li>OpenTelemetry</li>
+                        <li>Keycloak</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col r-break col-50">
+                    <h3 class="lang en">Languages and frameworks</h3>
+                    <h3 class="lang es">Lenguajes y frameworks</h3>
+                    <ul class="no-bullets pl-0">
+                        <li>JavaScript / Typescript / Node.js</li>
+                        <li>Python</li>
+                        <li>Go</li>
+                        <li>Bash</li>
+                        <li>HTML & CSS</li>
+                        <li>Svelte / SvelteKit</li>
+                        <li>Webflow</li>
+                    </ul>
+                </div>
+                <div class="col r-break col-50">
+                    <h3 class="lang en">Databases</h3>
+                    <h3 class="lang es">Bases de datos</h3>
+                    <ul class="no-bullets pl-0">
+                        <li>SQL</li>
+                        <li>MySQL and PostgreSQL</li>
+                        <li>Elasticsearch</li>
+                        <li>Redis</li>
+                        <li>MongoDB</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2 class="mt-64 lang en"><i class="fas fa-globe-europe mr-10 font-size-20"></i> Languages</h2>
+            <h2 class="mt-64 lang es"><i class="fas fa-globe-europe mr-10 font-size-20"></i> Idiomas</h2>
+            <div class="divider"></div>
+            <h3 class="bold mt-15 lang en">🇪🇸 Spanish, Native</h3>
+            <h3 class="bold mt-15 lang en">🇬🇧 English, B2 level</h3>
+            <p class="lang en">Cambridge English Language Assessment (First)</p>
+            <h3 class="bold mt-15 lang en">🇬🇧 English, C1 level</h3>
+            <p class="lang en">Erasmus+ OLS language assessment</p>
+            <h3 class="bold mt-15 lang en">🇩🇪 German, A1.1 level course</h3>
+            <p class="lang en">Innes Vienna Language Courses</p>
+
+            <h3 class="bold mt-15 lang es">🇪🇸 Español, Nativo</h3>
+            <h3 class="bold mt-15 lang es">🇬🇧 Inglés, nivel B2</h3>
+            <p class="lang es">Cambridge English Language Assessment (First)</p>
+            <h3 class="bold mt-15 lang es">🇬🇧 Inglés, nivel C1</h3>
+            <p class="lang es">Erasmus+ OLS language assessment</p>
+            <h3 class="bold mt-15 lang es">🇩🇪 Alemán, curso de nivel A1.1</h3>
+            <p class="lang es">Innes Vienna Language Courses</p>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+    <noscript>
+        <img src="https://insights.galisteo.me/ingress/beb892be-6a88-4cb9-8df2-288eb1b69959/pixel.gif" />
+    </noscript>
+    <script defer src="https://insights.galisteo.me/ingress/beb892be-6a88-4cb9-8df2-288eb1b69959/script.js"></script>
+    <script src="https://kit.fontawesome.com/7465cf6e1c.js" crossorigin="anonymous"></script>
+</body>
+
 </html>

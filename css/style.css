@@ -223,6 +223,11 @@ header a {
         width: 75%;
         margin: 0 auto;
     }
+
+    .content .header .profile.project img {
+        width: 40%;
+    }
+
     .content .header .col {
         width: 100%;
     }
